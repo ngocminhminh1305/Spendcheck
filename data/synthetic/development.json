@@ -1,0 +1,413 @@
+[
+  {
+    "id": "basic",
+    "text": "spent $8.90 at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8.9,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "sgd",
+    "text": "paid SGD 12.50 at Toast Box today",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 12.5,
+      "merchant": "Toast Box",
+      "date": "2026-10-06",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "currency",
+    "text": "S$25 at FairPrice on 2026-10-05",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 25,
+      "merchant": "FairPrice",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "bare",
+    "text": "Chagee 4.25 yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 4.25,
+      "merchant": "Chagee",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "typo",
+    "text": "kopitam 8 yesterdat",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "kopitam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "whitespace",
+    "text": "  spent  $8.90\nat  Kopitiam\t yesterday  ",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8.9,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "amount_first",
+    "text": "$8.90 Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8.9,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "date_first",
+    "text": "yesterday I spent $8.90 at Kopitiam",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8.9,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "purchase",
+    "text": "bought coffee from Toast Box for $3.20 yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 3.2,
+      "merchant": "Toast Box",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "apostrophe",
+    "text": "bought McDonald's $9.50 today",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 9.5,
+      "merchant": "McDonald's",
+      "date": "2026-10-06",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "digit_name",
+    "text": "7-Eleven 3.20 yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 3.2,
+      "merchant": "7-Eleven",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "unknown_name",
+    "text": "paid $14 at Blue Lantern Cafe yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 14,
+      "merchant": "Blue Lantern Cafe",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "relative",
+    "text": "spent $8 at Kopitiam two days ago",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": "2026-10-04",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "weekday",
+    "text": "spent $8 at Kopitiam last Friday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": "2026-10-02",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "morning",
+    "text": "spent 5 bucks on FairPrice this morning",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 5,
+      "merchant": "FairPrice",
+      "date": "2026-10-06",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "dmy",
+    "text": "paid $12 at Toast Box on 05/10/2026",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 12,
+      "merchant": "Toast Box",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "named_date",
+    "text": "paid $12 at Toast Box on 5 October 2026",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 12,
+      "merchant": "Toast Box",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "large",
+    "text": "spent SGD 1,234.56 at IKEA yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 1234.56,
+      "merchant": "IKEA",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "missing_date",
+    "text": "Kopitiam 8",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": null,
+      "status": "incomplete",
+      "missing_fields": [
+        "date"
+      ]
+    }
+  },
+  {
+    "id": "missing_amount",
+    "text": "at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "amount"
+      ]
+    }
+  },
+  {
+    "id": "missing_merchant",
+    "text": "spent $8.90 yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8.9,
+      "merchant": null,
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "merchant"
+      ]
+    }
+  },
+  {
+    "id": "meal_not_merchant",
+    "text": "spent $8 on lunch yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": null,
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "merchant"
+      ]
+    }
+  },
+  {
+    "id": "date_only",
+    "text": "yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": null,
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "amount",
+        "merchant"
+      ]
+    }
+  },
+  {
+    "id": "empty",
+    "text": "",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": null,
+      "date": null,
+      "status": "incomplete",
+      "missing_fields": [
+        "amount",
+        "merchant",
+        "date"
+      ]
+    }
+  },
+  {
+    "id": "invalid_date",
+    "text": "spent $8 at Kopitiam on 2026-02-30",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": null,
+      "status": "incomplete",
+      "missing_fields": [
+        "date"
+      ]
+    }
+  },
+  {
+    "id": "zero",
+    "text": "spent $0 at Kopitiam today",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": "Kopitiam",
+      "date": "2026-10-06",
+      "status": "incomplete",
+      "missing_fields": [
+        "amount"
+      ]
+    }
+  },
+  {
+    "id": "negative",
+    "text": "spent -$8 at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "amount"
+      ]
+    }
+  },
+  {
+    "id": "quantity",
+    "text": "bought 2 coffees for $8 at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "ambiguous_amount",
+    "text": "spent $8 or $9 at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "incomplete",
+      "missing_fields": [
+        "amount"
+      ]
+    }
+  },
+  {
+    "id": "multiple_transactions",
+    "text": "spent $8 at Kopitiam and $5 at Chagee yesterday",
+    "reference_datetime": "2026-10-06T18:30:00+08:00",
+    "expected": {
+      "amount": null,
+      "merchant": null,
+      "date": null,
+      "status": "incomplete",
+      "missing_fields": [
+        "amount",
+        "merchant",
+        "date"
+      ]
+    }
+  },
+  {
+    "id": "midnight",
+    "text": "spent $8 at Kopitiam yesterday",
+    "reference_datetime": "2026-10-06T00:15:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": "2026-10-05",
+      "status": "ok",
+      "missing_fields": []
+    }
+  },
+  {
+    "id": "year_boundary",
+    "text": "spent $8 at Kopitiam yesterday",
+    "reference_datetime": "2026-01-01T00:15:00+08:00",
+    "expected": {
+      "amount": 8,
+      "merchant": "Kopitiam",
+      "date": "2025-12-31",
+      "status": "ok",
+      "missing_fields": []
+    }
+  }
+]
