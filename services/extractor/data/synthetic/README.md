@@ -26,7 +26,8 @@ The updated rules satisfy these examples, with extraction assertions in
 general accuracy. Preserve the correct labels when an extractor fails; improve
 the extractor instead of changing labels to match it.
 
-Run `python3 -m app.inspect --mode rules` to inspect mismatches. This saves generated
+From `services/extractor/`, run `python3 -m app.inspect --mode rules` to inspect
+mismatches. This saves generated
 predictions separately under `data/outputs/rules_predictions.json`.
 `tests/test_development_data.py` validates label consistency only; passing those
 tests does not mean the extractor successfully handles the dataset.

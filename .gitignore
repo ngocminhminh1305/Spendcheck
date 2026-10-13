@@ -3,5 +3,5 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 .DS_Store
-data/outputs/*
-!data/outputs/.gitkeep
+/services/extractor/data/outputs/*
+!/services/extractor/data/outputs/.gitkeep
