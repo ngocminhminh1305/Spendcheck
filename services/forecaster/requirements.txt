@@ -1,0 +1,9 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pandas>=2.2
+pydantic>=2.7
+statsmodels>=0.14
+prophet>=1.1
+# Pinned: models/forecaster_ml.joblib must be loaded by the version that saved it
+scikit-learn==1.9.1
+joblib>=1.4
