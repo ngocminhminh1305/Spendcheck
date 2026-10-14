@@ -6,6 +6,12 @@ extractor turns one English spending transaction into amount, merchant, and date
 The extractor lives in [services/extractor/](services/extractor/README.md), with
 its own application, data, tests, dependencies, and setup instructions.
 
+The spending forecaster (Module 3) lives in
+[services/forecaster/](services/forecaster/README.md). It predicts end-of-month
+spending and raises a budget-risk alert. Run its commands, including `pytest`,
+from `services/forecaster/`; it has its own `pytest.ini` because both modules
+use a package named `app`.
+
 Teammates should add modules under `services/<module_name>/`, keeping each
 module's code, data, tests, dependencies, and README together. Shared repository
 configuration stays at the root.
