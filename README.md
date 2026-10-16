@@ -16,8 +16,12 @@ Teammates should add modules under `services/<module_name>/`, keeping each
 module's code, data, tests, dependencies, and README together. Shared repository
 configuration stays at the root.
 
-Run extractor setup and startup commands from `services/extractor/` as documented
-in its README. Tests can also run from the repository root with
-`python3 -m pytest -q` in an environment with the extractor dependencies installed.
-The root `pytest.ini` currently discovers the extractor tests and adds its
-directory to the test import path; extend test discovery when more modules arrive.
+Run extractor setup, Docker, and test commands from `services/extractor/` as
+documented in its README. Each service owns its pytest configuration and runs
+tests separately because both services use a package named `app`.
+To run extractor tests from the repository root, activate an environment with
+the extractor dependencies installed and run:
+
+```bash
+python3 -m pytest -c services/extractor/pytest.ini services/extractor/tests -q
+```

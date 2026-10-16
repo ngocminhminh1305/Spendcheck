@@ -13,7 +13,8 @@ def request(base_url, path, payload=None):
     body = json.dumps(payload).encode() if payload is not None else None
     req = Request(base_url + path, data=body, headers={"Content-Type": "application/json"})
     try:
-        with urlopen(req, timeout=60) as response:
+        # A cold CPU container may need more than a minute to load GLiNER.
+        with urlopen(req, timeout=180) as response:
             return response.status, response.read().decode()
     except HTTPError as exc:
         return exc.code, exc.read().decode()
