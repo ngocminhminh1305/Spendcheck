@@ -2,7 +2,8 @@
 
 Extract amount, merchant, and date from one English spending transaction.
 V1 runs locally: preprocessing → rules → spaCy → GLiNER → validation → JSON.
-Fine-tuning, LLMs, and deployment are deferred to RONIN.
+Docker packages the CPU API for local use. Fine-tuning, LLMs, and deployment
+are deferred to RONIN.
 
 ## Setup and run
 
@@ -40,6 +41,50 @@ Models load on demand, run on CPU, and are cached per process. The first GLiNER
 request downloads weights. Model setup failures return HTTP 503.
 Versions are pinned for the tested macOS / Python 3.14 environment.
 
+## Run with Docker
+
+Start Docker Desktop (or a Docker Engine), then run from `services/extractor/`:
+
+```bash
+docker build --load -t spendcheck-extractor .
+docker run --rm --name spendcheck-extractor -p 127.0.0.1:8001:8000 spendcheck-extractor
+```
+
+Open [API docs](http://127.0.0.1:8001/docs). The host uses port 8001; Uvicorn
+listens on port 8000 inside the container. Stop it with Ctrl+C.
+Rebuild the image after changing code; the container runs without auto-reload.
+
+The image uses Python 3.14 on Linux, the pinned requirements, and one CPU worker.
+PyTorch comes from its official CPU wheel index at the same pinned version,
+avoiding unnecessary CUDA dependencies.
+The first build needs internet access to install dependencies and download both
+`en_core_web_sm` and `urchade/gliner_small-v2.1`. It may take several minutes
+and creates a large image because it includes PyTorch and model weights.
+Later code-only builds reuse the dependency and model layers.
+
+Models load on demand from the image's bundled assets. `HF_HUB_OFFLINE=1`
+disables Hugging Face downloads at runtime; no host model cache or volume is
+needed. The API runs as a non-root user. Tests, development data, local virtual
+environments, and generated reports are excluded from the build context.
+
+In another terminal, check HTTP availability and real model extraction:
+
+```bash
+docker inspect --format '{{.State.Health.Status}}' spendcheck-extractor
+docker exec spendcheck-extractor python -m app.smoke_api
+```
+
+The health status checks only `/health`, so it does not prove that models load.
+The smoke test exercises spaCy and GLiNER fallback and should report
+**9 checks passed; 0 failed**. Its first extraction can take over a minute while
+models load into memory; the smoke script allows 180 seconds per request.
+You can also run the smoke test from an activated local
+environment with `python3 -m app.smoke_api --base-url http://127.0.0.1:8001`.
+
+Tests run separately in your local development environment as described below.
+The runtime image does not include the test suite. Docker Compose integration
+with the other services is a later step.
+
 ## Test and inspect
 
 ```bash
@@ -51,6 +96,13 @@ python3 -m app.smoke_api
 Pytest uses controlled model outputs without loading weights. Inspection runs real
 models on 32 development cases. The HTTP smoke test needs Uvicorn running and
 should report **9 checks passed; 0 failed**.
+
+The module owns `pytest.ini`. Run each service's tests separately to avoid
+collisions between their packages named `app`. From the repository root, use:
+
+```bash
+python3 -m pytest -c services/extractor/pytest.ini services/extractor/tests -q
+```
 
 One inspection command supports every layer:
 
