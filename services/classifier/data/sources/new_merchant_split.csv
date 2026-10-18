@@ -1,0 +1,297 @@
+row_id,merchant_text,merchant_group,category,split_group,split
+new-00bc9fd492613db48bc6,SGH,singaporegeneralhospital,Health,singaporegeneralhospital,train
+new-00d9d581e3bada5ad5bf,Gojek,gojek,Transport,gojek,validation
+new-00e81541121b08bbd8f1,Clippers Barber,clippersbarber,Other,clippersbarber,validation
+new-01f5138636907cd6e1ed,NUS Co-op textbooks,nuscoop,Education,nus,train
+new-02998c3c9a7ac3a0c1a4,Charles & Keith,charleskeith,Shopping,charleskeith,train
+new-0378d21cdfab64b4e812,GrabCar,grab,Transport,grab,test
+new-050ad0040ceeb0c6ce21,Tuas Power Supply,tuaspowersupply,Bills & Utilities,tuaspowersupply,train
+new-050c60e35bea15ff502c,Sushiro,sushiro,Food & Drink,sushiro,train
+new-05e9a0964bb366baccba,Universal Studios Singapore,universalstudiossingapore,Entertainment,universalstudiossingapore,train
+new-07f66403b4196545bef4,Alexandra Hospital,alexandrahospital,Health,nationaluniversityhospital,test
+new-0930562addc425d0d52c,Onitsuka Tiger,onitsukatiger,Shopping,onitsukatiger,train
+new-099b855f4f65c2d972a2,YouTube Premium,youtubepremium,Entertainment,googlecloud,validation
+new-0a4ce0461c710abf2487,Mind Stretcher,mindstretcher,Education,mindstretcher,train
+new-0adc220553120e68fe8e,Toast Box,toastbox,Food & Drink,breadtalk,train
+new-0b9b77fd2b88a8407867,Scarlett Supermarket,scarlettsupermarket,Groceries,scarlettsupermarket,train
+new-0c3877b4da0fbe62746d,Starbucks,starbucks,Food & Drink,starbucks,train
+new-0d9a943f8bef410013d0,Mr. Coconut,mrcoconut,Food & Drink,mrcoconut,validation
+new-0da5b86e2adaf7d2b3ea,K Voice Karaoke,kvoicekaraoke,Entertainment,kvoicekaraoke,train
+new-0ef4c256d12755fed924,Valu$,valu,Shopping,valu,train
+new-1198c934cfa2af710a54,Timberland,timberland,Shopping,timberland,test
+new-11eb0b2d6afc808738a6,Sheng Siong,shengsiong,Groceries,shengsiong,train
+new-1272b4cf840444c6daba,Pharmex Healthcare,pharmexhealthcare,Health,pharmexhealthcare,validation
+new-14f83b08c3428c524970,Kumon English,kumon,Education,kumon,train
+new-1518057339fe54ad77e4,SKH,sengkanggeneralhospital,Health,singaporegeneralhospital,train
+new-15a9da2a17cb4735e3c5,National University Hospital,nationaluniversityhospital,Health,nationaluniversityhospital,test
+new-16b47755e2c43a38cc17,Udon Don Bar,udondonbar,Food & Drink,udondonbar,train
+new-174169b2d7ebf80bca65,British Council Singapore,britishcouncilsingapore,Education,britishcouncilsingapore,train
+new-193775b4a724668fed04,giga!,giga,Bills & Utilities,starhub,train
+new-1ad73a17ecdc290e3672,FairPrice,fairprice,Groceries,fairprice,train
+new-1b50e03eb2b35c9144c9,foodpanda groceries,foodpanda,Groceries,foodpanda,train
+new-1d70bd4129521253ce18,FILA,fila,Shopping,fila,train
+new-1dff918a8fc1fa37e41d,Google Cloud Platform,googlecloud,Other,googlecloud,validation
+new-1f6c6fefce00778da2f7,Trans-cab,transcab,Transport,transcab,train
+new-211eb2c5d19aa6880830,Berries World,berriesworld,Education,berriesworld,validation
+new-21d6669ee98fcd47db4f,BHC Chicken,bhcchicken,Food & Drink,bhcchicken,train
+new-223f761fc42fb1e184d3,SingPost parcel delivery,singpost,Other,singpost,validation
+new-2431fadc170e8c0a936c,Subway,subway,Food & Drink,subway,train
+new-24b7be4c63243e4d712d,Greendot,greendot,Food & Drink,greendot,test
+new-2654829091b1b20b9d12,NTU tuition fees,ntu,Education,ntu,train
+new-26dadd57ccf3cae25595,FairPrice Finest,fairprice,Groceries,fairprice,train
+new-27500e53d35969ac8bff,Shine Korea Supermarket,shinekorea,Groceries,shinekorea,validation
+new-279d0752329f1121fd74,foodpanda food delivery,foodpanda,Food & Drink,foodpanda,train
+new-29cb6e68500e7634ab4d,National Skin Centre,nationalskincentre,Health,tantocksenghospital,train
+new-29f89ad9bd90ef408bf4,Huber's Butchery,hubers,Groceries,hubers,train
+new-2b1a00203f0c36e47cac,Night Safari,mandaiwildlifereserve,Entertainment,mandaiwildlifereserve,train
+new-2b3ced9f92c4b73c4650,SingHealth Polyclinics,singhealthpolyclinics,Health,singaporegeneralhospital,train
+new-2c7b6d71d01b071e1948,CS Fresh,coldstorage,Groceries,coldstorage,train
+new-2e6337782c2b17c1e025,Coursera Plus,coursera,Education,coursera,train
+new-2f1c5e85f0561ef1671f,Encik Tan,enciktan,Food & Drink,enciktan,test
+new-2fa5c3d8ed9c9b689734,Shaw Theatres,shawtheatres,Entertainment,shawtheatres,train
+new-30f5476915b92f84cefc,Coach,coach,Shopping,coach,train
+new-31d528fdfd010c8d564b,Nana Original Thai Food,nanaoriginalthaifood,Food & Drink,nanaoriginalthaifood,train
+new-32c4a9af744098c9852e,Swee Heng 1989 Classic,sweeheng1989classic,Food & Drink,sweeheng1989classic,train
+new-333d47da58134dd34fc4,D'Penyetz,dpenyetz,Food & Drink,dpenyetz,validation
+new-334199eca1c92ed08b1a,MyRepublic Broadband,myrepublic,Bills & Utilities,starhub,train
+new-3537fa5dd833e3fc8cb2,Sanook Kitchen,sanookkitchen,Food & Drink,sanookkitchen,train
+new-3538b8d3456d6a0060ff,Unity Pharmacy,unitypharmacy,Health,fairprice,train
+new-35db2912b11e68ece18c,GetGo car sharing,getgo,Transport,getgo,train
+new-366097e956964e4fb2d8,IKEA,ikea,Shopping,ikea,validation
+new-37c35cb1e7474c7f21e4,StarHub,starhub,Bills & Utilities,starhub,train
+new-37d56f31144eda5b9009,KOI Thé,koithe,Food & Drink,koithe,test
+new-380befc03eea0670f606,Tenderfresh Classic,tenderfreshclassic,Food & Drink,tenderfreshclassic,train
+new-38e7887a85761f549927,Fresh Laundry,freshlaundry,Other,freshlaundry,train
+new-3a42a08236ded3339ceb,Dutch Colony Coffee Co.,dutchcolonycoffeeco,Food & Drink,dutchcolonycoffeeco,train
+new-3a727b074d7df6aeea0f,Senoko Energy,senokoenergy,Bills & Utilities,senokoenergy,test
+new-3b1a236450b3937a7fb9,Sheng Siong Supermarket,shengsiong,Groceries,shengsiong,train
+new-3b8bb684e10f3eecb288,Saja Mi-O Gifts,sajamiogifts,Shopping,sajamiogifts,train
+new-3c4561ff1445047c3f2d,Kaffe & Toast,kaffetoast,Food & Drink,kaffetoast,train
+new-3dea4c42d9c1bb565796,Chateraise,chateraise,Food & Drink,chateraise,train
+new-3e85dcecb5139d3f0757,Yo-Chi,yochi,Food & Drink,yochi,train
+new-3f5fdcc05fc697dbf688,Kopi & Tarts,kopitarts,Food & Drink,kopitarts,train
+new-413fc1de06a34c89a3c5,SBS Transit,sbstransit,Transport,sbstransit,train
+new-41798595295c7e543c3c,M1,m1,Bills & Utilities,m1,train
+new-431613cf853b18e67ee3,StarHub mobile,starhub,Bills & Utilities,starhub,train
+new-456834b1dff0573a28de,ArtScience Museum,artsciencemuseum,Entertainment,artsciencemuseum,train
+new-45a385658015c4968106,Coursera,coursera,Education,coursera,train
+new-47c894da7c51147d44c5,7-Eleven,7eleven,Groceries,7eleven,train
+new-47fa2af6c35a694f2e36,Golden Village cinema,goldenvillage,Entertainment,goldenvillage,train
+new-4a77f6fc07659ef76415,FairPrice Online,fairprice,Groceries,fairprice,train
+new-4b054b34d156a1109829,Tower Transit,towertransit,Transport,towertransit,train
+new-4b794b4e081e0527ebb9,Caltex petrol,caltex,Transport,caltex,train
+new-4b8c6c1b7a9692c44a55,POPULAR,popular,Shopping,popular,validation
+new-4b9e6518369b2d6b774b,Singtel,singtel,Bills & Utilities,singtel,validation
+new-4c21ed927fab5c76cfcb,National University Polyclinics,nationaluniversitypolyclinics,Health,nationaluniversityhospital,test
+new-4d9d95e8c82f02a4106d,TTSH,tantocksenghospital,Health,tantocksenghospital,train
+new-4fe8436f2caec2d9c935,EduGrove Mandarin Enrichment Centre,edugrovemandarinenrichmentcentre,Education,edugrovemandarinenrichmentcentre,train
+new-525cb32fda758037be1d,Bird Paradise,mandaiwildlifereserve,Entertainment,mandaiwildlifereserve,train
+new-52b72a81741f57f71bc0,Little Farms groceries,littlefarms,Groceries,littlefarms,train
+new-53ed0df4e61e6d2c7c02,FairPrice Xtra,fairprice,Groceries,fairprice,train
+new-553bd99da333d7ba6019,Octobox,octobox,Groceries,octobox,validation
+new-55678a84c0e506d49ff9,Ng Teng Fong General Hospital,ngtengfonggeneralhospital,Health,nationaluniversityhospital,test
+new-558f612cfb3f2523feba,NUS tuition fees,nus,Education,nus,train
+new-55f7de575356adc9a5ad,Ya Kun Kaya Toast,yakunkayatoast,Food & Drink,yakunkayatoast,train
+new-56554cf9c4e2d81af811,TADA,tada,Transport,tada,train
+new-5716665723d0d6792392,CHICHA San Chen,chichasanchen,Food & Drink,chichasanchen,train
+new-572f0c024acbf8802be3,Notion Plus,notion,Other,notion,test
+new-57c0eaf0af3b9ebc20b8,Chagee,chagee,Food & Drink,chagee,train
+new-57d82e2eefe825489946,GrabMart,grab,Groceries,grab,test
+new-57e96b8a4164967ee173,PlayStation Plus,playstation,Entertainment,playstation,validation
+new-589fb720b39153235291,Four Leaves,fourleaves,Food & Drink,fourleaves,train
+new-58e70228b30bf75eb2c8,UNIQLO,uniqlo,Shopping,uniqlo,train
+new-59ad6d5b9aa5a494fe42,SMRT train fare,smrt,Transport,smrt,train
+new-5a3c2af89e363f318ec3,Crocs,crocs,Shopping,crocs,train
+new-5b4c889ac4332f0e36e9,Shell,shell,Transport,shell,test
+new-5c73dd47303c1e9ed118,BreadTalk,breadtalk,Food & Drink,breadtalk,train
+new-5d57dbb10f7f7828decf,Old Chang Kee,oldchangkee,Food & Drink,oldchangkee,test
+new-5da395280dff66f5f363,ChatGPT,openai,Other,openai,train
+new-5dcfd53029bf02454a16,Don Don Donki,dondondonki,Groceries,dondondonki,train
+new-5dd8d21335b547661a6d,McDonald's,mcdonalds,Food & Drink,mcdonalds,train
+new-5f1b5b02bed0fe9f83b3,Ryde,ryde,Transport,ryde,train
+new-602f289e075ddecc906f,Zara,zara,Shopping,zara,train
+new-6048b0b055ec309ad94d,The Coffee Bean & Tea Leaf,thecoffeebeantealeaf,Food & Drink,thecoffeebeantealeaf,train
+new-612badbf1873d61785e8,POPULAR Bookstore,popular,Shopping,popular,validation
+new-6312fb6d259b2ce1cb36,KFC,kfc,Food & Drink,kfc,train
+new-63e1e701b87eb37129fc,POPULAR textbooks,popular,Education,popular,validation
+new-642a208e1746662670c4,Tan Tock Seng Hospital,tantocksenghospital,Health,tantocksenghospital,train
+new-6449b78644b3423b4693,Books Kinokuniya,kinokuniya,Shopping,kinokuniya,test
+new-6522cdc9266d7633ea20,ChatGPT Plus,openai,Other,openai,train
+new-6582e69382c9f45eea8e,MUJI,muji,Shopping,muji,train
+new-661384d11053a4129281,KTPH,khooteckpuathospital,Health,tantocksenghospital,train
+new-6693a57fec868ee2e1e4,Stuff'd,stuffd,Food & Drink,stuffd,validation
+new-68efac48bc55c73b6aa4,NUH,nationaluniversityhospital,Health,nationaluniversityhospital,test
+new-69120a0258f26d64ae54,Auntie Cleaner,auntiecleaner,Other,auntiecleaner,validation
+new-6aa9f84e5f328337abbf,Pezzo,pezzo,Food & Drink,pezzo,test
+new-6e4722aa2cab3560dc6f,Esso petrol,esso,Transport,esso,train
+new-6e69587e2b6190c51c85,Kinokuniya,kinokuniya,Shopping,kinokuniya,test
+new-6f3765f373d8528f8da5,Sonic Bowl,sonicbowl,Entertainment,sonicbowl,train
+new-6f47b7fadfcb1355b760,Canva,canva,Other,canva,train
+new-6f69bbeed963455306a3,Grammarly Pro,grammarly,Other,grammarly,train
+new-6fe8f9afe8dcf0ba2edc,ViewQwest,viewqwest,Bills & Utilities,viewqwest,validation
+new-732d0ebbc483ec3708b0,GetGo,getgo,Transport,getgo,train
+new-73d11101c782a662b99e,HAO Mart,haomart,Groceries,haomart,train
+new-74da2d0eeb6b6f1e7bbd,PlayStation Network,playstation,Entertainment,playstation,validation
+new-75a36d35579935739cde,Timezone,timezone,Entertainment,timezone,validation
+new-765f7cadbcdd5af5a2e9,Esso,esso,Transport,esso,train
+new-76a101b22fd87320dc80,Yochi,yochi,Food & Drink,yochi,train
+new-7961e701a5ab85a6655d,The Nail Arcadia,thenailarcadia,Other,thenailarcadia,train
+new-7a91682f2cc1971ce7cd,Singtel broadband,singtel,Bills & Utilities,singtel,validation
+new-7b72f0b27c9f2305e8e5,Shine Korea,shinekorea,Groceries,shinekorea,validation
+new-7d9742d17cb5b4ae20d7,Golden Village,goldenvillage,Entertainment,goldenvillage,train
+new-7ead1fa3ac44ea484a2b,Changi General Hospital,changigeneralhospital,Health,singaporegeneralhospital,train
+new-7ecaa0f13da4f08fc5cc,ALDO,aldo,Shopping,aldo,train
+new-80c7c35d47798d940cc1,Q&M Dental Surgery,qmdentalsurgery,Health,qmdentalsurgery,train
+new-819b809e8ff13fb3355d,An Acai Affair,anacaiaffair,Food & Drink,anacaiaffair,train
+new-827dfa7f65b509c68375,LiHO Tea,lihotea,Food & Drink,lihotea,test
+new-82a8fd82afcb4cec8ff9,Grammarly,grammarly,Other,grammarly,train
+new-830d7c3e90b8ff4d9f85,Ryan's Grocery,ryansgrocery,Groceries,ryansgrocery,validation
+new-83c6143b8439d0142227,Prime Supermarket,primesupermarket,Groceries,primesupermarket,train
+new-845cdf4b7a1a2e22f1a9,Google Cloud,googlecloud,Other,googlecloud,validation
+new-85d53fa3dbb416f8911e,SingPost postage,singpost,Other,singpost,validation
+new-86774ccab0107d27057b,National University of Singapore tuition,nus,Education,nus,train
+new-891dce9607a26ff9f66a,Cristofori Music School,cristoforimusicschool,Education,cristoforimusicschool,test
+new-89df02d1da3c9f232ceb,Helpling,helpling,Other,helpling,train
+new-8a268d63134160242770,Kcuts,kcuts,Other,kcuts,train
+new-8a2a81859cd06369528d,MOS Burger,mosburger,Food & Drink,mosburger,train
+new-8a4f3ac8041998d5ec3d,Daiso,daiso,Shopping,daiso,validation
+new-8a8a80ddd5d240f1d452,PUB water bill,pub,Bills & Utilities,pub,train
+new-8acdb3a0ca8b579e6917,Spotify Premium,spotify,Entertainment,spotify,test
+new-8b70a8763e757ba4d907,V-Force Party & Novelties,vforcepartynovelties,Shopping,vforcepartynovelties,train
+new-8be8206434379d1440c4,Grab rides,grab,Transport,grab,test
+new-8c428f1c63e1e3f943ed,Healthway Medical,healthwaymedical,Health,healthwaymedical,validation
+new-8cc9e4b55c3b7d24b8a4,Netflix,netflix,Entertainment,netflix,test
+new-8e1d2428efb8a34e66d5,Singapore National Eye Centre,singaporenationaleyecentre,Health,singaporegeneralhospital,train
+new-8f38f12ce692d09ce9f6,My English School,myenglishschool,Education,myenglishschool,test
+new-8ffe2f1fb04c08f8d70a,Pedro,pedro,Shopping,pedro,train
+new-919bba64d164eec49801,ECCO,ecco,Shopping,ecco,train
+new-92060239e8b7508a1906,CDG Zig,comfortdelgro,Transport,comfortdelgro,test
+new-92eaa796c0263406217e,Kodecoon Academy,kodecoonacademy,Education,kodecoonacademy,train
+new-95a48f93eb4b65f0f373,Kopifellas,kopifellas,Food & Drink,kopifellas,train
+new-9739aaee1fabbea8371a,Qi Ji,qiji,Food & Drink,qiji,train
+new-97e81deb5fa77c3172e6,Japan Home,japanhome,Shopping,japanhome,train
+new-988b8a846d5f6016792c,Dian Xiao Er,dianxiaoer,Food & Drink,dianxiaoer,validation
+new-9894f3b877689a63b80b,Sukiya,sukiya,Food & Drink,sukiya,train
+new-98efcf59c0e4aa2327ea,Saap Saap Thai,saapsaapthai,Food & Drink,saapsaapthai,train
+new-9ab820be071cdaecb4c1,OpenAI subscription,openai,Other,openai,train
+new-9d4521a7396b4415d45d,SimplyGo transit fares,simplygo,Transport,simplygo,validation
+new-9e934747e68f65e4a211,Sembcorp Power,sembcorppower,Bills & Utilities,sembcorppower,train
+new-a12c93e8549ca2638816,Singapore Management University tuition,smu,Education,smu,train
+new-a1ebb2ad366320012dea,Singtel mobile,singtel,Bills & Utilities,singtel,validation
+new-a27589a07326a693ca98,Dropbox,dropbox,Other,dropbox,train
+new-a2e80e2469009ddc56e4,Mandai Wildlife Reserve,mandaiwildlifereserve,Entertainment,mandaiwildlifereserve,train
+new-a2fa3e35533199e5dfcc,The Learning Lab,thelearninglab,Education,thelearninglab,train
+new-a2fa865151463e2d0299,Dropbox Plus,dropbox,Other,dropbox,train
+new-a4233d47bd9cbb58509d,SP utilities bill,spservices,Bills & Utilities,spservices,test
+new-a47d1bf9329c38c0cda0,SP Services,spservices,Bills & Utilities,spservices,test
+new-a545fc45a15e698f44bb,Singapore Zoo,mandaiwildlifereserve,Entertainment,mandaiwildlifereserve,train
+new-a6d198c5c3e58543dcfe,Massimo Dutti,massimodutti,Shopping,massimodutti,train
+new-a77c305a10f7d8cc2ec8,Gadget Mix,gadgetmix,Shopping,gadgetmix,test
+new-a7d02d45a4d4cb32d63e,House of White Bee Hoon,houseofwhitebeehoon,Food & Drink,houseofwhitebeehoon,train
+new-a81f9c27747c7d507b11,Jolly Jungle,jollyjungle,Entertainment,jollyjungle,train
+new-aa71c707c3af413a0a99,Notion,notion,Other,notion,test
+new-ab8df3c1b0708509bd4e,MyRepublic,myrepublic,Bills & Utilities,starhub,train
+new-ab99beed9b5d0c785e6a,Shopee,shopee,Shopping,shopee,validation
+new-aba807788e0f335a02d5,Jinjja Kitchen,jinjjakitchen,Food & Drink,jinjjakitchen,train
+new-ae1c13a0df6a41237420,Khoo Teck Puat Hospital,khooteckpuathospital,Health,tantocksenghospital,train
+new-b16e26a6f59729284438,Fish & Co.,fishco,Food & Drink,fishco,test
+new-b24ed5471390f47c2916,British Council English course,britishcouncilsingapore,Education,britishcouncilsingapore,train
+new-b27962fb3d697d45485b,Din Tai Fung,dintaifung,Food & Drink,breadtalk,train
+new-b3576a72e8af70401867,Caltex,caltex,Transport,caltex,train
+new-b3f0ec4d2e3471611b04,Meidi-Ya Supermarket,meidiya,Groceries,meidiya,test
+new-b432adaf09631ecf17c0,Circles.Life,circleslife,Bills & Utilities,circleslife,test
+new-b443c495d2ae4de0afa8,KKH,kkwomensandchildrenshospital,Health,singaporegeneralhospital,train
+new-b5308d53455fd7996dda,Ultimed Medical Centre,ultimedmedicalcentre,Health,ultimedmedicalcentre,train
+new-b5a3c0685181e29ea4f2,Crave,crave,Food & Drink,crave,train
+new-b7426bbc2cc57cfb73c7,Eye Level,eyelevel,Education,eyelevel,train
+new-b8cc34975440976e9cf9,Heguru Education Centre,hegurueducationcentre,Education,hegurueducationcentre,train
+new-b9c98abed3f366db2301,Udemy,udemy,Education,udemy,test
+new-ba185bb96609c21b7862,Jollibee,jollibee,Food & Drink,jollibee,train
+new-bb0df9460b546917773c,River Wonders,mandaiwildlifereserve,Entertainment,mandaiwildlifereserve,train
+new-bb1d7f055d7bf63fe1fe,Watsons,watsons,Health,watsons,validation
+new-bb24c7b40cca7e6ac641,NUS Co-op,nuscoop,Shopping,nus,train
+new-bc2c1209266c2d66dcf3,pandamart,foodpanda,Groceries,foodpanda,train
+new-bd34d10819b780ad53d2,iTea,itea,Food & Drink,itea,validation
+new-be898e7ab5c3fb341529,Microsoft 365,microsoft365,Other,microsoft365,validation
+new-c07b0b28cf9186c4d4ef,Gardens by the Bay admission,gardensbythebay,Entertainment,gardensbythebay,train
+new-c23fdbdc7f4fee762935,Genki Sushi,genkisushi,Food & Drink,genkisushi,train
+new-c29b23e235e47feb1537,SMU tuition fees,smu,Education,smu,train
+new-c422465ec822b29d6f93,Adobe Acrobat subscription,adobe,Other,adobe,test
+new-c434eaa3b2974152ecc2,Wingstop,wingstop,Food & Drink,wingstop,train
+new-c55259c6b891223dc87f,Giant,giant,Groceries,giant,train
+new-c5620a2781777249688f,LaundryMart,laundrymart,Other,laundrymart,train
+new-c58de32d73f0980c520e,Ramen Hitoyoshi,ramenhitoyoshi,Food & Drink,ramenhitoyoshi,train
+new-c5d967e3ddf7d62b1a0a,Mr Bean,mrbean,Food & Drink,mrbean,train
+new-c6357e1501c55c857756,Fred Perry,fredperry,Shopping,fredperry,train
+new-c697a6de03bbc85d0a4d,Wok Hey,wokhey,Food & Drink,wokhey,train
+new-c6fa0a736040c30c9819,Ayo Kimbap Singapore,ayokimbap,Food & Drink,ayokimbap,train
+new-c74329a757f9d5244a8a,SMRT buses/trains,smrt,Transport,smrt,train
+new-c7bc4205a8cb3d11e422,KK Women's and Children's Hospital,kkwomensandchildrenshospital,Health,singaporegeneralhospital,train
+new-c80e3a540e43d6df6b90,LaundryMart dry cleaning,laundrymart,Other,laundrymart,train
+new-c88a615f5b182f9a2b45,Gardens by the Bay,gardensbythebay,Entertainment,gardensbythebay,train
+new-ca85a78fe48186c09787,USS admission,universalstudiossingapore,Entertainment,universalstudiossingapore,train
+new-cb076b9a7a274b59bf39,I Can Read,icanread,Education,icanread,train
+new-cc2b2bd22123ad34e7e0,Berries Chinese enrichment,berriesworld,Education,berriesworld,validation
+new-cc6e9a573c026b7b950d,GrabFood,grab,Food & Drink,grab,test
+new-ccf8d204bb876281a5da,The Science Academy,thescienceacademy,Education,thescienceacademy,validation
+new-ce0fb6dec349115e0fa4,Tree Art,treeart,Education,treeart,train
+new-ce30c3f7e240b0b9e003,Yoshinoya,yoshinoya,Food & Drink,yoshinoya,validation
+new-ceac6a09d9988cace574,Miracle Math Tuition Centre,miraclemathtuitioncentre,Education,miraclemathtuitioncentre,train
+new-ceb64fc107236ec0c941,SimplyGo bus fare,simplygo,Transport,simplygo,validation
+new-cec6a8cde6be4d466dee,Ticketmaster,ticketmastersingapore,Entertainment,ticketmastersingapore,train
+new-cf1b75879a6ab4ef2e8e,foodpanda,foodpanda,Food & Drink,foodpanda,train
+new-cf1bca05501019817a8f,SBS Transit bus fare,sbstransit,Transport,sbstransit,train
+new-cf858cbc1ea5303484fc,Zoom Workplace subscription,zoom,Other,zoom,train
+new-d08c7dd6170b3e802bc6,Birkenstock,birkenstock,Shopping,birkenstock,train
+new-d0bfc3f39cad9e10e4c8,Shell petrol,shell,Transport,shell,test
+new-d1203e41fa3041205244,SimplyGo MRT fare,simplygo,Transport,simplygo,validation
+new-d2675e047c38ca26b3cf,Cold Storage,coldstorage,Groceries,coldstorage,train
+new-d2b2859f494fe24a4737,Luckin Coffee,luckincoffee,Food & Drink,luckincoffee,train
+new-d3c88525e21e69d0a1e0,Spotify,spotify,Entertainment,spotify,test
+new-d3d46f9838f62bee4daa,Disney+,disney,Entertainment,disney,train
+new-d6495e60228bc71f6f7c,GrabTaxi,grab,Transport,grab,test
+new-d677d64a361a1f6e7ea6,Guzman y Gomez,guzmanygomez,Food & Drink,guzmanygomez,train
+new-d7aaea0f8bf4a407552b,Canva Pro,canva,Other,canva,train
+new-d8b1443edc10146718b8,Singapore General Hospital,singaporegeneralhospital,Health,singaporegeneralhospital,train
+new-d90fcb86424eddd5577c,Ticketmaster Singapore,ticketmastersingapore,Entertainment,ticketmastersingapore,train
+new-d9f4e36752e31c247b85,Unity,unitypharmacy,Health,fairprice,train
+new-da6a20b04127b72df7db,Pandora,pandora,Shopping,pandora,test
+new-da7f7381e61ccef7e045,M1 broadband,m1,Bills & Utilities,m1,train
+new-dbd82f4b6100a4bf14df,RedMart,redmart,Groceries,redmart,validation
+new-dceee4e14579aa652537,City Energy,cityenergy,Bills & Utilities,cityenergy,train
+new-ddaf57c47a5f41f4a8ba,Cheers,cheers,Groceries,fairprice,train
+new-de9dec2c6b7085c33272,Go-Ahead Singapore,goaheadsingapore,Transport,goaheadsingapore,train
+new-df8f7e94426272b48b26,Flexar,flexar,Transport,flexar,test
+new-e05e18efe0127c58673a,Geneco,geneco,Bills & Utilities,geneco,train
+new-e2367921509b23d169d2,Udemy course,udemy,Education,udemy,test
+new-e2b5cae209568c89e3e5,Raffles Medical,rafflesmedical,Health,rafflesmedical,train
+new-e34c8c32b02bb70246f7,City Energy gas bill,cityenergy,Bills & Utilities,cityenergy,train
+new-e3efed1725115547efdd,Steam,steam,Entertainment,steam,train
+new-e3f384ecf4efb02978c2,The Shirt Bar,theshirtbar,Shopping,theshirtbar,train
+new-e59557da9c80c506db3b,Pasta Express,pastaexpress,Food & Drink,pastaexpress,train
+new-e5e9e7231943e5f965a0,Calvin Klein,calvinklein,Shopping,calvinklein,train
+new-e6b2d2344c27f30b2f18,SIMBA,simbatelecom,Bills & Utilities,simbatelecom,train
+new-e8589227add19668ddab,Decathlon,decathlon,Shopping,decathlon,test
+new-ea5bc16180fed23bb97b,Microsoft 365 Personal,microsoft365,Other,microsoft365,validation
+new-ecafc1ce81631cf5de40,Kumon,kumon,Education,kumon,train
+new-ecc7e1a35b1906be5d93,SIMBA Telecom,simbatelecom,Bills & Utilities,simbatelecom,train
+new-ed2dacc0b387abf17752,SMRT bus fare,smrt,Transport,smrt,train
+new-ed71af4bba9738cf405a,ComfortDelGro taxi,comfortdelgro,Transport,comfortdelgro,test
+new-edc65a8156c55d6d1fa4,Ri An TCM Clinic,riantcmclinic,Health,riantcmclinic,train
+new-ee9e8f6230999069fff4,Sengkang General Hospital,sengkanggeneralhospital,Health,singaporegeneralhospital,train
+new-f0be6393c57092b7f679,Kskin,kskin,Other,kskin,train
+new-f19fc23671dcb71e281c,PlayStation Store,playstation,Entertainment,playstation,validation
+new-f1bb47889fe83c4e17cd,JasonSally Hairdressers,jasonsallyhairdressers,Other,jasonsallyhairdressers,train
+new-f28fb0ad3ad24463d00d,GOMO,gomo,Bills & Utilities,singtel,validation
+new-f50b74f3016e6684d65f,Guardian,guardian,Health,guardian,train
+new-f9a340bf266e5ad4c5c6,Helpling home cleaning,helpling,Other,helpling,train
+new-fa46b62e00b89de1ef8f,SNEC,singaporenationaleyecentre,Health,singaporegeneralhospital,train
+new-fa7c7824949bd93f9aa6,StarHub broadband,starhub,Bills & Utilities,starhub,train
+new-fbc0e58bc7beda121de1,Meidi-Ya,meidiya,Groceries,meidiya,test
+new-fcb747f96f2847c85e29,Luce home cleaning,luce,Other,luce,train
+new-fe0c04b934e101e9caaf,Miniso,miniso,Shopping,miniso,test
+new-fe5914ec438955787da1,Nanyang Technological University tuition,ntu,Education,ntu,train
+new-feb47ae14576225541a3,CGH,changigeneralhospital,Health,singaporegeneralhospital,train
+new-fee44f22409fde02cb63,NTFGH,ngtengfonggeneralhospital,Health,nationaluniversityhospital,test
+new-ff3f67ca7305b67e7af3,Ayó Kimbap,ayokimbap,Food & Drink,ayokimbap,train
+new-ff40b0d0b1c9c1d4e1ef,Adobe Creative Cloud,adobe,Other,adobe,test

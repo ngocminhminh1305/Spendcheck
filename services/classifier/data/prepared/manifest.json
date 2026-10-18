@@ -1,0 +1,97 @@
+{
+  "version": "hybrid-v1",
+  "seed": 42,
+  "assignment_method": "preserve base; additions training-only",
+  "partitions": {
+    "train": {
+      "rows": 280,
+      "families": 227,
+      "categories": {
+        "Health": 30,
+        "Education": 30,
+        "Bills & Utilities": 19,
+        "Shopping": 49,
+        "Other": 33,
+        "Food & Drink": 52,
+        "Entertainment": 27,
+        "Groceries": 22,
+        "Transport": 18
+      }
+    },
+    "validation": {
+      "rows": 45,
+      "families": 32,
+      "categories": {
+        "Transport": 4,
+        "Other": 8,
+        "Entertainment": 5,
+        "Food & Drink": 6,
+        "Health": 3,
+        "Education": 4,
+        "Groceries": 5,
+        "Shopping": 5,
+        "Bills & Utilities": 5
+      }
+    },
+    "test": {
+      "rows": 47,
+      "families": 32,
+      "categories": {
+        "Transport": 8,
+        "Health": 6,
+        "Shopping": 7,
+        "Food & Drink": 8,
+        "Bills & Utilities": 4,
+        "Other": 4,
+        "Groceries": 3,
+        "Education": 4,
+        "Entertainment": 3
+      }
+    }
+  },
+  "dataset_rows": 372,
+  "dataset_families": 291,
+  "extra_split_relations": {
+    "kopitiam": "fairprice"
+  },
+  "input_hashes": {
+    "data/new_merchant_dataset.csv": "e3e9c9f85cfca208df59d6a20e038036f509536bc4faf3645be897ede7e5d49a",
+    "data/new_merchant_split.csv": "0026c61531e7981b04b1d0a47a53363852168ca9f2fe424d4f3d537c7a7f2b77",
+    "data/hybrid_additions.csv": "27ac9de0e024aea08e3c3541530e03029d7ca688c113097a613a394c84939906",
+    "data/hybrid_sources.csv": "82eff6b67571c01d0aaff34903a8531f7018bdacc77ea77aa5b2cdeddcce7e63",
+    "data/hybrid_operational_unfamiliar.csv": "8a919504d86a56c4a91e5e230df3dc07ca679818b16ae61e70d9f5559b1fdb40",
+    "data/merchant_review.csv": "dcf720d77f17cee9c2ce9d007a2ac74dc455b74b231927447f1ed64b23364b30",
+    "data/merchant_checks.csv": "aeae2171048577ea4ca74ddffb580dabd07223b4b3d021d8d61bbb375963da50"
+  },
+  "file_hashes": {
+    "recognition.csv": "a6e62586d7ee5661a756b6807da2f5df4f1684b269a15f6395ce35489197788f",
+    "split.csv": "42d55df68eff3a9eb996cdcb67391302fb15858076789dbe5aec800c95328293",
+    "catalogue_development.csv": "f09c067b8486bfd2888fd81e7cd93e6b85e9156fc9b3ef4dccb2525b761f59c2",
+    "merchant_dataset.csv": "1d6982bd15d6b995bfd87a2013e85c60ef795e4048b698bf86b151f1764e5a2e",
+    "operational.csv": "0d0bc5186953840607fce7e75c00f03624bff29f4588a2bd4bcb016144f257b9",
+    "catalogue_post_selection.csv": "38290b482291ccee368d73836afa839c473083197487f863c6f89ea03f893c90",
+    "merchant_checks.csv": "e54bfd95ed420ac9acfbaf4f331679bd4eab37333027aaffd2929753b903e65e",
+    "folds.csv": "351c1f185d7894a985b7019f04e56af347bb4adb00bcc8dddad85e3d6082db89"
+  },
+  "catalogues": {
+    "A_development": "catalogue_development.csv",
+    "A_final_unseen": "catalogue_post_selection.csv",
+    "B_recognition": "catalogue_development.csv",
+    "C_operational": "catalogue_post_selection.csv"
+  },
+  "operational_composition": {
+    "known": 27,
+    "unfamiliar": 27,
+    "representative_frequency": false
+  },
+  "recognition_method": "72 AI-authored sourced-name/alias and constructed formatting/negative cases; not blind human data",
+  "final_predictions": "not run",
+  "human_checked_rows": 0,
+  "limitations": [
+    "Earlier source pool and development benchmarks already examined.",
+    "Final unfamiliar families screened against old supervised identities, not encoder pretraining."
+  ],
+  "pre_prediction_corrections": [
+    "Replaced eight Telecom with VIVIFI based on documented StarHub ownership before any operational predictions. No label changes based on results."
+  ]
+}

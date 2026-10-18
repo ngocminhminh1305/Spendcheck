@@ -1,0 +1,133 @@
+{
+  "model_version": "new-merchant-minilm",
+  "mode": "new_merchant_development",
+  "data_status": "source-checked constructed descriptions; development benchmark",
+  "threshold": 0.5,
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "dataset_file": "data/hybrid_v1/merchant_dataset.csv",
+  "dataset_sha256": "1d6982bd15d6b995bfd87a2013e85c60ef795e4048b698bf86b151f1764e5a2e",
+  "split_file": "data/hybrid_v1/split.csv",
+  "split_sha256": "42d55df68eff3a9eb996cdcb67391302fb15858076789dbe5aec800c95328293",
+  "training_rows": 280,
+  "validation_rows": 45,
+  "categories": [
+    "Food & Drink",
+    "Groceries",
+    "Transport",
+    "Shopping",
+    "Entertainment",
+    "Bills & Utilities",
+    "Health",
+    "Education",
+    "Other"
+  ],
+  "folds_sha256": "f725138e5ba06d73762bc26e4a7457b6d1d40e3abfe091a97534db330ae28d19",
+  "created_at": "2026-10-17T16:22:13.462493+00:00",
+  "test_evaluation": "not performed",
+  "promotion": "not performed",
+  "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "model_type": "sentence_embedding",
+  "encoder_files": {
+    "model.safetensors": "1377e9af0ca0b016a9f2aa584d6fc71ab3ea6804fae21ef9fb1416e2944057ac",
+    "tokenizer_config.json": "0dc7daa3554987b91b499c1b9baa6c404cb7a4d082c1622611437916c70585f3",
+    "config.json": "69a2d4427d31477f4e570c96959839faa9294298a7d4d04c7c274c24b99f87fe",
+    "config_sentence_transformers.json": "656531759db0db363970cad1eec78caa28322812d847cedbfc645184b9fd3383",
+    "tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "README.md": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+    "sentence_bert_config.json": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8",
+    "modules.json": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd",
+    "2_Normalize/config.json": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524",
+    "1_Pooling/config.json": "4fef0a7e8c8ee36e74c0fad89bab60ade72324442d43f559ea219bb7c2580710"
+  },
+  "encoder_packages": {
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.20.1",
+    "torch": "2.14.1"
+  },
+  "preprocessing_sha256": "a58a7d9e25dcebb685a24957031f1c5b1e7b2a574612ad7fe9e8773fe0da1a52",
+  "selected_C": 1,
+  "selected_class_weight": "balanced",
+  "cv_results": [
+    {
+      "C": 0.1,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.0772609819121447,
+        0.07711732711732712,
+        0.1185753314785573
+      ],
+      "mean_macro_f1": 0.0909845468360097
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.44325413463778246,
+        0.3568568453022234,
+        0.3399729897239656
+      ],
+      "mean_macro_f1": 0.3800279898879905
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.5326653544300604,
+        0.48221445339548397,
+        0.4909057264160917
+      ],
+      "mean_macro_f1": 0.5019285114138786
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.5353396544128809,
+        0.5367803768680961,
+        0.4040028934405276
+      ],
+      "mean_macro_f1": 0.49204097490716814
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.5831761859539637,
+        0.5087491393863943,
+        0.4783424442749385
+      ],
+      "mean_macro_f1": 0.5234225898717655
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.5752700636372534,
+        0.47822018977849734,
+        0.5090383583137207
+      ],
+      "mean_macro_f1": 0.5208428705764905
+    }
+  ],
+  "frozen_encoder": true,
+  "normalised_embeddings": true,
+  "embedding_dimension": 384,
+  "embedding_provenance": {
+    "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "encoder_files_sha256": "5f5d920e36cd28082bf8009d509180a8f41d4386e847d271d37c309f102bf484",
+    "packages": {
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.20.1",
+      "torch": "2.14.1"
+    },
+    "cleaning_sha256": "a58a7d9e25dcebb685a24957031f1c5b1e7b2a574612ad7fe9e8773fe0da1a52",
+    "embedding_code_sha256": "64f5dda6321289df21c3b36ff7a1dc3da875e2f8a8f71e8dd88a3799961b738d",
+    "rows_sha256": "651585687ab57db8c0eef7f7486b2cf9324069df67fb192ccbc468934d8c2fa4",
+    "normalised": true
+  },
+  "embedding_cache_reused": false,
+  "model_sha256": "ccf0bf2cb698adebba8bd950315c44927a02d05fdcf8b02a589ec434bc7c7a34"
+}

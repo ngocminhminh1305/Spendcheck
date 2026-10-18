@@ -1,0 +1,51 @@
+{
+  "evaluation": "recognition",
+  "bundle_sha256": "f4c7ceb6e0636e76617e689a15436cb0356b8fa38a9dddbebfa44259e5bb431d",
+  "catalogue_version": "hybrid-v1-development",
+  "catalogue_sha256": "f09c067b8486bfd2888fd81e7cd93e6b85e9156fc9b3ef4dccb2525b761f59c2",
+  "fallback_sha256": "ccf0bf2cb698adebba8bd950315c44927a02d05fdcf8b02a589ec434bc7c7a34",
+  "evaluation_inputs_sha256": "a6e62586d7ee5661a756b6807da2f5df4f1684b269a15f6395ce35489197788f",
+  "case_types": {
+    "exact": {
+      "rows": 18,
+      "matched": 18,
+      "coverage": 1.0,
+      "matched_accuracy": 1.0,
+      "false_matches": 0,
+      "expected_match_rows": 18
+    },
+    "alias": {
+      "rows": 18,
+      "matched": 18,
+      "coverage": 1.0,
+      "matched_accuracy": 1.0,
+      "false_matches": 0,
+      "expected_match_rows": 18
+    },
+    "formatting": {
+      "rows": 18,
+      "matched": 18,
+      "coverage": 1.0,
+      "matched_accuracy": 1.0,
+      "false_matches": 0,
+      "expected_match_rows": 18
+    },
+    "near_match": {
+      "rows": 18,
+      "matched": 0,
+      "coverage": 0.0,
+      "matched_accuracy": null,
+      "false_matches": 0,
+      "expected_match_rows": 0
+    }
+  },
+  "lookup": {
+    "rows": 72,
+    "matched": 54,
+    "coverage": 0.75,
+    "matched_accuracy": 1.0,
+    "false_matches": 0,
+    "expected_match_rows": 54
+  },
+  "method": "AI-authored sourced names/aliases and constructed variations; not blind human accuracy"
+}

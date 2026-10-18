@@ -1,0 +1,55 @@
+case_id,merchant_text,merchant_group,category,cohort,ml_prediction,confidence,lookup_prediction,hybrid_prediction,source,keyword_prediction
+C001,Starbucks,starbucks,Food & Drink,known,Food & Drink,0.28713610768318176,Food & Drink,Food & Drink,lookup,Food & Drink
+C002,Udon Don Bar,udondonbar,Food & Drink,known,Food & Drink,0.21085989475250244,Food & Drink,Food & Drink,lookup,Food & Drink
+C003,BHC Chicken,bhcchicken,Food & Drink,known,Food & Drink,0.3571729063987732,Food & Drink,Food & Drink,lookup,Food & Drink
+C004,The Soup Spoon,thesoupspoon,Food & Drink,unfamiliar,Food & Drink,0.26427385210990906,__unmatched__,Food & Drink,model,Other
+C005,San Ren Xing,sanrenxing,Food & Drink,unfamiliar,Food & Drink,0.15042904019355774,__unmatched__,Food & Drink,model,Other
+C006,BatterCatch,battercatch,Food & Drink,unfamiliar,Bills & Utilities,0.21112538874149323,__unmatched__,Bills & Utilities,model,Other
+C007,FairPrice,fairprice,Groceries,known,Groceries,0.5252211093902588,Groceries,Groceries,lookup,Groceries
+C008,Huber's Butchery,hubers,Groceries,known,Groceries,0.38881614804267883,Groceries,Groceries,lookup,Groceries
+C009,CS Fresh,coldstorage,Groceries,known,Groceries,0.26012885570526123,Groceries,Groceries,lookup,Groceries
+C010,Thai Supermarket,thaisupermarket,Groceries,unfamiliar,Groceries,0.3782396912574768,__unmatched__,Groceries,model,Groceries
+C011,Sri Murugan Ezy,srimuruganezy,Groceries,unfamiliar,Health,0.20812034606933594,__unmatched__,Health,model,Other
+C012,Fresh Stop SG,freshstopsg,Groceries,unfamiliar,Transport,0.20721350610256195,__unmatched__,Transport,model,Other
+C013,Tower Transit,towertransit,Transport,known,Transport,0.48899194598197937,Transport,Transport,lookup,Transport
+C014,TADA,tada,Transport,known,Transport,0.20709824562072754,Transport,Transport,lookup,Transport
+C015,Ryde,ryde,Transport,known,Transport,0.1947973072528839,Transport,Transport,lookup,Transport
+C016,Car Lite,carlite,Transport,unfamiliar,Transport,0.2963695824146271,__unmatched__,Transport,model,Other
+C017,Drive lah,drivelah,Transport,unfamiliar,Transport,0.23646214604377747,__unmatched__,Transport,model,Other
+C018,SIXT car rental,sixtcarrental,Transport,unfamiliar,Transport,0.319679319858551,__unmatched__,Transport,model,Other
+C019,Xiaomi Store,xiaomistore,Shopping,known,Groceries,0.22574226558208466,Shopping,Shopping,lookup,Shopping
+C020,Onitsuka Tiger,onitsukatiger,Shopping,known,Shopping,0.2403605729341507,Shopping,Shopping,lookup,Shopping
+C021,Valu$,valu,Shopping,known,Shopping,0.2661984860897064,Shopping,Shopping,lookup,Shopping
+C022,Cityluxe,cityluxe,Shopping,unfamiliar,Shopping,0.18640902638435364,__unmatched__,Shopping,model,Other
+C023,Beyond The Vines,beyondthevines,Shopping,unfamiliar,Entertainment,0.235355406999588,__unmatched__,Entertainment,model,Other
+C024,The Paper Bunny,thepaperbunny,Shopping,unfamiliar,Other,0.2022426575422287,__unmatched__,Other,model,Other
+C025,Night Safari,mandaiwildlifereserve,Entertainment,known,Entertainment,0.35545143485069275,Entertainment,Entertainment,lookup,Entertainment
+C026,Shaw Theatres,shawtheatres,Entertainment,known,Entertainment,0.342896431684494,Entertainment,Entertainment,lookup,Entertainment
+C027,Teo Heng KTV,teohengktv,Entertainment,known,Food & Drink,0.1618204116821289,Entertainment,Entertainment,lookup,Entertainment
+C028,SuperBowl,superbowl,Entertainment,unfamiliar,Entertainment,0.21217764914035797,__unmatched__,Entertainment,model,Other
+C029,Sandbox VR,sandboxvr,Entertainment,unfamiliar,Entertainment,0.19982555508613586,__unmatched__,Entertainment,model,Other
+C030,Trapped Escape Room,trappedescaperoom,Entertainment,unfamiliar,Entertainment,0.181767538189888,__unmatched__,Entertainment,model,Other
+C031,giga!,giga,Bills & Utilities,known,Bills & Utilities,0.4301677346229553,Bills & Utilities,Bills & Utilities,lookup,Bills & Utilities
+C032,Keppel Electric,keppelelectric,Bills & Utilities,known,Bills & Utilities,0.3557336926460266,Bills & Utilities,Bills & Utilities,lookup,Bills & Utilities
+C033,StarHub,starhub,Bills & Utilities,known,Bills & Utilities,0.4167065918445587,Bills & Utilities,Bills & Utilities,lookup,Bills & Utilities
+C034,Zero1,zero1,Bills & Utilities,unfamiliar,Shopping,0.15972010791301727,__unmatched__,Shopping,model,Other
+C035,ZYM Mobile,zymmobile,Bills & Utilities,unfamiliar,Bills & Utilities,0.2047070413827896,__unmatched__,Bills & Utilities,model,Bills & Utilities
+C036,VIVIFI,vivifi,Bills & Utilities,unfamiliar,Shopping,0.16619142889976501,__unmatched__,Shopping,model,Other
+C037,SKH,sengkanggeneralhospital,Health,known,Health,0.3043052554130554,Health,Health,lookup,Health
+C038,National Skin Centre,nationalskincentre,Health,known,Health,0.45697537064552307,Health,Health,lookup,Health
+C039,SingHealth Polyclinics,singhealthpolyclinics,Health,known,Health,0.3750855326652527,Health,Health,lookup,Health
+C040,Nuffield Dental,nuffielddental,Health,unfamiliar,Health,0.3594398498535156,__unmatched__,Health,model,Health
+C041,Luminous Dental,luminousdental,Health,unfamiliar,Health,0.29059967398643494,__unmatched__,Health,model,Health
+C042,Dental Focus,dentalfocus,Health,unfamiliar,Health,0.26276883482933044,__unmatched__,Health,model,Health
+C043,Julia Gabriel Education,juliagabrieleducation,Education,known,Education,0.44538116455078125,Education,Education,lookup,Education
+C044,British Council Singapore,britishcouncilsingapore,Education,known,Education,0.3203989863395691,Education,Education,lookup,Education
+C045,Coursera Plus,coursera,Education,known,Education,0.3444034457206726,Education,Education,lookup,Education
+C046,Learners' Lodge,learnerslodge,Education,unfamiliar,Education,0.35252270102500916,__unmatched__,Education,model,Other
+C047,Aspire Hub,aspirehub,Education,unfamiliar,Groceries,0.21656334400177002,__unmatched__,Groceries,model,Other
+C048,LingoAce,lingoace,Education,unfamiliar,Food & Drink,0.22868689894676208,__unmatched__,Food & Drink,model,Other
+C049,BP Brow & Lash,bpbrowlash,Other,known,Other,0.31436362862586975,Other,Other,lookup,Other
+C050,Fresh Laundry,freshlaundry,Other,known,Other,0.41529226303100586,Other,Other,lookup,Other
+C051,nailz Gallery,nailzgallery,Other,known,Other,0.38617995381355286,Other,Other,lookup,Other
+C052,Laundryheap,laundryheap,Other,unfamiliar,Other,0.31884297728538513,__unmatched__,Other,model,Other
+C053,Jeeves dry cleaning,jeevesdrycleaning,Other,unfamiliar,Other,0.4253794550895691,__unmatched__,Other,model,Other
+C054,Piing!,piing,Other,unfamiliar,Other,0.22845925390720367,__unmatched__,Other,model,Other

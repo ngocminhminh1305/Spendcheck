@@ -1,0 +1,133 @@
+{
+  "model_version": "new-merchant-mpnet",
+  "mode": "new_merchant_development",
+  "data_status": "source-checked constructed descriptions; development benchmark",
+  "threshold": 0.5,
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "dataset_file": "data/hybrid_v1/merchant_dataset.csv",
+  "dataset_sha256": "1d6982bd15d6b995bfd87a2013e85c60ef795e4048b698bf86b151f1764e5a2e",
+  "split_file": "data/hybrid_v1/split.csv",
+  "split_sha256": "42d55df68eff3a9eb996cdcb67391302fb15858076789dbe5aec800c95328293",
+  "training_rows": 280,
+  "validation_rows": 45,
+  "categories": [
+    "Food & Drink",
+    "Groceries",
+    "Transport",
+    "Shopping",
+    "Entertainment",
+    "Bills & Utilities",
+    "Health",
+    "Education",
+    "Other"
+  ],
+  "folds_sha256": "f725138e5ba06d73762bc26e4a7457b6d1d40e3abfe091a97534db330ae28d19",
+  "created_at": "2026-10-17T16:22:20.138655+00:00",
+  "test_evaluation": "not performed",
+  "promotion": "not performed",
+  "encoder_id": "sentence-transformers/all-mpnet-base-v2",
+  "encoder_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+  "model_type": "sentence_embedding",
+  "encoder_files": {
+    "model.safetensors": "0b3c8c717335c801abb15983036a6f1df4b6943fd6b93717969efd96d22eeec6",
+    "tokenizer_config.json": "aeeb4f98695b0dbb6d58679b1c794699cbc22288ce9bc436ce232ebb25f5b254",
+    "config.json": "5edd1ff25633468df9bfd524cace62ff000627cb718509972dc54c82c63f4347",
+    "config_sentence_transformers.json": "656531759db0db363970cad1eec78caa28322812d847cedbfc645184b9fd3383",
+    "tokenizer.json": "d00dad6f80b7eab804479a58634a58a50966366627f847e47848bac52873995d",
+    "README.md": "89a1a9c3290fe58e76c939b578c48a14331dc7bfcaaf5a53102adb183da6f96a",
+    "sentence_bert_config.json": "3084164002c0bca01b0259c5327123803fce32e660a57feb93184ffead186fc8",
+    "modules.json": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd",
+    "2_Normalize/config.json": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524",
+    "1_Pooling/config.json": "8759bdf7c77efc7df7723f64856a593c8943b71ee38baf2a88771fbaf78438f9"
+  },
+  "encoder_packages": {
+    "sentence-transformers": "6.1.0",
+    "transformers": "5.20.1",
+    "torch": "2.14.1"
+  },
+  "preprocessing_sha256": "a58a7d9e25dcebb685a24957031f1c5b1e7b2a574612ad7fe9e8773fe0da1a52",
+  "selected_C": 10,
+  "selected_class_weight": "balanced",
+  "cv_results": [
+    {
+      "C": 0.1,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.10167147667147668,
+        0.0930415263748597,
+        0.10733752620545073
+      ],
+      "mean_macro_f1": 0.1006835097505957
+    },
+    {
+      "C": 1,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.5776342860376474,
+        0.4407048483654059,
+        0.4971906261379946
+      ],
+      "mean_macro_f1": 0.5051765868470159
+    },
+    {
+      "C": 10,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.630767997434664,
+        0.5987313434825854,
+        0.56693758737237
+      ],
+      "mean_macro_f1": 0.5988123094298731
+    },
+    {
+      "C": 0.1,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.5372426875657459,
+        0.5985046326222797,
+        0.49017671689240316
+      ],
+      "mean_macro_f1": 0.5419746790268096
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.6010457044770771,
+        0.6547584449930602,
+        0.5411017803432664
+      ],
+      "mean_macro_f1": 0.5989686432711346
+    },
+    {
+      "C": 10,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.6820288274597962,
+        0.6210435063802496,
+        0.5694584097023121
+      ],
+      "mean_macro_f1": 0.6241769145141193
+    }
+  ],
+  "frozen_encoder": true,
+  "normalised_embeddings": true,
+  "embedding_dimension": 768,
+  "embedding_provenance": {
+    "encoder_id": "sentence-transformers/all-mpnet-base-v2",
+    "encoder_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "encoder_files_sha256": "584ae1f24fde0381ce190b2f0812c416aecd4f67b16474d062856e1100962169",
+    "packages": {
+      "sentence-transformers": "6.1.0",
+      "transformers": "5.20.1",
+      "torch": "2.14.1"
+    },
+    "cleaning_sha256": "a58a7d9e25dcebb685a24957031f1c5b1e7b2a574612ad7fe9e8773fe0da1a52",
+    "embedding_code_sha256": "64f5dda6321289df21c3b36ff7a1dc3da875e2f8a8f71e8dd88a3799961b738d",
+    "rows_sha256": "651585687ab57db8c0eef7f7486b2cf9324069df67fb192ccbc468934d8c2fa4",
+    "normalised": true
+  },
+  "embedding_cache_reused": false,
+  "model_sha256": "b1864e99d69c2bd94a97c6107ecad94bf254f97d978d0d4d00d6e674d7cb7377"
+}

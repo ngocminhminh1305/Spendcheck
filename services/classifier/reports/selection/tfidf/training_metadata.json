@@ -1,0 +1,55 @@
+{
+  "model_version": "new-merchant-tfidf",
+  "mode": "new_merchant_development",
+  "data_status": "source-checked constructed descriptions; development benchmark",
+  "threshold": 0.5,
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "dataset_file": "data/hybrid_v1/merchant_dataset.csv",
+  "dataset_sha256": "1d6982bd15d6b995bfd87a2013e85c60ef795e4048b698bf86b151f1764e5a2e",
+  "split_file": "data/hybrid_v1/split.csv",
+  "split_sha256": "42d55df68eff3a9eb996cdcb67391302fb15858076789dbe5aec800c95328293",
+  "training_rows": 280,
+  "validation_rows": 45,
+  "categories": [
+    "Food & Drink",
+    "Groceries",
+    "Transport",
+    "Shopping",
+    "Entertainment",
+    "Bills & Utilities",
+    "Health",
+    "Education",
+    "Other"
+  ],
+  "folds_sha256": "f725138e5ba06d73762bc26e4a7457b6d1d40e3abfe091a97534db330ae28d19",
+  "created_at": "2026-10-17T16:22:04.815491+00:00",
+  "test_evaluation": "not performed",
+  "promotion": "not performed",
+  "selected_C": 1,
+  "selected_class_weight": "balanced",
+  "cv_results": [
+    {
+      "C": 1,
+      "class_weight": null,
+      "fold_macro_f1": [
+        0.3520282186948853,
+        0.29001628001628005,
+        0.3190050149114476
+      ],
+      "mean_macro_f1": 0.3203498378742043
+    },
+    {
+      "C": 1,
+      "class_weight": "balanced",
+      "fold_macro_f1": [
+        0.4899584982918317,
+        0.4043411916218933,
+        0.4601320721525325
+      ],
+      "mean_macro_f1": 0.4514772540220859
+    }
+  ],
+  "model_type": "tfidf",
+  "model_sha256": "f644a38d87b8d39c4de000c538f594427239bf4b30dfa50570df9d7e5754ca08"
+}

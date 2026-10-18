@@ -1,0 +1,10 @@
+{
+  "cases": 226,
+  "categories_and_sources_identical": true,
+  "maximum_probability_difference": 0.0,
+  "evaluated_manifest_sha256": "907c5e05fae68a611ec9a9192322c32d1a038b461e338ccce2c563f628fe5620",
+  "model_version": "merchant-categoriser-v1",
+  "final_manifest_sha256": "2c5b313a66bb311851231771e437c7b0543bb207f84e1a16d93c0ce7a4212d6a",
+  "methods": "45 validation,47 reserved,72 recognition,54 operational,8 regression inputs; archived evaluated sources versus final sources, same weights",
+  "no_training_or_metric_selection": true
+}

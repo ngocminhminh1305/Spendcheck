@@ -1,0 +1,16 @@
+**
+!requirements.txt
+!requirements-encoders.txt
+!app/
+!app/*.py
+!bundles/
+!bundles/default/
+!bundles/default/manifest.json
+!bundles/default/metadata.json
+!data/
+!data/catalogues/
+!data/catalogues/catalogue_development.csv
+!data/catalogues/catalogue_post_selection.csv
+!models/
+!models/minilm/
+!models/minilm/**

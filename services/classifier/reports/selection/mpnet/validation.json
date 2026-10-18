@@ -1,0 +1,186 @@
+{
+  "rows": 45,
+  "accuracy": 0.5111111111111111,
+  "macro_f1": 0.5407105240438573,
+  "per_category": {
+    "Food & Drink": {
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "Groceries": {
+      "precision": 0.75,
+      "recall": 0.6,
+      "f1-score": 0.6666666666666666,
+      "support": 5.0
+    },
+    "Transport": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 4.0
+    },
+    "Shopping": {
+      "precision": 0.15384615384615385,
+      "recall": 0.4,
+      "f1-score": 0.2222222222222222,
+      "support": 5.0
+    },
+    "Entertainment": {
+      "precision": 0.5,
+      "recall": 0.8,
+      "f1-score": 0.6153846153846154,
+      "support": 5.0
+    },
+    "Bills & Utilities": {
+      "precision": 0.6666666666666666,
+      "recall": 0.4,
+      "f1-score": 0.5,
+      "support": 5.0
+    },
+    "Health": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.6666666666666666,
+      "support": 3.0
+    },
+    "Education": {
+      "precision": 1.0,
+      "recall": 0.25,
+      "f1-score": 0.4,
+      "support": 4.0
+    },
+    "Other": {
+      "precision": 1.0,
+      "recall": 0.375,
+      "f1-score": 0.5454545454545454,
+      "support": 8.0
+    },
+    "accuracy": 0.5111111111111111,
+    "macro avg": {
+      "precision": 0.6652421652421653,
+      "recall": 0.5268518518518519,
+      "f1-score": 0.5407105240438573,
+      "support": 45.0
+    },
+    "weighted avg": {
+      "precision": 0.6745014245014245,
+      "recall": 0.5111111111111111,
+      "f1-score": 0.5330000863334196,
+      "support": 45.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      0,
+      2,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      1,
+      2,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      2,
+      1,
+      1,
+      0,
+      0,
+      3
+    ]
+  ],
+  "confusion_matrix_labels": [
+    "Food & Drink",
+    "Groceries",
+    "Transport",
+    "Shopping",
+    "Entertainment",
+    "Bills & Utilities",
+    "Health",
+    "Education",
+    "Other"
+  ]
+}

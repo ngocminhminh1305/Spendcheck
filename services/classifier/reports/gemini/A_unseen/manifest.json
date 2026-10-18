@@ -1,0 +1,196 @@
+{
+  "evaluation": "unseen",
+  "prompt_sha256": "9d620e2338069422449a554326db7ecf3b52d0c9dd90bd7ec31e4a9457579f40",
+  "hybrid_manifest_sha256": "164774e75fed67bfdbacb5d1598af696fd3f202264a516f19ff554c86cc3907c",
+  "bundle_sha256": "907c5e05fae68a611ec9a9192322c32d1a038b461e338ccce2c563f628fe5620",
+  "private_answers_do_not_paste": {
+    "E001": {
+      "row_id": "new-b16e26a6f59729284438",
+      "category": "Food & Drink"
+    },
+    "E002": {
+      "row_id": "new-8f38f12ce692d09ce9f6",
+      "category": "Education"
+    },
+    "E003": {
+      "row_id": "new-92060239e8b7508a1906",
+      "category": "Transport"
+    },
+    "E004": {
+      "row_id": "new-572f0c024acbf8802be3",
+      "category": "Other"
+    },
+    "E005": {
+      "row_id": "new-8be8206434379d1440c4",
+      "category": "Transport"
+    },
+    "E006": {
+      "row_id": "new-55678a84c0e506d49ff9",
+      "category": "Health"
+    },
+    "E007": {
+      "row_id": "new-b3f0ec4d2e3471611b04",
+      "category": "Groceries"
+    },
+    "E008": {
+      "row_id": "new-da6a20b04127b72df7db",
+      "category": "Shopping"
+    },
+    "E009": {
+      "row_id": "new-5b4c889ac4332f0e36e9",
+      "category": "Transport"
+    },
+    "E010": {
+      "row_id": "new-15a9da2a17cb4735e3c5",
+      "category": "Health"
+    },
+    "E011": {
+      "row_id": "new-d0bfc3f39cad9e10e4c8",
+      "category": "Transport"
+    },
+    "E012": {
+      "row_id": "new-24b7be4c63243e4d712d",
+      "category": "Food & Drink"
+    },
+    "E013": {
+      "row_id": "new-ed71af4bba9738cf405a",
+      "category": "Transport"
+    },
+    "E014": {
+      "row_id": "new-a47d1bf9329c38c0cda0",
+      "category": "Bills & Utilities"
+    },
+    "E015": {
+      "row_id": "new-57d82e2eefe825489946",
+      "category": "Groceries"
+    },
+    "E016": {
+      "row_id": "new-c422465ec822b29d6f93",
+      "category": "Other"
+    },
+    "E017": {
+      "row_id": "new-aa71c707c3af413a0a99",
+      "category": "Other"
+    },
+    "E018": {
+      "row_id": "new-ff40b0d0b1c9c1d4e1ef",
+      "category": "Other"
+    },
+    "E019": {
+      "row_id": "new-827dfa7f65b509c68375",
+      "category": "Food & Drink"
+    },
+    "E020": {
+      "row_id": "new-b432adaf09631ecf17c0",
+      "category": "Bills & Utilities"
+    },
+    "E021": {
+      "row_id": "new-fee44f22409fde02cb63",
+      "category": "Health"
+    },
+    "E022": {
+      "row_id": "new-b9c98abed3f366db2301",
+      "category": "Education"
+    },
+    "E023": {
+      "row_id": "new-d3c88525e21e69d0a1e0",
+      "category": "Entertainment"
+    },
+    "E024": {
+      "row_id": "new-a4233d47bd9cbb58509d",
+      "category": "Bills & Utilities"
+    },
+    "E025": {
+      "row_id": "new-8acdb3a0ca8b579e6917",
+      "category": "Entertainment"
+    },
+    "E026": {
+      "row_id": "new-8cc9e4b55c3b7d24b8a4",
+      "category": "Entertainment"
+    },
+    "E027": {
+      "row_id": "new-df8f7e94426272b48b26",
+      "category": "Transport"
+    },
+    "E028": {
+      "row_id": "new-fbc0e58bc7beda121de1",
+      "category": "Groceries"
+    },
+    "E029": {
+      "row_id": "new-0378d21cdfab64b4e812",
+      "category": "Transport"
+    },
+    "E030": {
+      "row_id": "new-891dce9607a26ff9f66a",
+      "category": "Education"
+    },
+    "E031": {
+      "row_id": "new-6aa9f84e5f328337abbf",
+      "category": "Food & Drink"
+    },
+    "E032": {
+      "row_id": "new-e8589227add19668ddab",
+      "category": "Shopping"
+    },
+    "E033": {
+      "row_id": "new-5d57dbb10f7f7828decf",
+      "category": "Food & Drink"
+    },
+    "E034": {
+      "row_id": "new-d6495e60228bc71f6f7c",
+      "category": "Transport"
+    },
+    "E035": {
+      "row_id": "new-fe0c04b934e101e9caaf",
+      "category": "Shopping"
+    },
+    "E036": {
+      "row_id": "new-1198c934cfa2af710a54",
+      "category": "Shopping"
+    },
+    "E037": {
+      "row_id": "new-a77c305a10f7d8cc2ec8",
+      "category": "Shopping"
+    },
+    "E038": {
+      "row_id": "new-2f1c5e85f0561ef1671f",
+      "category": "Food & Drink"
+    },
+    "E039": {
+      "row_id": "new-cc6e9a573c026b7b950d",
+      "category": "Food & Drink"
+    },
+    "E040": {
+      "row_id": "new-37d56f31144eda5b9009",
+      "category": "Food & Drink"
+    },
+    "E041": {
+      "row_id": "new-4c21ed927fab5c76cfcb",
+      "category": "Health"
+    },
+    "E042": {
+      "row_id": "new-6449b78644b3423b4693",
+      "category": "Shopping"
+    },
+    "E043": {
+      "row_id": "new-68efac48bc55c73b6aa4",
+      "category": "Health"
+    },
+    "E044": {
+      "row_id": "new-6e69587e2b6190c51c85",
+      "category": "Shopping"
+    },
+    "E045": {
+      "row_id": "new-07f66403b4196545bef4",
+      "category": "Health"
+    },
+    "E046": {
+      "row_id": "new-3a727b074d7df6aeea0f",
+      "category": "Bills & Utilities"
+    },
+    "E047": {
+      "row_id": "new-e2367921509b23d169d2",
+      "category": "Education"
+    }
+  }
+}

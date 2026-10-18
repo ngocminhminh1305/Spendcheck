@@ -1,0 +1,373 @@
+merchant_text,merchant_group,category,human_checked
+An Acai Affair,anacaiaffair,Food & Drink,yes
+Ayo Kimbap Singapore,ayokimbap,Food & Drink,yes
+Ayó Kimbap,ayokimbap,Food & Drink,yes
+BHC Chicken,bhcchicken,Food & Drink,yes
+BreadTalk,breadtalk,Food & Drink,yes
+Chagee,chagee,Food & Drink,yes
+Chateraise,chateraise,Food & Drink,yes
+CHICHA San Chen,chichasanchen,Food & Drink,yes
+Crave,crave,Food & Drink,yes
+Dian Xiao Er,dianxiaoer,Food & Drink,yes
+Din Tai Fung,dintaifung,Food & Drink,yes
+D'Penyetz,dpenyetz,Food & Drink,yes
+Dutch Colony Coffee Co.,dutchcolonycoffeeco,Food & Drink,yes
+Encik Tan,enciktan,Food & Drink,yes
+Fish & Co.,fishco,Food & Drink,yes
+foodpanda,foodpanda,Food & Drink,yes
+foodpanda food delivery,foodpanda,Food & Drink,yes
+Four Leaves,fourleaves,Food & Drink,yes
+Genki Sushi,genkisushi,Food & Drink,yes
+GrabFood,grab,Food & Drink,yes
+Greendot,greendot,Food & Drink,yes
+Guzman y Gomez,guzmanygomez,Food & Drink,yes
+House of White Bee Hoon,houseofwhitebeehoon,Food & Drink,yes
+iTea,itea,Food & Drink,yes
+Jinjja Kitchen,jinjjakitchen,Food & Drink,yes
+Jollibee,jollibee,Food & Drink,yes
+Kaffe & Toast,kaffetoast,Food & Drink,yes
+KFC,kfc,Food & Drink,yes
+KOI Thé,koithe,Food & Drink,yes
+Kopifellas,kopifellas,Food & Drink,yes
+Kopi & Tarts,kopitarts,Food & Drink,yes
+LiHO Tea,lihotea,Food & Drink,yes
+Luckin Coffee,luckincoffee,Food & Drink,yes
+McDonald's,mcdonalds,Food & Drink,yes
+MOS Burger,mosburger,Food & Drink,yes
+Mr Bean,mrbean,Food & Drink,yes
+Mr. Coconut,mrcoconut,Food & Drink,yes
+Nana Original Thai Food,nanaoriginalthaifood,Food & Drink,yes
+Old Chang Kee,oldchangkee,Food & Drink,yes
+Pasta Express,pastaexpress,Food & Drink,yes
+Pezzo,pezzo,Food & Drink,yes
+Qi Ji,qiji,Food & Drink,yes
+Ramen Hitoyoshi,ramenhitoyoshi,Food & Drink,yes
+Saap Saap Thai,saapsaapthai,Food & Drink,yes
+Sanook Kitchen,sanookkitchen,Food & Drink,yes
+Starbucks,starbucks,Food & Drink,yes
+Stuff'd,stuffd,Food & Drink,yes
+Subway,subway,Food & Drink,yes
+Sukiya,sukiya,Food & Drink,yes
+Sushiro,sushiro,Food & Drink,yes
+Swee Heng 1989 Classic,sweeheng1989classic,Food & Drink,yes
+Tenderfresh Classic,tenderfreshclassic,Food & Drink,yes
+The Coffee Bean & Tea Leaf,thecoffeebeantealeaf,Food & Drink,yes
+Toast Box,toastbox,Food & Drink,yes
+Udon Don Bar,udondonbar,Food & Drink,yes
+Wingstop,wingstop,Food & Drink,yes
+Wok Hey,wokhey,Food & Drink,yes
+Ya Kun Kaya Toast,yakunkayatoast,Food & Drink,yes
+Yo-Chi,yochi,Food & Drink,yes
+Yochi,yochi,Food & Drink,yes
+Yoshinoya,yoshinoya,Food & Drink,yes
+7-Eleven,7eleven,Groceries,yes
+Cheers,cheers,Groceries,yes
+Cold Storage,coldstorage,Groceries,yes
+CS Fresh,coldstorage,Groceries,yes
+Don Don Donki,dondondonki,Groceries,yes
+FairPrice,fairprice,Groceries,yes
+FairPrice Finest,fairprice,Groceries,yes
+FairPrice Online,fairprice,Groceries,yes
+FairPrice Xtra,fairprice,Groceries,yes
+foodpanda groceries,foodpanda,Groceries,yes
+pandamart,foodpanda,Groceries,yes
+Giant,giant,Groceries,yes
+GrabMart,grab,Groceries,yes
+HAO Mart,haomart,Groceries,yes
+Huber's Butchery,hubers,Groceries,yes
+Little Farms groceries,littlefarms,Groceries,yes
+Meidi-Ya,meidiya,Groceries,yes
+Meidi-Ya Supermarket,meidiya,Groceries,yes
+Octobox,octobox,Groceries,yes
+Prime Supermarket,primesupermarket,Groceries,yes
+RedMart,redmart,Groceries,yes
+Ryan's Grocery,ryansgrocery,Groceries,yes
+Scarlett Supermarket,scarlettsupermarket,Groceries,yes
+Sheng Siong,shengsiong,Groceries,yes
+Sheng Siong Supermarket,shengsiong,Groceries,yes
+Shine Korea,shinekorea,Groceries,yes
+Shine Korea Supermarket,shinekorea,Groceries,yes
+Caltex,caltex,Transport,yes
+Caltex petrol,caltex,Transport,yes
+CDG Zig,comfortdelgro,Transport,yes
+ComfortDelGro taxi,comfortdelgro,Transport,yes
+Esso,esso,Transport,yes
+Esso petrol,esso,Transport,yes
+Flexar,flexar,Transport,yes
+GetGo,getgo,Transport,yes
+GetGo car sharing,getgo,Transport,yes
+Go-Ahead Singapore,goaheadsingapore,Transport,yes
+Gojek,gojek,Transport,yes
+Grab rides,grab,Transport,yes
+GrabCar,grab,Transport,yes
+GrabTaxi,grab,Transport,yes
+Ryde,ryde,Transport,yes
+SBS Transit,sbstransit,Transport,yes
+SBS Transit bus fare,sbstransit,Transport,yes
+Shell,shell,Transport,yes
+Shell petrol,shell,Transport,yes
+SimplyGo bus fare,simplygo,Transport,yes
+SimplyGo MRT fare,simplygo,Transport,yes
+SimplyGo transit fares,simplygo,Transport,yes
+SMRT bus fare,smrt,Transport,yes
+SMRT buses/trains,smrt,Transport,yes
+SMRT train fare,smrt,Transport,yes
+TADA,tada,Transport,yes
+Tower Transit,towertransit,Transport,yes
+Trans-cab,transcab,Transport,yes
+ALDO,aldo,Shopping,yes
+Birkenstock,birkenstock,Shopping,yes
+Calvin Klein,calvinklein,Shopping,yes
+Charles & Keith,charleskeith,Shopping,yes
+Coach,coach,Shopping,yes
+Crocs,crocs,Shopping,yes
+Daiso,daiso,Shopping,yes
+Decathlon,decathlon,Shopping,yes
+ECCO,ecco,Shopping,yes
+FILA,fila,Shopping,yes
+Fred Perry,fredperry,Shopping,yes
+Gadget Mix,gadgetmix,Shopping,yes
+IKEA,ikea,Shopping,yes
+Japan Home,japanhome,Shopping,yes
+Books Kinokuniya,kinokuniya,Shopping,yes
+Kinokuniya,kinokuniya,Shopping,yes
+Massimo Dutti,massimodutti,Shopping,yes
+Miniso,miniso,Shopping,yes
+MUJI,muji,Shopping,yes
+NUS Co-op,nuscoop,Shopping,yes
+Onitsuka Tiger,onitsukatiger,Shopping,yes
+Pandora,pandora,Shopping,yes
+Pedro,pedro,Shopping,yes
+POPULAR,popular,Shopping,yes
+POPULAR Bookstore,popular,Shopping,yes
+Saja Mi-O Gifts,sajamiogifts,Shopping,yes
+Shopee,shopee,Shopping,yes
+The Shirt Bar,theshirtbar,Shopping,yes
+Timberland,timberland,Shopping,yes
+UNIQLO,uniqlo,Shopping,yes
+Valu$,valu,Shopping,yes
+V-Force Party & Novelties,vforcepartynovelties,Shopping,yes
+Zara,zara,Shopping,yes
+ArtScience Museum,artsciencemuseum,Entertainment,yes
+Disney+,disney,Entertainment,yes
+Gardens by the Bay,gardensbythebay,Entertainment,yes
+Gardens by the Bay admission,gardensbythebay,Entertainment,yes
+Golden Village,goldenvillage,Entertainment,yes
+Golden Village cinema,goldenvillage,Entertainment,yes
+Jolly Jungle,jollyjungle,Entertainment,yes
+K Voice Karaoke,kvoicekaraoke,Entertainment,yes
+Bird Paradise,mandaiwildlifereserve,Entertainment,yes
+Mandai Wildlife Reserve,mandaiwildlifereserve,Entertainment,yes
+Night Safari,mandaiwildlifereserve,Entertainment,yes
+River Wonders,mandaiwildlifereserve,Entertainment,yes
+Singapore Zoo,mandaiwildlifereserve,Entertainment,yes
+Netflix,netflix,Entertainment,yes
+PlayStation Network,playstation,Entertainment,yes
+PlayStation Plus,playstation,Entertainment,yes
+PlayStation Store,playstation,Entertainment,yes
+Shaw Theatres,shawtheatres,Entertainment,yes
+Sonic Bowl,sonicbowl,Entertainment,yes
+Spotify,spotify,Entertainment,yes
+Spotify Premium,spotify,Entertainment,yes
+Steam,steam,Entertainment,yes
+Ticketmaster,ticketmastersingapore,Entertainment,yes
+Ticketmaster Singapore,ticketmastersingapore,Entertainment,yes
+Timezone,timezone,Entertainment,yes
+Universal Studios Singapore,universalstudiossingapore,Entertainment,yes
+USS admission,universalstudiossingapore,Entertainment,yes
+YouTube Premium,youtubepremium,Entertainment,yes
+Circles.Life,circleslife,Bills & Utilities,yes
+City Energy,cityenergy,Bills & Utilities,yes
+City Energy gas bill,cityenergy,Bills & Utilities,yes
+Geneco,geneco,Bills & Utilities,yes
+giga!,giga,Bills & Utilities,yes
+GOMO,gomo,Bills & Utilities,yes
+M1,m1,Bills & Utilities,yes
+M1 broadband,m1,Bills & Utilities,yes
+MyRepublic,myrepublic,Bills & Utilities,yes
+MyRepublic Broadband,myrepublic,Bills & Utilities,yes
+PUB water bill,pub,Bills & Utilities,yes
+Sembcorp Power,sembcorppower,Bills & Utilities,yes
+Senoko Energy,senokoenergy,Bills & Utilities,yes
+SIMBA,simbatelecom,Bills & Utilities,yes
+SIMBA Telecom,simbatelecom,Bills & Utilities,yes
+Singtel,singtel,Bills & Utilities,yes
+Singtel broadband,singtel,Bills & Utilities,yes
+Singtel mobile,singtel,Bills & Utilities,yes
+SP Services,spservices,Bills & Utilities,yes
+SP utilities bill,spservices,Bills & Utilities,yes
+StarHub,starhub,Bills & Utilities,yes
+StarHub broadband,starhub,Bills & Utilities,yes
+StarHub mobile,starhub,Bills & Utilities,yes
+Tuas Power Supply,tuaspowersupply,Bills & Utilities,yes
+ViewQwest,viewqwest,Bills & Utilities,yes
+Alexandra Hospital,alexandrahospital,Health,yes
+CGH,changigeneralhospital,Health,yes
+Changi General Hospital,changigeneralhospital,Health,yes
+Guardian,guardian,Health,yes
+Healthway Medical,healthwaymedical,Health,yes
+Khoo Teck Puat Hospital,khooteckpuathospital,Health,yes
+KTPH,khooteckpuathospital,Health,yes
+KK Women's and Children's Hospital,kkwomensandchildrenshospital,Health,yes
+KKH,kkwomensandchildrenshospital,Health,yes
+National Skin Centre,nationalskincentre,Health,yes
+National University Hospital,nationaluniversityhospital,Health,yes
+NUH,nationaluniversityhospital,Health,yes
+National University Polyclinics,nationaluniversitypolyclinics,Health,yes
+Ng Teng Fong General Hospital,ngtengfonggeneralhospital,Health,yes
+NTFGH,ngtengfonggeneralhospital,Health,yes
+Pharmex Healthcare,pharmexhealthcare,Health,yes
+Q&M Dental Surgery,qmdentalsurgery,Health,yes
+Raffles Medical,rafflesmedical,Health,yes
+Ri An TCM Clinic,riantcmclinic,Health,yes
+Sengkang General Hospital,sengkanggeneralhospital,Health,yes
+SKH,sengkanggeneralhospital,Health,yes
+SGH,singaporegeneralhospital,Health,yes
+Singapore General Hospital,singaporegeneralhospital,Health,yes
+Singapore National Eye Centre,singaporenationaleyecentre,Health,yes
+SNEC,singaporenationaleyecentre,Health,yes
+SingHealth Polyclinics,singhealthpolyclinics,Health,yes
+Tan Tock Seng Hospital,tantocksenghospital,Health,yes
+TTSH,tantocksenghospital,Health,yes
+Ultimed Medical Centre,ultimedmedicalcentre,Health,yes
+Unity,unitypharmacy,Health,yes
+Unity Pharmacy,unitypharmacy,Health,yes
+Watsons,watsons,Health,yes
+Berries Chinese enrichment,berriesworld,Education,yes
+Berries World,berriesworld,Education,yes
+British Council English course,britishcouncilsingapore,Education,yes
+British Council Singapore,britishcouncilsingapore,Education,yes
+Coursera,coursera,Education,yes
+Coursera Plus,coursera,Education,yes
+Cristofori Music School,cristoforimusicschool,Education,yes
+EduGrove Mandarin Enrichment Centre,edugrovemandarinenrichmentcentre,Education,yes
+Eye Level,eyelevel,Education,yes
+Heguru Education Centre,hegurueducationcentre,Education,yes
+I Can Read,icanread,Education,yes
+Kodecoon Academy,kodecoonacademy,Education,yes
+Kumon,kumon,Education,yes
+Kumon English,kumon,Education,yes
+Mind Stretcher,mindstretcher,Education,yes
+Miracle Math Tuition Centre,miraclemathtuitioncentre,Education,yes
+My English School,myenglishschool,Education,yes
+Nanyang Technological University tuition,ntu,Education,yes
+NTU tuition fees,ntu,Education,yes
+National University of Singapore tuition,nus,Education,yes
+NUS tuition fees,nus,Education,yes
+NUS Co-op textbooks,nuscoop,Education,yes
+POPULAR textbooks,popular,Education,yes
+Singapore Management University tuition,smu,Education,yes
+SMU tuition fees,smu,Education,yes
+The Learning Lab,thelearninglab,Education,yes
+The Science Academy,thescienceacademy,Education,yes
+Tree Art,treeart,Education,yes
+Udemy,udemy,Education,yes
+Udemy course,udemy,Education,yes
+Adobe Acrobat subscription,adobe,Other,yes
+Adobe Creative Cloud,adobe,Other,yes
+Auntie Cleaner,auntiecleaner,Other,yes
+Canva,canva,Other,yes
+Canva Pro,canva,Other,yes
+Clippers Barber,clippersbarber,Other,yes
+Dropbox,dropbox,Other,yes
+Dropbox Plus,dropbox,Other,yes
+Fresh Laundry,freshlaundry,Other,yes
+Google Cloud,googlecloud,Other,yes
+Google Cloud Platform,googlecloud,Other,yes
+Grammarly,grammarly,Other,yes
+Grammarly Pro,grammarly,Other,yes
+Helpling,helpling,Other,yes
+Helpling home cleaning,helpling,Other,yes
+JasonSally Hairdressers,jasonsallyhairdressers,Other,yes
+Kcuts,kcuts,Other,yes
+Kskin,kskin,Other,yes
+LaundryMart,laundrymart,Other,yes
+LaundryMart dry cleaning,laundrymart,Other,yes
+Luce home cleaning,luce,Other,yes
+Microsoft 365,microsoft365,Other,yes
+Microsoft 365 Personal,microsoft365,Other,yes
+Notion,notion,Other,yes
+Notion Plus,notion,Other,yes
+ChatGPT,openai,Other,yes
+ChatGPT Plus,openai,Other,yes
+OpenAI subscription,openai,Other,yes
+SingPost parcel delivery,singpost,Other,yes
+SingPost postage,singpost,Other,yes
+The Nail Arcadia,thenailarcadia,Other,yes
+Zoom Workplace subscription,zoom,Other,yes
+Challenger,challenger,Shopping,yes
+Best Denki,bestdenki,Shopping,yes
+COURTS,courts,Shopping,yes
+Harvey Norman,harveynorman,Shopping,yes
+Gain City,gaincity,Shopping,yes
+Xiaomi Store,xiaomistore,Shopping,yes
+Samsung,samsung,Shopping,yes
+OPPO,oppo,Shopping,yes
+iStudio,istudio,Shopping,yes
+Mister Mobile,mistermobile,Shopping,yes
+Nippon Home,nipponhome,Shopping,yes
+Eurotex,eurotex,Shopping,yes
+ValueLux Furnishing,valueluxfurnishing,Shopping,yes
+Sleepnight Lifestyle Mattress,sleepnightlifestylemattress,Shopping,yes
+Kiddy Palace,kiddypalace,Shopping,yes
+Yale,yale,Shopping,yes
+Pet Lovers Centre,petloverscentre,Shopping,yes
+Beauty Language,beautylanguage,Shopping,yes
+The Body Shop,thebodyshop,Shopping,yes
+THEFACESHOP,thefaceshop,Shopping,yes
+Venus Beauty,venusbeauty,Shopping,yes
+H2 Hub Timepiece,h2hubtimepiece,Shopping,yes
+Goldheart,goldheart,Shopping,yes
+Basheer Graphic Books,basheergraphicbooks,Shopping,yes
+Pacific Bookstores,pacificbookstores,Shopping,yes
+Wardah Books,wardahbooks,Shopping,yes
+SKS Books,sksbooks,Shopping,yes
+Woods in the Books,woodsinthebooks,Shopping,yes
+99 Percent Hair Studio,99percenthairstudio,Other,yes
+Beijing 101 Hair Consultants,beijing101hairconsultants,Other,yes
+Jean Yip Hair & Hair Spa,jeanyiphairhairspa,Other,yes
+nailz Gallery,nailzgallery,Other,yes
+NAILZ treats,nailztreats,Other,yes
+NK Hairworks,nkhairworks,Other,yes
+Vintage Studio Hairdressing Spa,vintagestudiohairdressingspa,Other,yes
+BP Brow & Lash,bpbrowlash,Other,yes
+Presto Drycleaners,prestodrycleaners,Other,yes
+V Medical Aesthetics and Laser Clinic,vmedicalaestheticsandlaserclinic,Health,yes
+Amazing Hearing,amazinghearing,Health,yes
+Kin Teck Tong,kintecktong,Health,yes
+Eu Yan Sang,euyansang,Health,yes
+Doctor Anywhere,doctoranywhere,Health,yes
+Fullerton Health,fullertonhealth,Health,yes
+Chiropractic Singapore,chiropracticsingapore,Health,yes
+Kaplan Singapore,kaplansingapore,Education,yes
+DataCamp,datacamp,Education,yes
+The Write Connection,thewriteconnection,Education,yes
+Julia Gabriel Education,juliagabrieleducation,Education,yes
+Achievers Arts Studio,achieversartsstudio,Education,yes
+Chinese Instrumental Music School,chineseinstrumentalmusicschool,Education,yes
+School of Concepts,schoolofconcepts,Education,yes
+The Ballet School Singapore,theballetschoolsingapore,Education,yes
+SISTIC,sistic,Entertainment,yes
+SuperPark,superpark,Entertainment,yes
+BOUNCE Singapore,bouncesingapore,Entertainment,yes
+Teo Heng KTV,teohengktv,Entertainment,yes
+BFF Climb,bffclimb,Entertainment,yes
+Koryo Mart,koryomart,Groceries,yes
+Scoop Wholefoods,scoopwholefoods,Groceries,yes
+Cut Butchery,cutbutchery,Groceries,yes
+Keppel Electric,keppelelectric,Bills & Utilities,yes
+PacificLight,pacificlight,Bills & Utilities,yes
+WhizComms,whizcomms,Bills & Utilities,yes
+Parking.sg,parkingsg,Transport,yes
+Kopitiam,kopitiam,Food & Drink,yes
+DJ Bakery,djbakery,Food & Drink,yes
+The French American Bakery,thefrenchamericanbakery,Food & Drink,yes
+Ah Khoo Kopi Toast,ahkhookopitoast,Food & Drink,yes
+Nam Kee Pau,namkeepau,Food & Drink,yes
+Tribecar,tribecar,Transport,yes
+Figma,figma,Other,yes
+Slack,slack,Other,yes
+Trello,trello,Other,yes
+Evernote,evernote,Other,yes
+Apple Music,apple,Entertainment,yes
+Apple TV+,apple,Entertainment,yes

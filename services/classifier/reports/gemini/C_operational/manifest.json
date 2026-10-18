@@ -1,0 +1,224 @@
+{
+  "evaluation": "operational",
+  "prompt_sha256": "ab715623be9d4ac179df43f1e9d218d135de08c518fd5525fa218a91144ffd3f",
+  "hybrid_manifest_sha256": "164774e75fed67bfdbacb5d1598af696fd3f202264a516f19ff554c86cc3907c",
+  "bundle_sha256": "907c5e05fae68a611ec9a9192322c32d1a038b461e338ccce2c563f628fe5620",
+  "private_answers_do_not_paste": {
+    "E001": {
+      "row_id": "C040",
+      "category": "Health"
+    },
+    "E002": {
+      "row_id": "C022",
+      "category": "Shopping"
+    },
+    "E003": {
+      "row_id": "C045",
+      "category": "Education"
+    },
+    "E004": {
+      "row_id": "C031",
+      "category": "Bills & Utilities"
+    },
+    "E005": {
+      "row_id": "C020",
+      "category": "Shopping"
+    },
+    "E006": {
+      "row_id": "C049",
+      "category": "Other"
+    },
+    "E007": {
+      "row_id": "C017",
+      "category": "Transport"
+    },
+    "E008": {
+      "row_id": "C032",
+      "category": "Bills & Utilities"
+    },
+    "E009": {
+      "row_id": "C029",
+      "category": "Entertainment"
+    },
+    "E010": {
+      "row_id": "C010",
+      "category": "Groceries"
+    },
+    "E011": {
+      "row_id": "C012",
+      "category": "Groceries"
+    },
+    "E012": {
+      "row_id": "C024",
+      "category": "Shopping"
+    },
+    "E013": {
+      "row_id": "C030",
+      "category": "Entertainment"
+    },
+    "E014": {
+      "row_id": "C050",
+      "category": "Other"
+    },
+    "E015": {
+      "row_id": "C034",
+      "category": "Bills & Utilities"
+    },
+    "E016": {
+      "row_id": "C004",
+      "category": "Food & Drink"
+    },
+    "E017": {
+      "row_id": "C021",
+      "category": "Shopping"
+    },
+    "E018": {
+      "row_id": "C046",
+      "category": "Education"
+    },
+    "E019": {
+      "row_id": "C005",
+      "category": "Food & Drink"
+    },
+    "E020": {
+      "row_id": "C054",
+      "category": "Other"
+    },
+    "E021": {
+      "row_id": "C011",
+      "category": "Groceries"
+    },
+    "E022": {
+      "row_id": "C037",
+      "category": "Health"
+    },
+    "E023": {
+      "row_id": "C023",
+      "category": "Shopping"
+    },
+    "E024": {
+      "row_id": "C042",
+      "category": "Health"
+    },
+    "E025": {
+      "row_id": "C025",
+      "category": "Entertainment"
+    },
+    "E026": {
+      "row_id": "C001",
+      "category": "Food & Drink"
+    },
+    "E027": {
+      "row_id": "C026",
+      "category": "Entertainment"
+    },
+    "E028": {
+      "row_id": "C047",
+      "category": "Education"
+    },
+    "E029": {
+      "row_id": "C019",
+      "category": "Shopping"
+    },
+    "E030": {
+      "row_id": "C036",
+      "category": "Bills & Utilities"
+    },
+    "E031": {
+      "row_id": "C053",
+      "category": "Other"
+    },
+    "E032": {
+      "row_id": "C027",
+      "category": "Entertainment"
+    },
+    "E033": {
+      "row_id": "C013",
+      "category": "Transport"
+    },
+    "E034": {
+      "row_id": "C039",
+      "category": "Health"
+    },
+    "E035": {
+      "row_id": "C033",
+      "category": "Bills & Utilities"
+    },
+    "E036": {
+      "row_id": "C051",
+      "category": "Other"
+    },
+    "E037": {
+      "row_id": "C014",
+      "category": "Transport"
+    },
+    "E038": {
+      "row_id": "C043",
+      "category": "Education"
+    },
+    "E039": {
+      "row_id": "C052",
+      "category": "Other"
+    },
+    "E040": {
+      "row_id": "C003",
+      "category": "Food & Drink"
+    },
+    "E041": {
+      "row_id": "C028",
+      "category": "Entertainment"
+    },
+    "E042": {
+      "row_id": "C038",
+      "category": "Health"
+    },
+    "E043": {
+      "row_id": "C006",
+      "category": "Food & Drink"
+    },
+    "E044": {
+      "row_id": "C035",
+      "category": "Bills & Utilities"
+    },
+    "E045": {
+      "row_id": "C044",
+      "category": "Education"
+    },
+    "E046": {
+      "row_id": "C007",
+      "category": "Groceries"
+    },
+    "E047": {
+      "row_id": "C009",
+      "category": "Groceries"
+    },
+    "E048": {
+      "row_id": "C015",
+      "category": "Transport"
+    },
+    "E049": {
+      "row_id": "C016",
+      "category": "Transport"
+    },
+    "E050": {
+      "row_id": "C018",
+      "category": "Transport"
+    },
+    "E051": {
+      "row_id": "C048",
+      "category": "Education"
+    },
+    "E052": {
+      "row_id": "C002",
+      "category": "Food & Drink"
+    },
+    "E053": {
+      "row_id": "C008",
+      "category": "Groceries"
+    },
+    "E054": {
+      "row_id": "C041",
+      "category": "Health"
+    }
+  }
+}
