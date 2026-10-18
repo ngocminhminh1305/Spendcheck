@@ -55,7 +55,7 @@ def local_path(path: Path) -> Path:
     """Restrict configurable inputs and outputs to this module, including symlinks."""
     resolved = path.resolve()
     if not resolved.is_relative_to(ROOT):
-        raise ValueError(f"Path must stay inside services/classifier: {path}")
+        raise ValueError(f"Path must stay inside services/categoriser: {path}")
     return resolved
 
 

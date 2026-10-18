@@ -112,7 +112,7 @@ def test_cross_group_cleaned_alias_rejected(isolated_workflow):
 
 def test_no_paths_outside_module(tmp_path):
     """Configurable paths cannot target a teammate's module or external location."""
-    with pytest.raises(ValueError, match="inside services/classifier"):
+    with pytest.raises(ValueError, match="inside services/categoriser"):
         workflow.local_path(tmp_path / "outside.csv")
 
 

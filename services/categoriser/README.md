@@ -66,7 +66,7 @@ Docker packages only inference dependencies/code, selected manifest/metadata/mod
 From the Spendcheck repository root:
 
 ```bash
-cd services/classifier
+cd services/categoriser
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-dev.txt -r requirements-encoders.txt
@@ -90,7 +90,7 @@ Missing/non-string/blank/punctuation-only/over-500-character input or extra fiel
 From repository root:
 
 ```bash
-cd services/classifier
+cd services/categoriser
 docker build -f Dockerfile.hybrid -t spendcheck-classifier:v1 .
 docker run --rm --name spendcheck-classifier -p 127.0.0.1:8003:8000 spendcheck-classifier:v1
 ```
@@ -108,7 +108,7 @@ Expected:
 {"category":"Groceries","confidence":null,"source":"lookup","model_version":"merchant-categoriser-v1"}
 ```
 
-The gateway calls http://classifier:8000/classify if the integrator names the Compose service classifier. Use build context ./services/classifier and dockerfile Dockerfile.hybrid. No Compose/gateway/frontend is implemented by this module.
+The gateway calls http://classifier:8000/classify if the integrator names the Compose service classifier. Use build context ./services/categoriser and dockerfile Dockerfile.hybrid. No Compose/gateway/frontend is implemented by this module.
 
 Forward only the extracted merchant field. If merchant=null, handle incomplete extraction upstream without calling classification. Do not send amount/date or other extra fields.
 Accept nullable confidence and source; absence of needs_review is intentional. Low confidence still yields a category. Bare Grab/Apple return 422 ambiguity errors; request-validation errors also return 422. Handle both detail shapes without treating them as outages or silently assigning Other. Merge successful category into a transaction with valid date and positive amount for the forecaster.
