@@ -6,6 +6,11 @@ extractor turns one English spending transaction into amount, merchant, and date
 The extractor lives in [services/extractor/](services/extractor/README.md), with
 its own application, data, tests, dependencies, and setup instructions.
 
+The merchant categoriser lives in
+[services/categoriser/](services/categoriser/README.md). It automatically assigns
+one of nine spending categories using a verified merchant catalogue and a MiniLM
+classifier fallback; its README covers the standalone API, Docker setup and tests.
+
 The spending forecaster (Module 3) lives in
 [services/forecaster/](services/forecaster/README.md). It predicts end-of-month
 spending and raises a budget-risk alert. Run its commands, including `pytest`,
