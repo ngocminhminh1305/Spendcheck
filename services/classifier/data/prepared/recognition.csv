@@ -1,0 +1,73 @@
+case_id,merchant_text,merchant_group,category,case_type,expected_match
+B001,Sushiro,sushiro,Food & Drink,exact,true
+B002,Toast Box,toastbox,Food & Drink,exact,true
+B003,Yo-Chi,yochi,Food & Drink,alias,true
+B004,McDonalds,mcdonalds,Food & Drink,alias,true
+B005,  SUSHIRO  ,sushiro,Food & Drink,formatting,true
+B006,  TOAST  BOX  ,toastbox,Food & Drink,formatting,true
+B007,Sushiro unrelated business,sushiro,Food & Drink,near_match,false
+B008,Toast Box unrelated business,toastbox,Food & Drink,near_match,false
+B009,Scarlett Supermarket,scarlettsupermarket,Groceries,exact,true
+B010,Sheng Siong,shengsiong,Groceries,exact,true
+B011,FairPrice Finest,fairprice,Groceries,alias,true
+B012,NTUC FairPrice,fairprice,Groceries,alias,true
+B013,  SCARLETT  SUPERMARKET  ,scarlettsupermarket,Groceries,formatting,true
+B014,  SHENG  SIONG  ,shengsiong,Groceries,formatting,true
+B015,Scarlett Supermarket unrelated business,scarlettsupermarket,Groceries,near_match,false
+B016,Sheng Siong unrelated business,shengsiong,Groceries,near_match,false
+B017,Trans-cab,transcab,Transport,exact,true
+B018,SBS Transit,sbstransit,Transport,exact,true
+B019,SMRT,smrt,Transport,alias,true
+B020,SMRT Buses,smrt,Transport,alias,true
+B021,  TRANS-CAB  ,transcab,Transport,formatting,true
+B022,  SBS  TRANSIT  ,sbstransit,Transport,formatting,true
+B023,Trans-cab unrelated business,transcab,Transport,near_match,false
+B024,SBS Transit unrelated business,sbstransit,Transport,near_match,false
+B025,Charles & Keith,charleskeith,Shopping,exact,true
+B026,Challenger,challenger,Shopping,exact,true
+B027,Challenger MOBILE,challenger,Shopping,alias,true
+B028,SKS Bookstore,sksbooks,Shopping,alias,true
+B029,  CHARLES  &  KEITH  ,charleskeith,Shopping,formatting,true
+B030,  CHALLENGER  ,challenger,Shopping,formatting,true
+B031,Charles & Keith unrelated business,charleskeith,Shopping,near_match,false
+B032,Challenger unrelated business,challenger,Shopping,near_match,false
+B033,Universal Studios Singapore,universalstudiossingapore,Entertainment,exact,true
+B034,K Voice Karaoke,kvoicekaraoke,Entertainment,exact,true
+B035,BOUNCE,bouncesingapore,Entertainment,alias,true
+B036,TeoHeng KTV,teohengktv,Entertainment,alias,true
+B037,  UNIVERSAL  STUDIOS  SINGAPORE  ,universalstudiossingapore,Entertainment,formatting,true
+B038,  K  VOICE  KARAOKE  ,kvoicekaraoke,Entertainment,formatting,true
+B039,Universal Studios Singapore unrelated business,universalstudiossingapore,Entertainment,near_match,false
+B040,K Voice Karaoke unrelated business,kvoicekaraoke,Entertainment,near_match,false
+B041,PacificLight,pacificlight,Bills & Utilities,exact,true
+B042,Tuas Power Supply,tuaspowersupply,Bills & Utilities,exact,true
+B043,MyRepublic Broadband,myrepublic,Bills & Utilities,alias,true
+B044,SIMBA Telecom,simbatelecom,Bills & Utilities,alias,true
+B045,  PACIFICLIGHT  ,pacificlight,Bills & Utilities,formatting,true
+B046,  TUAS  POWER  SUPPLY  ,tuaspowersupply,Bills & Utilities,formatting,true
+B047,PacificLight unrelated business,pacificlight,Bills & Utilities,near_match,false
+B048,Tuas Power Supply unrelated business,tuaspowersupply,Bills & Utilities,near_match,false
+B049,Eu Yan Sang,euyansang,Health,exact,true
+B050,Chiropractic Singapore,chiropracticsingapore,Health,exact,true
+B051,SGH,singaporegeneralhospital,Health,alias,true
+B052,SNEC,singaporenationaleyecentre,Health,alias,true
+B053,  EU  YAN  SANG  ,euyansang,Health,formatting,true
+B054,  CHIROPRACTIC  SINGAPORE  ,chiropracticsingapore,Health,formatting,true
+B055,Eu Yan Sang unrelated business,euyansang,Health,near_match,false
+B056,Chiropractic Singapore unrelated business,chiropracticsingapore,Health,near_match,false
+B057,School of Concepts,schoolofconcepts,Education,exact,true
+B058,Mind Stretcher,mindstretcher,Education,exact,true
+B059,British Council,britishcouncilsingapore,Education,alias,true
+B060,Kaplan,kaplansingapore,Education,alias,true
+B061,  SCHOOL  OF  CONCEPTS  ,schoolofconcepts,Education,formatting,true
+B062,  MIND  STRETCHER  ,mindstretcher,Education,formatting,true
+B063,School of Concepts unrelated business,schoolofconcepts,Education,near_match,false
+B064,Mind Stretcher unrelated business,mindstretcher,Education,near_match,false
+B065,Presto Drycleaners,prestodrycleaners,Other,exact,true
+B066,NK Hairworks,nkhairworks,Other,exact,true
+B067,ChatGPT Plus,openai,Other,alias,true
+B068,Dropbox Plus,dropbox,Other,alias,true
+B069,  PRESTO  DRYCLEANERS  ,prestodrycleaners,Other,formatting,true
+B070,  NK  HAIRWORKS  ,nkhairworks,Other,formatting,true
+B071,Presto Drycleaners unrelated business,prestodrycleaners,Other,near_match,false
+B072,NK Hairworks unrelated business,nkhairworks,Other,near_match,false

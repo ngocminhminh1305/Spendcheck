@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "checks": 1513,
+  "offline_tcp_connections_blocked": true,
+  "fallback_sha256": "ccf0bf2cb698adebba8bd950315c44927a02d05fdcf8b02a589ec434bc7c7a34",
+  "catalogue_sha256": "38290b482291ccee368d73836afa839c473083197487f863c6f89ea03f893c90",
+  "bundle_before_freeze_sha256": "ad443cb79ab3a6b38ac257a1737e05f238e038ea08afd6f91e3d3ea415a2f1e4",
+  "fallback_samples": [
+    {
+      "merchant": "ABC Dental Clinic",
+      "category": "Health",
+      "confidence": 0.3530499339103699,
+      "source": "model",
+      "model_version": "merchant-categoriser-v1"
+    },
+    {
+      "merchant": "Happy Noodle House",
+      "category": "Food & Drink",
+      "confidence": 0.2274577021598816,
+      "source": "model",
+      "model_version": "merchant-categoriser-v1"
+    },
+    {
+      "merchant": "zzzzzzzzzzz",
+      "category": "Other",
+      "confidence": 0.1820680946111679,
+      "source": "model",
+      "model_version": "merchant-categoriser-v1"
+    },
+    {
+      "merchant": "Unknown Merchant",
+      "category": "Groceries",
+      "confidence": 0.3133316934108734,
+      "source": "model",
+      "model_version": "merchant-categoriser-v1"
+    }
+  ],
+  "final_evaluation_predictions": "not run by this functional check"
+}

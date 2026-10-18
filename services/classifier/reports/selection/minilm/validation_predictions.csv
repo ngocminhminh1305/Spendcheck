@@ -1,0 +1,46 @@
+row_id,merchant_text,merchant_group,true_category,predicted_category,confidence
+new-00d9d581e3bada5ad5bf,Gojek,gojek,Transport,Food & Drink,0.17135778069496155
+new-00e81541121b08bbd8f1,Clippers Barber,clippersbarber,Other,Other,0.3306291103363037
+new-099b855f4f65c2d972a2,YouTube Premium,youtubepremium,Entertainment,Other,0.22013096511363983
+new-0d9a943f8bef410013d0,Mr. Coconut,mrcoconut,Food & Drink,Food & Drink,0.29298266768455505
+new-1272b4cf840444c6daba,Pharmex Healthcare,pharmexhealthcare,Health,Health,0.4450070559978485
+new-1dff918a8fc1fa37e41d,Google Cloud Platform,googlecloud,Other,Other,0.18359051644802094
+new-211eb2c5d19aa6880830,Berries World,berriesworld,Education,Food & Drink,0.18760016560554504
+new-223f761fc42fb1e184d3,SingPost parcel delivery,singpost,Other,Groceries,0.20478518307209015
+new-27500e53d35969ac8bff,Shine Korea Supermarket,shinekorea,Groceries,Groceries,0.3325870931148529
+new-333d47da58134dd34fc4,D'Penyetz,dpenyetz,Food & Drink,Shopping,0.17045235633850098
+new-366097e956964e4fb2d8,IKEA,ikea,Shopping,Shopping,0.17458553612232208
+new-4b8c6c1b7a9692c44a55,POPULAR,popular,Shopping,Shopping,0.17845937609672546
+new-4b9e6518369b2d6b774b,Singtel,singtel,Bills & Utilities,Bills & Utilities,0.19794249534606934
+new-553bd99da333d7ba6019,Octobox,octobox,Groceries,Bills & Utilities,0.2750082314014435
+new-57e96b8a4164967ee173,PlayStation Plus,playstation,Entertainment,Entertainment,0.20238427817821503
+new-612badbf1873d61785e8,POPULAR Bookstore,popular,Shopping,Shopping,0.28463366627693176
+new-63e1e701b87eb37129fc,POPULAR textbooks,popular,Education,Shopping,0.2662394046783447
+new-6693a57fec868ee2e1e4,Stuff'd,stuffd,Food & Drink,Other,0.1573072224855423
+new-69120a0258f26d64ae54,Auntie Cleaner,auntiecleaner,Other,Other,0.2844810485839844
+new-6fe8f9afe8dcf0ba2edc,ViewQwest,viewqwest,Bills & Utilities,Health,0.1519719362258911
+new-74da2d0eeb6b6f1e7bbd,PlayStation Network,playstation,Entertainment,Bills & Utilities,0.1859080046415329
+new-75a36d35579935739cde,Timezone,timezone,Entertainment,Entertainment,0.2515120804309845
+new-7a91682f2cc1971ce7cd,Singtel broadband,singtel,Bills & Utilities,Bills & Utilities,0.4634145200252533
+new-7b72f0b27c9f2305e8e5,Shine Korea,shinekorea,Groceries,Entertainment,0.18378013372421265
+new-830d7c3e90b8ff4d9f85,Ryan's Grocery,ryansgrocery,Groceries,Groceries,0.30289632081985474
+new-845cdf4b7a1a2e22f1a9,Google Cloud,googlecloud,Other,Other,0.23373004794120789
+new-85d53fa3dbb416f8911e,SingPost postage,singpost,Other,Groceries,0.16985617578029633
+new-8a4f3ac8041998d5ec3d,Daiso,daiso,Shopping,Food & Drink,0.20427963137626648
+new-8c428f1c63e1e3f943ed,Healthway Medical,healthwaymedical,Health,Health,0.5398700833320618
+new-988b8a846d5f6016792c,Dian Xiao Er,dianxiaoer,Food & Drink,Food & Drink,0.2232162058353424
+new-9d4521a7396b4415d45d,SimplyGo transit fares,simplygo,Transport,Transport,0.440207302570343
+new-a1ebb2ad366320012dea,Singtel mobile,singtel,Bills & Utilities,Bills & Utilities,0.2827315330505371
+new-ab99beed9b5d0c785e6a,Shopee,shopee,Shopping,Groceries,0.26379236578941345
+new-bb1d7f055d7bf63fe1fe,Watsons,watsons,Health,Shopping,0.2201753407716751
+new-bd34d10819b780ad53d2,iTea,itea,Food & Drink,Shopping,0.20098792016506195
+new-be898e7ab5c3fb341529,Microsoft 365,microsoft365,Other,Other,0.24122114479541779
+new-cc2b2bd22123ad34e7e0,Berries Chinese enrichment,berriesworld,Education,Food & Drink,0.31615951657295227
+new-ccf8d204bb876281a5da,The Science Academy,thescienceacademy,Education,Education,0.4053250551223755
+new-ce30c3f7e240b0b9e003,Yoshinoya,yoshinoya,Food & Drink,Food & Drink,0.26594361662864685
+new-ceb64fc107236ec0c941,SimplyGo bus fare,simplygo,Transport,Transport,0.46478819847106934
+new-d1203e41fa3041205244,SimplyGo MRT fare,simplygo,Transport,Transport,0.27309706807136536
+new-dbd82f4b6100a4bf14df,RedMart,redmart,Groceries,Groceries,0.367143452167511
+new-ea5bc16180fed23bb97b,Microsoft 365 Personal,microsoft365,Other,Other,0.2822621762752533
+new-f19fc23671dcb71e281c,PlayStation Store,playstation,Entertainment,Entertainment,0.18931664526462555
+new-f28fb0ad3ad24463d00d,GOMO,gomo,Bills & Utilities,Shopping,0.23983916640281677

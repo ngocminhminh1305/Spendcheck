@@ -1,0 +1,196 @@
+{
+  "model": "Gemini 3.1 Pro (High)\n",
+  "recorded_at": "2026-10-17T17:45:56.071675+00:00",
+  "run_date": "2026-10-18",
+  "evaluation": "validation",
+  "prompt_sha256": "480619192e944c0da3a9a795385a23b705db6c18d37f6e78f5285dafbd1860e7",
+  "hybrid_manifest_sha256": "164774e75fed67bfdbacb5d1598af696fd3f202264a516f19ff554c86cc3907c",
+  "bundle_sha256": null,
+  "predictions_sha256": "9be4be3826b025f1b56abd37e1fb97c335f2e48ff67e6df3219714a7117eea00",
+  "metrics": {
+    "rows": 45,
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "per_category": {
+      "Food & Drink": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 6.0
+      },
+      "Groceries": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "Transport": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "Shopping": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "Entertainment": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "Bills & Utilities": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 5.0
+      },
+      "Health": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 3.0
+      },
+      "Education": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 4.0
+      },
+      "Other": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 8.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 45.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
+      ]
+    ],
+    "confusion_matrix_labels": [
+      "Food & Drink",
+      "Groceries",
+      "Transport",
+      "Shopping",
+      "Entertainment",
+      "Bills & Utilities",
+      "Health",
+      "Education",
+      "Other"
+    ]
+  }
+}

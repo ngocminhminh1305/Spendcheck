@@ -1,0 +1,11 @@
+true_category,Food & Drink,Groceries,Transport,Shopping,Entertainment,Bills & Utilities,Health,Education,Other,__unmatched__
+Food & Drink,3,0,0,0,0,0,0,0,0,3
+Groceries,0,3,0,0,0,0,0,0,0,3
+Transport,0,0,3,0,0,0,0,0,0,3
+Shopping,0,0,0,3,0,0,0,0,0,3
+Entertainment,0,0,0,0,3,0,0,0,0,3
+Bills & Utilities,0,0,0,0,0,3,0,0,0,3
+Health,0,0,0,0,0,0,3,0,0,3
+Education,0,0,0,0,0,0,0,3,0,3
+Other,0,0,0,0,0,0,0,0,3,3
+__unmatched__,0,0,0,0,0,0,0,0,0,0

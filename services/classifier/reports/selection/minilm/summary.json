@@ -1,0 +1,19 @@
+{
+  "model": "minilm",
+  "selected_C": 1,
+  "selected_class_weight": "balanced",
+  "metrics": {
+    "train": {
+      "rows": 280,
+      "accuracy": 0.8928571428571429,
+      "macro_f1": 0.9050220590245581
+    },
+    "validation": {
+      "rows": 45,
+      "accuracy": 0.6,
+      "macro_f1": 0.601000851000851
+    }
+  },
+  "test_evaluation": "not performed",
+  "confidence": "raw maximum probability; no threshold filtering; uncalibrated"
+}

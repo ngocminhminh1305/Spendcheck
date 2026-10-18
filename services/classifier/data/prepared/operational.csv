@@ -1,0 +1,55 @@
+case_id,merchant_text,merchant_group,category,cohort
+C001,Starbucks,starbucks,Food & Drink,known
+C002,Udon Don Bar,udondonbar,Food & Drink,known
+C003,BHC Chicken,bhcchicken,Food & Drink,known
+C004,The Soup Spoon,thesoupspoon,Food & Drink,unfamiliar
+C005,San Ren Xing,sanrenxing,Food & Drink,unfamiliar
+C006,BatterCatch,battercatch,Food & Drink,unfamiliar
+C007,FairPrice,fairprice,Groceries,known
+C008,Huber's Butchery,hubers,Groceries,known
+C009,CS Fresh,coldstorage,Groceries,known
+C010,Thai Supermarket,thaisupermarket,Groceries,unfamiliar
+C011,Sri Murugan Ezy,srimuruganezy,Groceries,unfamiliar
+C012,Fresh Stop SG,freshstopsg,Groceries,unfamiliar
+C013,Tower Transit,towertransit,Transport,known
+C014,TADA,tada,Transport,known
+C015,Ryde,ryde,Transport,known
+C016,Car Lite,carlite,Transport,unfamiliar
+C017,Drive lah,drivelah,Transport,unfamiliar
+C018,SIXT car rental,sixtcarrental,Transport,unfamiliar
+C019,Xiaomi Store,xiaomistore,Shopping,known
+C020,Onitsuka Tiger,onitsukatiger,Shopping,known
+C021,Valu$,valu,Shopping,known
+C022,Cityluxe,cityluxe,Shopping,unfamiliar
+C023,Beyond The Vines,beyondthevines,Shopping,unfamiliar
+C024,The Paper Bunny,thepaperbunny,Shopping,unfamiliar
+C025,Night Safari,mandaiwildlifereserve,Entertainment,known
+C026,Shaw Theatres,shawtheatres,Entertainment,known
+C027,Teo Heng KTV,teohengktv,Entertainment,known
+C028,SuperBowl,superbowl,Entertainment,unfamiliar
+C029,Sandbox VR,sandboxvr,Entertainment,unfamiliar
+C030,Trapped Escape Room,trappedescaperoom,Entertainment,unfamiliar
+C031,giga!,giga,Bills & Utilities,known
+C032,Keppel Electric,keppelelectric,Bills & Utilities,known
+C033,StarHub,starhub,Bills & Utilities,known
+C034,Zero1,zero1,Bills & Utilities,unfamiliar
+C035,ZYM Mobile,zymmobile,Bills & Utilities,unfamiliar
+C036,VIVIFI,vivifi,Bills & Utilities,unfamiliar
+C037,SKH,sengkanggeneralhospital,Health,known
+C038,National Skin Centre,nationalskincentre,Health,known
+C039,SingHealth Polyclinics,singhealthpolyclinics,Health,known
+C040,Nuffield Dental,nuffielddental,Health,unfamiliar
+C041,Luminous Dental,luminousdental,Health,unfamiliar
+C042,Dental Focus,dentalfocus,Health,unfamiliar
+C043,Julia Gabriel Education,juliagabrieleducation,Education,known
+C044,British Council Singapore,britishcouncilsingapore,Education,known
+C045,Coursera Plus,coursera,Education,known
+C046,Learners' Lodge,learnerslodge,Education,unfamiliar
+C047,Aspire Hub,aspirehub,Education,unfamiliar
+C048,LingoAce,lingoace,Education,unfamiliar
+C049,BP Brow & Lash,bpbrowlash,Other,known
+C050,Fresh Laundry,freshlaundry,Other,known
+C051,nailz Gallery,nailzgallery,Other,known
+C052,Laundryheap,laundryheap,Other,unfamiliar
+C053,Jeeves dry cleaning,jeevesdrycleaning,Other,unfamiliar
+C054,Piing!,piing,Other,unfamiliar

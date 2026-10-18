@@ -1,0 +1,19 @@
+{
+  "model": "tfidf",
+  "selected_C": 1,
+  "selected_class_weight": "balanced",
+  "metrics": {
+    "train": {
+      "rows": 280,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "validation": {
+      "rows": 45,
+      "accuracy": 0.4444444444444444,
+      "macro_f1": 0.5044652877986211
+    }
+  },
+  "test_evaluation": "not performed",
+  "confidence": "raw maximum probability; no threshold filtering; uncalibrated"
+}

@@ -1,0 +1,1 @@
+"""Standalone merchant categorisation service."""

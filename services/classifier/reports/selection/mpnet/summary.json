@@ -1,0 +1,19 @@
+{
+  "model": "mpnet",
+  "selected_C": 10,
+  "selected_class_weight": "balanced",
+  "metrics": {
+    "train": {
+      "rows": 280,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    "validation": {
+      "rows": 45,
+      "accuracy": 0.5111111111111111,
+      "macro_f1": 0.5407105240438573
+    }
+  },
+  "test_evaluation": "not performed",
+  "confidence": "raw maximum probability; no threshold filtering; uncalibrated"
+}

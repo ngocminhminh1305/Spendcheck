@@ -1,0 +1,601 @@
+row_id,source,source_row_id,merchant_raw,merchant_text,suggested_category,proposed_category,canonical_merchant,merchant_group,provisional_eligible,review_status,reviewed_category,reviewed_by,notes
+codex-M001,codex,M001,Kopitiam,Kopitiam,Food & Drink,Food & Drink,Kopitiam,kopitiam,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M002,codex,M002,kopitiam,kopitiam,Food & Drink,Food & Drink,Kopitiam,kopitiam,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M003,codex,M003,NETS*KOPITIAM SG,NETS*KOPITIAM SG,Food & Drink,Food & Drink,Kopitiam,kopitiam,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M004,codex,M004,Chagee,Chagee,Food & Drink,Food & Drink,Chagee,chagee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M005,codex,M005,chagee,chagee,Food & Drink,Food & Drink,Chagee,chagee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M006,codex,M006,CARD*CHAGEE SG,CARD*CHAGEE SG,Food & Drink,Food & Drink,Chagee,chagee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M007,codex,M007,Ya Kun Kaya Toast,Ya Kun Kaya Toast,Food & Drink,Food & Drink,Ya Kun Kaya Toast,yakunkayatoast,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M008,codex,M008,ya kun kaya toast,ya kun kaya toast,Food & Drink,Food & Drink,Ya Kun Kaya Toast,yakunkayatoast,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M009,codex,M009,NETS*YA KUN KAYA TOAST SG,NETS*YA KUN KAYA TOAST SG,Food & Drink,Food & Drink,Ya Kun Kaya Toast,yakunkayatoast,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M010,codex,M010,Toast Box,Toast Box,Food & Drink,Food & Drink,Toast Box,toastbox,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M011,codex,M011,toast box,toast box,Food & Drink,Food & Drink,Toast Box,toastbox,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M012,codex,M012,CARD*TOAST BOX SG,CARD*TOAST BOX SG,Food & Drink,Food & Drink,Toast Box,toastbox,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M013,codex,M013,LiHO Tea,LiHO Tea,Food & Drink,Food & Drink,LiHO Tea,liho,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M014,codex,M014,liho tea,liho tea,Food & Drink,Food & Drink,LiHO Tea,liho,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M015,codex,M015,NETS*LIHO TEA SG,NETS*LIHO TEA SG,Food & Drink,Food & Drink,LiHO Tea,liho,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M016,codex,M016,KOI The,KOI The,Food & Drink,Food & Drink,KOI The,koithe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M017,codex,M017,koi the,koi the,Food & Drink,Food & Drink,KOI The,koithe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M018,codex,M018,CARD*KOI THE SG,CARD*KOI THE SG,Food & Drink,Food & Drink,KOI The,koithe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M019,codex,M019,Gong Cha,Gong Cha,Food & Drink,Food & Drink,Gong Cha,gongcha,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M020,codex,M020,gong cha,gong cha,Food & Drink,Food & Drink,Gong Cha,gongcha,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M021,codex,M021,NETS*GONG CHA SG,NETS*GONG CHA SG,Food & Drink,Food & Drink,Gong Cha,gongcha,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M022,codex,M022,McDonalds,McDonalds,Food & Drink,Food & Drink,McDonalds,mcdonalds,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M023,codex,M023,mcdonalds,mcdonalds,Food & Drink,Food & Drink,McDonalds,mcdonalds,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M024,codex,M024,CARD*MCDONALDS SG,CARD*MCDONALDS SG,Food & Drink,Food & Drink,McDonalds,mcdonalds,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M025,codex,M025,KFC,KFC,Food & Drink,Food & Drink,KFC,kfc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M026,codex,M026,kfc,kfc,Food & Drink,Food & Drink,KFC,kfc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M027,codex,M027,NETS*KFC SG,NETS*KFC SG,Food & Drink,Food & Drink,KFC,kfc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M028,codex,M028,Starbucks,Starbucks,Food & Drink,Food & Drink,Starbucks,starbucks,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M029,codex,M029,starbucks,starbucks,Food & Drink,Food & Drink,Starbucks,starbucks,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M030,codex,M030,CARD*STARBUCKS SG,CARD*STARBUCKS SG,Food & Drink,Food & Drink,Starbucks,starbucks,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M031,codex,M031,GrabFood,GrabFood,Food & Drink,Food & Drink,GrabFood,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M032,codex,M032,grabfood,grabfood,Food & Drink,Food & Drink,GrabFood,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M033,codex,M033,NETS*GRABFOOD SG,NETS*GRABFOOD SG,Food & Drink,Food & Drink,GrabFood,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M034,codex,M034,Foodpanda,Foodpanda,Food & Drink,Food & Drink,Foodpanda,foodpanda,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M035,codex,M035,foodpanda,foodpanda,Food & Drink,Food & Drink,Foodpanda,foodpanda,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M036,codex,M036,CARD*FOODPANDA SG,CARD*FOODPANDA SG,Food & Drink,Food & Drink,Foodpanda,foodpanda,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M037,codex,M037,FairPrice,FairPrice,Groceries,Groceries,FairPrice,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M038,codex,M038,fairprice,fairprice,Groceries,Groceries,FairPrice,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M039,codex,M039,NETS*FAIRPRICE SG,NETS*FAIRPRICE SG,Groceries,Groceries,FairPrice,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M040,codex,M040,Cold Storage,Cold Storage,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M041,codex,M041,cold storage,cold storage,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M042,codex,M042,CARD*COLD STORAGE SG,CARD*COLD STORAGE SG,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M043,codex,M043,Sheng Siong,Sheng Siong,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M044,codex,M044,sheng siong,sheng siong,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M045,codex,M045,NETS*SHENG SIONG SG,NETS*SHENG SIONG SG,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M046,codex,M046,Giant Supermarket,Giant Supermarket,Groceries,Groceries,Giant Supermarket,giant,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M047,codex,M047,giant supermarket,giant supermarket,Groceries,Groceries,Giant Supermarket,giant,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M048,codex,M048,CARD*GIANT SUPERMARKET SG,CARD*GIANT SUPERMARKET SG,Groceries,Groceries,Giant Supermarket,giant,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M049,codex,M049,Prime Supermarket,Prime Supermarket,Groceries,Groceries,Prime Supermarket,primesupermarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M050,codex,M050,prime supermarket,prime supermarket,Groceries,Groceries,Prime Supermarket,primesupermarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M051,codex,M051,NETS*PRIME SUPERMARKET SG,NETS*PRIME SUPERMARKET SG,Groceries,Groceries,Prime Supermarket,primesupermarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M052,codex,M052,HAO Mart,HAO Mart,Groceries,Groceries,HAO Mart,haomart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M053,codex,M053,hao mart,hao mart,Groceries,Groceries,HAO Mart,haomart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M054,codex,M054,CARD*HAO MART SG,CARD*HAO MART SG,Groceries,Groceries,HAO Mart,haomart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M055,codex,M055,DON DON DONKI,DON DON DONKI,Groceries,Groceries,DON DON DONKI,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M056,codex,M056,don don donki,don don donki,Groceries,Groceries,DON DON DONKI,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M057,codex,M057,NETS*DON DON DONKI SG,NETS*DON DON DONKI SG,Groceries,Groceries,DON DON DONKI,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M058,codex,M058,RedMart,RedMart,Groceries,Groceries,RedMart,redmart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M059,codex,M059,redmart,redmart,Groceries,Groceries,RedMart,redmart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M060,codex,M060,CARD*REDMART SG,CARD*REDMART SG,Groceries,Groceries,RedMart,redmart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M061,codex,M061,Little Farms,Little Farms,Groceries,Groceries,Little Farms,littlefarms,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M062,codex,M062,little farms,little farms,Groceries,Groceries,Little Farms,littlefarms,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M063,codex,M063,NETS*LITTLE FARMS SG,NETS*LITTLE FARMS SG,Groceries,Groceries,Little Farms,littlefarms,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M064,codex,M064,Meidi Ya,Meidi Ya,Groceries,Groceries,Meidi Ya,meidiya,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M065,codex,M065,meidi ya,meidi ya,Groceries,Groceries,Meidi Ya,meidiya,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M066,codex,M066,CARD*MEIDI YA SG,CARD*MEIDI YA SG,Groceries,Groceries,Meidi Ya,meidiya,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M067,codex,M067,Neighbourhood grocery shop,Neighbourhood grocery shop,Groceries,Groceries,Neighbourhood grocery shop,neighbourhoodgroceryshop,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M068,codex,M068,neighbourhood grocery shop,neighbourhood grocery shop,Groceries,Groceries,Neighbourhood grocery shop,neighbourhoodgroceryshop,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M069,codex,M069,NETS*NEIGHBOURHOOD GROCERY SHOP SG,NETS*NEIGHBOURHOOD GROCERY SHOP SG,Groceries,Groceries,Neighbourhood grocery shop,neighbourhoodgroceryshop,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M070,codex,M070,U Stars Supermarket,U Stars Supermarket,Groceries,Groceries,U Stars Supermarket,ustars,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M071,codex,M071,u stars supermarket,u stars supermarket,Groceries,Groceries,U Stars Supermarket,ustars,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M072,codex,M072,CARD*U STARS SUPERMARKET SG,CARD*U STARS SUPERMARKET SG,Groceries,Groceries,U Stars Supermarket,ustars,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M073,codex,M073,Grab ride,Grab ride,Transport,Transport,Grab ride,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M074,codex,M074,grab ride,grab ride,Transport,Transport,Grab ride,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M075,codex,M075,NETS*GRAB RIDE SG,NETS*GRAB RIDE SG,Transport,Transport,Grab ride,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M076,codex,M076,Gojek ride,Gojek,Transport,Transport,Gojek ride,gojek,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M077,codex,M077,gojek ride,Gojek,Transport,Transport,Gojek ride,gojek,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M078,codex,M078,CARD*GOJEK RIDE SG,CARD*Gojek SG,Transport,Transport,Gojek ride,gojek,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M079,codex,M079,EZ Link transit,EZ-Link,Transport,Transport,EZ Link transit,ezlink,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M080,codex,M080,ez link transit,EZ-Link,Transport,Transport,EZ Link transit,ezlink,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M081,codex,M081,NETS*EZ LINK TRANSIT SG,NETS*EZ-Link SG,Transport,Transport,EZ Link transit,ezlink,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M082,codex,M082,SimplyGo transit,SimplyGo,Transport,Transport,SimplyGo transit,simplygo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M083,codex,M083,simplygo transit,SimplyGo,Transport,Transport,SimplyGo transit,simplygo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M084,codex,M084,CARD*SIMPLYGO TRANSIT SG,CARD*SimplyGo SG,Transport,Transport,SimplyGo transit,simplygo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M085,codex,M085,ComfortDelGro taxi,ComfortDelGro,Transport,Transport,ComfortDelGro taxi,comfortdelgro,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M086,codex,M086,comfortdelgro taxi,ComfortDelGro,Transport,Transport,ComfortDelGro taxi,comfortdelgro,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M087,codex,M087,NETS*COMFORTDELGRO TAXI SG,NETS*ComfortDelGro SG,Transport,Transport,ComfortDelGro taxi,comfortdelgro,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M088,codex,M088,TADA ride,TADA,Transport,Transport,TADA ride,tada,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M089,codex,M089,tada ride,TADA,Transport,Transport,TADA ride,tada,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M090,codex,M090,CARD*TADA RIDE SG,CARD*TADA SG,Transport,Transport,TADA ride,tada,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M091,codex,M091,Ryde ride,Ryde,Transport,Transport,Ryde ride,ryde,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M092,codex,M092,ryde ride,Ryde,Transport,Transport,Ryde ride,ryde,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M093,codex,M093,NETS*RYDE RIDE SG,NETS*Ryde SG,Transport,Transport,Ryde ride,ryde,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M094,codex,M094,SMRT taxi,SMRT,Transport,Transport,SMRT taxi,smrt,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M095,codex,M095,smrt taxi,SMRT,Transport,Transport,SMRT taxi,smrt,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M096,codex,M096,CARD*SMRT TAXI SG,CARD*SMRT SG,Transport,Transport,SMRT taxi,smrt,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M097,codex,M097,SBS Transit bus,SBS Transit,Transport,Transport,SBS Transit bus,sbstransit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M098,codex,M098,sbs transit bus,SBS Transit,Transport,Transport,SBS Transit bus,sbstransit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M099,codex,M099,NETS*SBS TRANSIT BUS SG,NETS*SBS Transit SG,Transport,Transport,SBS Transit bus,sbstransit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M100,codex,M100,MRT train fare,MRT train fare,Transport,Transport,MRT train fare,mrttrainfare,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M101,codex,M101,mrt train fare,mrt train fare,Transport,Transport,MRT train fare,mrttrainfare,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M102,codex,M102,CARD*MRT TRAIN FARE SG,CARD*MRT TRAIN FARE SG,Transport,Transport,MRT train fare,mrttrainfare,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M103,codex,M103,BlueSG car rental,BlueSG,Transport,Transport,BlueSG car rental,bluesg,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M104,codex,M104,bluesg car rental,BlueSG,Transport,Transport,BlueSG car rental,bluesg,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M105,codex,M105,NETS*BLUESG CAR RENTAL SG,NETS*BlueSG SG,Transport,Transport,BlueSG car rental,bluesg,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M106,codex,M106,GetGo car rental,GetGo,Transport,Transport,GetGo car rental,getgo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M107,codex,M107,getgo car rental,GetGo,Transport,Transport,GetGo car rental,getgo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M108,codex,M108,CARD*GETGO CAR RENTAL SG,CARD*GetGo SG,Transport,Transport,GetGo car rental,getgo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M109,codex,M109,Shopee,Shopee,Shopping,Shopping,Shopee,shopee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M110,codex,M110,shopee,shopee,Shopping,Shopping,Shopee,shopee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M111,codex,M111,NETS*SHOPEE SG,NETS*SHOPEE SG,Shopping,Shopping,Shopee,shopee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M112,codex,M112,Lazada,Lazada,Shopping,Shopping,Lazada,lazada,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M113,codex,M113,lazada,lazada,Shopping,Shopping,Lazada,lazada,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M114,codex,M114,CARD*LAZADA SG,CARD*LAZADA SG,Shopping,Shopping,Lazada,lazada,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M115,codex,M115,Uniqlo,Uniqlo,Shopping,Shopping,Uniqlo,uniqlo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M116,codex,M116,uniqlo,uniqlo,Shopping,Shopping,Uniqlo,uniqlo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M117,codex,M117,NETS*UNIQLO SG,NETS*UNIQLO SG,Shopping,Shopping,Uniqlo,uniqlo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M118,codex,M118,Zalora,Zalora,Shopping,Shopping,Zalora,zalora,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M119,codex,M119,zalora,zalora,Shopping,Shopping,Zalora,zalora,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M120,codex,M120,CARD*ZALORA SG,CARD*ZALORA SG,Shopping,Shopping,Zalora,zalora,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M121,codex,M121,H&M,H&M,Shopping,Shopping,H&M,hm,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M122,codex,M122,h&m,h&m,Shopping,Shopping,H&M,hm,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M123,codex,M123,NETS*H&M SG,NETS*H&M SG,Shopping,Shopping,H&M,hm,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M124,codex,M124,Cotton On,Cotton On,Shopping,Shopping,Cotton On,cottonon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M125,codex,M125,cotton on,cotton on,Shopping,Shopping,Cotton On,cottonon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M126,codex,M126,CARD*COTTON ON SG,CARD*COTTON ON SG,Shopping,Shopping,Cotton On,cottonon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M127,codex,M127,IKEA,IKEA,Shopping,Shopping,IKEA,ikea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M128,codex,M128,ikea,ikea,Shopping,Shopping,IKEA,ikea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M129,codex,M129,NETS*IKEA SG,NETS*IKEA SG,Shopping,Shopping,IKEA,ikea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M130,codex,M130,Muji,Muji,Shopping,Shopping,Muji,muji,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M131,codex,M131,muji,muji,Shopping,Shopping,Muji,muji,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M132,codex,M132,CARD*MUJI SG,CARD*MUJI SG,Shopping,Shopping,Muji,muji,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M133,codex,M133,Decathlon,Decathlon,Shopping,Shopping,Decathlon,decathlon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M134,codex,M134,decathlon,decathlon,Shopping,Shopping,Decathlon,decathlon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M135,codex,M135,NETS*DECATHLON SG,NETS*DECATHLON SG,Shopping,Shopping,Decathlon,decathlon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M136,codex,M136,Courts,Courts,Shopping,Shopping,Courts,courts,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M137,codex,M137,courts,courts,Shopping,Shopping,Courts,courts,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M138,codex,M138,CARD*COURTS SG,CARD*COURTS SG,Shopping,Shopping,Courts,courts,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M139,codex,M139,Challenger,Challenger,Shopping,Shopping,Challenger,challenger,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M140,codex,M140,challenger,challenger,Shopping,Shopping,Challenger,challenger,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M141,codex,M141,NETS*CHALLENGER SG,NETS*CHALLENGER SG,Shopping,Shopping,Challenger,challenger,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M142,codex,M142,Typo stationery,Typo,Shopping,Shopping,Typo stationery,typo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M143,codex,M143,typo stationery,Typo,Shopping,Shopping,Typo stationery,typo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M144,codex,M144,CARD*TYPO STATIONERY SG,CARD*Typo SG,Shopping,Shopping,Typo stationery,typo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M145,codex,M145,Golden Village cinema,Golden Village,Entertainment,Entertainment,Golden Village cinema,goldenvillage,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M146,codex,M146,golden village cinema,Golden Village,Entertainment,Entertainment,Golden Village cinema,goldenvillage,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M147,codex,M147,NETS*GOLDEN VILLAGE CINEMA SG,NETS*Golden Village SG,Entertainment,Entertainment,Golden Village cinema,goldenvillage,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M148,codex,M148,Shaw cinema,Shaw,Entertainment,Entertainment,Shaw cinema,shaw,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M149,codex,M149,shaw cinema,Shaw,Entertainment,Entertainment,Shaw cinema,shaw,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M150,codex,M150,CARD*SHAW CINEMA SG,CARD*Shaw SG,Entertainment,Entertainment,Shaw cinema,shaw,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M151,codex,M151,Cathay cinema,Cathay,Entertainment,Entertainment,Cathay cinema,cathay,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M152,codex,M152,cathay cinema,Cathay,Entertainment,Entertainment,Cathay cinema,cathay,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M153,codex,M153,NETS*CATHAY CINEMA SG,NETS*Cathay SG,Entertainment,Entertainment,Cathay cinema,cathay,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M154,codex,M154,Netflix,Netflix,Entertainment,Entertainment,Netflix,netflix,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M155,codex,M155,netflix,netflix,Entertainment,Entertainment,Netflix,netflix,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M156,codex,M156,CARD*NETFLIX SG,CARD*NETFLIX SG,Entertainment,Entertainment,Netflix,netflix,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M157,codex,M157,Disney Plus,Disney Plus,Entertainment,Entertainment,Disney Plus,disneyplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M158,codex,M158,disney plus,disney plus,Entertainment,Entertainment,Disney Plus,disneyplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M159,codex,M159,NETS*DISNEY PLUS SG,NETS*DISNEY PLUS SG,Entertainment,Entertainment,Disney Plus,disneyplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M160,codex,M160,Spotify,Spotify,Entertainment,Entertainment,Spotify,spotify,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M161,codex,M161,spotify,spotify,Entertainment,Entertainment,Spotify,spotify,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M162,codex,M162,CARD*SPOTIFY SG,CARD*SPOTIFY SG,Entertainment,Entertainment,Spotify,spotify,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M163,codex,M163,Steam games,Steam,Entertainment,Entertainment,Steam games,steam,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M164,codex,M164,steam games,Steam,Entertainment,Entertainment,Steam games,steam,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M165,codex,M165,NETS*STEAM GAMES SG,NETS*Steam SG,Entertainment,Entertainment,Steam games,steam,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M166,codex,M166,PlayStation games,PlayStation,Entertainment,Entertainment,PlayStation games,playstation,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M167,codex,M167,playstation games,PlayStation,Entertainment,Entertainment,PlayStation games,playstation,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M168,codex,M168,CARD*PLAYSTATION GAMES SG,CARD*PlayStation SG,Entertainment,Entertainment,PlayStation games,playstation,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M169,codex,M169,Nintendo games,Nintendo,Entertainment,Entertainment,Nintendo games,nintendo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M170,codex,M170,nintendo games,Nintendo,Entertainment,Entertainment,Nintendo games,nintendo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M171,codex,M171,NETS*NINTENDO GAMES SG,NETS*Nintendo SG,Entertainment,Entertainment,Nintendo games,nintendo,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M172,codex,M172,Ticketmaster concert,Ticketmaster,Entertainment,Entertainment,Ticketmaster concert,ticketmaster,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M173,codex,M173,ticketmaster concert,Ticketmaster,Entertainment,Entertainment,Ticketmaster concert,ticketmaster,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M174,codex,M174,CARD*TICKETMASTER CONCERT SG,CARD*Ticketmaster SG,Entertainment,Entertainment,Ticketmaster concert,ticketmaster,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M175,codex,M175,SISTIC concert,SISTIC,Entertainment,Entertainment,SISTIC concert,sistic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M176,codex,M176,sistic concert,SISTIC,Entertainment,Entertainment,SISTIC concert,sistic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M177,codex,M177,NETS*SISTIC CONCERT SG,NETS*SISTIC SG,Entertainment,Entertainment,SISTIC concert,sistic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M178,codex,M178,Apple TV Plus,Apple TV Plus,Entertainment,Entertainment,Apple TV Plus,appletvplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M179,codex,M179,apple tv plus,apple tv plus,Entertainment,Entertainment,Apple TV Plus,appletvplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M180,codex,M180,CARD*APPLE TV PLUS SG,CARD*APPLE TV PLUS SG,Entertainment,Entertainment,Apple TV Plus,appletvplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M181,codex,M181,Singtel mobile bill,Singtel,Bills & Utilities,Bills & Utilities,Singtel mobile bill,singtel,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M182,codex,M182,singtel mobile bill,Singtel,Bills & Utilities,Bills & Utilities,Singtel mobile bill,singtel,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M183,codex,M183,NETS*SINGTEL MOBILE BILL SG,NETS*Singtel SG,Bills & Utilities,Bills & Utilities,Singtel mobile bill,singtel,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M184,codex,M184,StarHub broadband bill,StarHub,Bills & Utilities,Bills & Utilities,StarHub broadband bill,starhub,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M185,codex,M185,starhub broadband bill,StarHub,Bills & Utilities,Bills & Utilities,StarHub broadband bill,starhub,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M186,codex,M186,CARD*STARHUB BROADBAND BILL SG,CARD*StarHub SG,Bills & Utilities,Bills & Utilities,StarHub broadband bill,starhub,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M187,codex,M187,M1 mobile bill,M1,Bills & Utilities,Bills & Utilities,M1 mobile bill,m1,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M188,codex,M188,m1 mobile bill,M1,Bills & Utilities,Bills & Utilities,M1 mobile bill,m1,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M189,codex,M189,NETS*M1 MOBILE BILL SG,NETS*M1 SG,Bills & Utilities,Bills & Utilities,M1 mobile bill,m1,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M190,codex,M190,SIMBA mobile bill,SIMBA,Bills & Utilities,Bills & Utilities,SIMBA mobile bill,simba,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M191,codex,M191,simba mobile bill,SIMBA,Bills & Utilities,Bills & Utilities,SIMBA mobile bill,simba,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M192,codex,M192,CARD*SIMBA MOBILE BILL SG,CARD*SIMBA SG,Bills & Utilities,Bills & Utilities,SIMBA mobile bill,simba,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M193,codex,M193,SP Services utilities,SP Services,Bills & Utilities,Bills & Utilities,SP Services utilities,spgroup,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M194,codex,M194,sp services utilities,SP Services,Bills & Utilities,Bills & Utilities,SP Services utilities,spgroup,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M195,codex,M195,NETS*SP SERVICES UTILITIES SG,NETS*SP Services SG,Bills & Utilities,Bills & Utilities,SP Services utilities,spgroup,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M196,codex,M196,Senoko electricity bill,Senoko Energy,Bills & Utilities,Bills & Utilities,Senoko electricity bill,senoko,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M197,codex,M197,senoko electricity bill,Senoko Energy,Bills & Utilities,Bills & Utilities,Senoko electricity bill,senoko,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M198,codex,M198,CARD*SENOKO ELECTRICITY BILL SG,CARD*Senoko Energy SG,Bills & Utilities,Bills & Utilities,Senoko electricity bill,senoko,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M199,codex,M199,Tuas Power electricity bill,Tuas Power,Bills & Utilities,Bills & Utilities,Tuas Power electricity bill,tuaspower,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M200,codex,M200,tuas power electricity bill,Tuas Power,Bills & Utilities,Bills & Utilities,Tuas Power electricity bill,tuaspower,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M201,codex,M201,NETS*TUAS POWER ELECTRICITY BILL SG,NETS*Tuas Power SG,Bills & Utilities,Bills & Utilities,Tuas Power electricity bill,tuaspower,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M202,codex,M202,Geneco electricity bill,Geneco,Bills & Utilities,Bills & Utilities,Geneco electricity bill,geneco,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M203,codex,M203,geneco electricity bill,Geneco,Bills & Utilities,Bills & Utilities,Geneco electricity bill,geneco,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M204,codex,M204,CARD*GENECO ELECTRICITY BILL SG,CARD*Geneco SG,Bills & Utilities,Bills & Utilities,Geneco electricity bill,geneco,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M205,codex,M205,MyRepublic broadband bill,MyRepublic,Bills & Utilities,Bills & Utilities,MyRepublic broadband bill,myrepublic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M206,codex,M206,myrepublic broadband bill,MyRepublic,Bills & Utilities,Bills & Utilities,MyRepublic broadband bill,myrepublic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M207,codex,M207,NETS*MYREPUBLIC BROADBAND BILL SG,NETS*MyRepublic SG,Bills & Utilities,Bills & Utilities,MyRepublic broadband bill,myrepublic,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M208,codex,M208,Circles Life mobile bill,Circles.Life,Bills & Utilities,Bills & Utilities,Circles Life mobile bill,circleslife,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M209,codex,M209,circles life mobile bill,Circles.Life,Bills & Utilities,Bills & Utilities,Circles Life mobile bill,circleslife,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M210,codex,M210,CARD*CIRCLES LIFE MOBILE BILL SG,CARD*Circles.Life SG,Bills & Utilities,Bills & Utilities,Circles Life mobile bill,circleslife,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M211,codex,M211,Guardian,Guardian,Health,Health,Guardian,guardian,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M212,codex,M212,guardian,guardian,Health,Health,Guardian,guardian,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M213,codex,M213,NETS*GUARDIAN SG,NETS*GUARDIAN SG,Health,Health,Guardian,guardian,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M214,codex,M214,Watsons,Watsons,Health,Health,Watsons,watsons,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M215,codex,M215,watsons,watsons,Health,Health,Watsons,watsons,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M216,codex,M216,CARD*WATSONS SG,CARD*WATSONS SG,Health,Health,Watsons,watsons,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M217,codex,M217,Unity pharmacy,Unity pharmacy,Health,Health,Unity pharmacy,unity,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M218,codex,M218,unity pharmacy,unity pharmacy,Health,Health,Unity pharmacy,unity,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M219,codex,M219,NETS*UNITY PHARMACY SG,NETS*UNITY PHARMACY SG,Health,Health,Unity pharmacy,unity,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M220,codex,M220,Raffles Medical clinic,Raffles Medical,Health,Health,Raffles Medical clinic,rafflesmedical,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M221,codex,M221,raffles medical clinic,Raffles Medical,Health,Health,Raffles Medical clinic,rafflesmedical,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M222,codex,M222,CARD*RAFFLES MEDICAL CLINIC SG,CARD*Raffles Medical SG,Health,Health,Raffles Medical clinic,rafflesmedical,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M223,codex,M223,Healthway clinic,Healthway clinic,Health,Health,Healthway clinic,healthway,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M224,codex,M224,healthway clinic,healthway clinic,Health,Health,Healthway clinic,healthway,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M225,codex,M225,NETS*HEALTHWAY CLINIC SG,NETS*HEALTHWAY CLINIC SG,Health,Health,Healthway clinic,healthway,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M226,codex,M226,Polyclinic consultation,Polyclinic consultation,Health,Health,Polyclinic consultation,polyclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M227,codex,M227,polyclinic consultation,polyclinic consultation,Health,Health,Polyclinic consultation,polyclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M228,codex,M228,CARD*POLYCLINIC CONSULTATION SG,CARD*POLYCLINIC CONSULTATION SG,Health,Health,Polyclinic consultation,polyclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M229,codex,M229,Dental clinic consultation,Dental clinic consultation,Health,Health,Dental clinic consultation,dentalclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M230,codex,M230,dental clinic consultation,dental clinic consultation,Health,Health,Dental clinic consultation,dentalclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M231,codex,M231,NETS*DENTAL CLINIC CONSULTATION SG,NETS*DENTAL CLINIC CONSULTATION SG,Health,Health,Dental clinic consultation,dentalclinicconsultation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M232,codex,M232,Physiotherapy clinic,Physiotherapy clinic,Health,Health,Physiotherapy clinic,physiotherapyclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M233,codex,M233,physiotherapy clinic,physiotherapy clinic,Health,Health,Physiotherapy clinic,physiotherapyclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M234,codex,M234,CARD*PHYSIOTHERAPY CLINIC SG,CARD*PHYSIOTHERAPY CLINIC SG,Health,Health,Physiotherapy clinic,physiotherapyclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M235,codex,M235,Optical shop prescription lenses,Optical shop prescription lenses,Health,Health,Optical shop prescription lenses,opticalshopprescriptionlenses,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M236,codex,M236,optical shop prescription lenses,optical shop prescription lenses,Health,Health,Optical shop prescription lenses,opticalshopprescriptionlenses,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M237,codex,M237,NETS*OPTICAL SHOP PRESCRIPTION LENSES SG,NETS*OPTICAL SHOP PRESCRIPTION LENSES SG,Health,Health,Optical shop prescription lenses,opticalshopprescriptionlenses,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M238,codex,M238,Traditional Chinese medicine clinic,Traditional Chinese medicine clinic,Health,Health,Traditional Chinese medicine clinic,traditionalchinesemedicineclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M239,codex,M239,traditional chinese medicine clinic,traditional chinese medicine clinic,Health,Health,Traditional Chinese medicine clinic,traditionalchinesemedicineclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M240,codex,M240,CARD*TRADITIONAL CHINESE MEDICINE CLINIC SG,CARD*TRADITIONAL CHINESE MEDICINE CLINIC SG,Health,Health,Traditional Chinese medicine clinic,traditionalchinesemedicineclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M241,codex,M241,NUS tuition fee,NUS,Education,Education,NUS tuition fee,nus,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M242,codex,M242,nus tuition fee,NUS,Education,Education,NUS tuition fee,nus,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M243,codex,M243,NETS*NUS TUITION FEE SG,NETS*NUS SG,Education,Education,NUS tuition fee,nus,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M244,codex,M244,NTU tuition fee,NTU,Education,Education,NTU tuition fee,ntu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M245,codex,M245,ntu tuition fee,NTU,Education,Education,NTU tuition fee,ntu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M246,codex,M246,CARD*NTU TUITION FEE SG,CARD*NTU SG,Education,Education,NTU tuition fee,ntu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M247,codex,M247,SMU tuition fee,SMU,Education,Education,SMU tuition fee,smu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M248,codex,M248,smu tuition fee,SMU,Education,Education,SMU tuition fee,smu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M249,codex,M249,NETS*SMU TUITION FEE SG,NETS*SMU SG,Education,Education,SMU tuition fee,smu,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M250,codex,M250,SUTD tuition fee,SUTD,Education,Education,SUTD tuition fee,sutdtuitionfee,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M251,codex,M251,sutd tuition fee,SUTD,Education,Education,SUTD tuition fee,sutdtuitionfee,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M252,codex,M252,CARD*SUTD TUITION FEE SG,CARD*SUTD SG,Education,Education,SUTD tuition fee,sutdtuitionfee,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M253,codex,M253,SUSS course fee,SUSS,Education,Education,SUSS course fee,suss,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M254,codex,M254,suss course fee,SUSS,Education,Education,SUSS course fee,suss,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M255,codex,M255,NETS*SUSS COURSE FEE SG,NETS*SUSS SG,Education,Education,SUSS course fee,suss,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M256,codex,M256,SIT tuition fee,SIT,Education,Education,SIT tuition fee,sit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M257,codex,M257,sit tuition fee,SIT,Education,Education,SIT tuition fee,sit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M258,codex,M258,CARD*SIT TUITION FEE SG,CARD*SIT SG,Education,Education,SIT tuition fee,sit,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M259,codex,M259,Coursera course,Coursera,Education,Education,Coursera course,coursera,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M260,codex,M260,coursera course,Coursera,Education,Education,Coursera course,coursera,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M261,codex,M261,NETS*COURSERA COURSE SG,NETS*Coursera SG,Education,Education,Coursera course,coursera,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M262,codex,M262,Udemy course,Udemy,Education,Education,Udemy course,udemy,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M263,codex,M263,udemy course,Udemy,Education,Education,Udemy course,udemy,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M264,codex,M264,CARD*UDEMY COURSE SG,CARD*Udemy SG,Education,Education,Udemy course,udemy,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Removed appended synthetic service/category wording; raw source preserved.
+codex-M265,codex,M265,Tuition centre lesson,Tuition centre lesson,Education,Education,Tuition centre lesson,tuitioncentrelesson,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M266,codex,M266,tuition centre lesson,tuition centre lesson,Education,Education,Tuition centre lesson,tuitioncentrelesson,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M267,codex,M267,NETS*TUITION CENTRE LESSON SG,NETS*TUITION CENTRE LESSON SG,Education,Education,Tuition centre lesson,tuitioncentrelesson,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M268,codex,M268,Popular textbook,Popular textbook,Education,Education,Popular textbook,popular,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+codex-M269,codex,M269,popular textbook,popular textbook,Education,Education,Popular textbook,popular,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+codex-M270,codex,M270,CARD*POPULAR TEXTBOOK SG,CARD*POPULAR TEXTBOOK SG,Education,Education,Popular textbook,popular,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+codex-M271,codex,M271,Florist bouquet,Florist bouquet,Other,Other,Florist bouquet,floristbouquet,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M272,codex,M272,florist bouquet,florist bouquet,Other,Other,Florist bouquet,floristbouquet,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M273,codex,M273,NETS*FLORIST BOUQUET SG,NETS*FLORIST BOUQUET SG,Other,Other,Florist bouquet,floristbouquet,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M274,codex,M274,Pet shop supplies,Pet shop supplies,Other,Other,Pet shop supplies,petshopsupplies,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M275,codex,M275,pet shop supplies,pet shop supplies,Other,Other,Pet shop supplies,petshopsupplies,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M276,codex,M276,CARD*PET SHOP SUPPLIES SG,CARD*PET SHOP SUPPLIES SG,Other,Other,Pet shop supplies,petshopsupplies,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M277,codex,M277,Hair salon haircut,Hair salon haircut,Other,Other,Hair salon haircut,hairsalonhaircut,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M278,codex,M278,hair salon haircut,hair salon haircut,Other,Other,Hair salon haircut,hairsalonhaircut,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M279,codex,M279,NETS*HAIR SALON HAIRCUT SG,NETS*HAIR SALON HAIRCUT SG,Other,Other,Hair salon haircut,hairsalonhaircut,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M280,codex,M280,Laundry service,Laundry service,Other,Other,Laundry service,laundryservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M281,codex,M281,laundry service,laundry service,Other,Other,Laundry service,laundryservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M282,codex,M282,CARD*LAUNDRY SERVICE SG,CARD*LAUNDRY SERVICE SG,Other,Other,Laundry service,laundryservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M283,codex,M283,Hotel accommodation,Hotel accommodation,Other,Other,Hotel accommodation,hotelaccommodation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M284,codex,M284,hotel accommodation,hotel accommodation,Other,Other,Hotel accommodation,hotelaccommodation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M285,codex,M285,NETS*HOTEL ACCOMMODATION SG,NETS*HOTEL ACCOMMODATION SG,Other,Other,Hotel accommodation,hotelaccommodation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M286,codex,M286,Charity donation,Charity donation,Other,Other,Charity donation,charitydonation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M287,codex,M287,charity donation,charity donation,Other,Other,Charity donation,charitydonation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M288,codex,M288,CARD*CHARITY DONATION SG,CARD*CHARITY DONATION SG,Other,Other,Charity donation,charitydonation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M289,codex,M289,Shoe repair service,Shoe repair service,Other,Other,Shoe repair service,shoerepairservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M290,codex,M290,shoe repair service,shoe repair service,Other,Other,Shoe repair service,shoerepairservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M291,codex,M291,NETS*SHOE REPAIR SERVICE SG,NETS*SHOE REPAIR SERVICE SG,Other,Other,Shoe repair service,shoerepairservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M292,codex,M292,SingPost postage,SingPost postage,Other,Other,SingPost postage,singpostpostage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M293,codex,M293,singpost postage,singpost postage,Other,Other,SingPost postage,singpostpostage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M294,codex,M294,CARD*SINGPOST POSTAGE SG,CARD*SINGPOST POSTAGE SG,Other,Other,SingPost postage,singpostpostage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M295,codex,M295,Home cleaning service,Home cleaning service,Other,Other,Home cleaning service,homecleaningservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M296,codex,M296,home cleaning service,home cleaning service,Other,Other,Home cleaning service,homecleaningservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M297,codex,M297,NETS*HOME CLEANING SERVICE SG,NETS*HOME CLEANING SERVICE SG,Other,Other,Home cleaning service,homecleaningservice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M298,codex,M298,Gym membership,Gym membership,Other,Other,Gym membership,gymmembership,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M299,codex,M299,gym membership,gym membership,Other,Other,Gym membership,gymmembership,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+codex-M300,codex,M300,CARD*GYM MEMBERSHIP SG,CARD*GYM MEMBERSHIP SG,Other,Other,Gym membership,gymmembership,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_001,gemini,TXN_001,NETS*KOPITIAM-NTUC,NETS*KOPITIAM-NTUC,Food & Drink,Food & Drink,Kopitiam,kopitiam,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_002,gemini,TXN_002,CHAGEE SINGAPORE-PLAZA SING,CHAGEE SINGAPORE-PLAZA SING,Food & Drink,Food & Drink,Chagee,chagee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_003,gemini,TXN_003,OLD CHANG KEE - BUGIS,OLD CHANG KEE - BUGIS,Food & Drink,Food & Drink,Old Chang Kee,oldchangkee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_004,gemini,TXN_004,TOAST BOX - MARINA BAY,TOAST BOX - MARINA BAY,Food & Drink,Food & Drink,Toast Box,toastbox,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_005,gemini,TXN_005,YA KUN KAYA TOAST - AMK,YA KUN KAYA TOAST - AMK,Food & Drink,Food & Drink,Ya Kun Kaya Toast,yakunkayatoast,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_006,gemini,TXN_006,GRAB* GRABFOOD SG,GRAB* GRABFOOD SG,Food & Drink,Food & Drink,GrabFood,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_007,gemini,TXN_007,FOODPANDA SINGAPORE,FOODPANDA SINGAPORE,Food & Drink,Food & Drink,Foodpanda,foodpanda,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_008,gemini,TXN_008,DELIVEROO SG,DELIVEROO SG,Food & Drink,Food & Drink,Deliveroo,deliveroo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_009,gemini,TXN_009,LIHO TEA - NEX,LIHO TEA - NEX,Food & Drink,Food & Drink,LiHO,liho,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_010,gemini,TXN_010,KOI THE SINGAPORE - TAMPINES,KOI THE SINGAPORE - TAMPINES,Food & Drink,Food & Drink,KOI Thé,koithe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_011,gemini,TXN_011,STARBUCKS COFFEE - NUS,STARBUCKS COFFEE - NUS,Food & Drink,Food & Drink,Starbucks,starbucks,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_012,gemini,TXN_012,SWEE CHOON TIM SUM,SWEE CHOON TIM SUM,Food & Drink,Food & Drink,Swee Choon,sweechoon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_013,gemini,TXN_013,LAU PA SAT HAWKER CTR,LAU PA SAT HAWKER CTR,Food & Drink,Food & Drink,Lau Pa Sat,laupasat,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_014,gemini,TXN_014,FOOD REPUBLIC - VIVOCITY,FOOD REPUBLIC - VIVOCITY,Food & Drink,Food & Drink,Food Republic,foodrepublic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_015,gemini,TXN_015,MAXWELL FOOD CENTRE - TIAN TIAN,MAXWELL FOOD CENTRE - TIAN TIAN,Food & Drink,Food & Drink,Maxwell Food Centre,maxwellfoodcentre,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_016,gemini,TXN_016,TIM HO WAN - JEWEL,TIM HO WAN - JEWEL,Food & Drink,Food & Drink,Tim Ho Wan,timhowan,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_017,gemini,TXN_017,DIN TAI FUNG - PARAGON,DIN TAI FUNG - PARAGON,Food & Drink,Food & Drink,Din Tai Fung,dintaifung,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_018,gemini,TXN_018,MACDONALDS - CLEMENTI,MACDONALDS - CLEMENTI,Food & Drink,Food & Drink,McDonald's,mcdonalds,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_019,gemini,TXN_019,KFC SINGAPORE - JEM,KFC SINGAPORE - JEM,Food & Drink,Food & Drink,KFC,kfc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_020,gemini,TXN_020,SUBWAY - UTOWN NUS,SUBWAY - UTOWN NUS,Food & Drink,Food & Drink,Subway,subway,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_021,gemini,TXN_021,BURGER KING - CHANGI T3,BURGER KING - CHANGI T3,Food & Drink,Food & Drink,Burger King,burgerking,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_022,gemini,TXN_022,NETS*KOUFU-NTU,NETS*KOUFU-NTU,Food & Drink,Food & Drink,Koufu,koufu,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_023,gemini,TXN_023,NETS*CANTEEN 2 HAWKER,NETS*CANTEEN 2 HAWKER,Food & Drink,Food & Drink,NTU Canteen 2,ntucanteen2,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_024,gemini,TXN_024,NETS*DECK CANTEEN NUS,NETS*DECK CANTEEN NUS,Food & Drink,Food & Drink,NUS The Deck,nusthedeck,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_025,gemini,TXN_025,HAIDILAO HOTPOT - CLARKE QUAY,HAIDILAO HOTPOT - CLARKE QUAY,Food & Drink,Food & Drink,Haidilao,haidilao,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_026,gemini,TXN_026,PLAYMADE - WESTGATE,PLAYMADE - WESTGATE,Food & Drink,Food & Drink,PlayMade,playmade,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_027,gemini,TXN_027,HEYTEA - ION ORCHARD,HEYTEA - ION ORCHARD,Food & Drink,Food & Drink,Heytea,heytea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_028,gemini,TXN_028,EACH A CUP - BEDOK,EACH A CUP - BEDOK,Food & Drink,Food & Drink,Each A Cup,eachacup,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_029,gemini,TXN_029,BOBA TEA TRUCK - CITY HALL,BOBA TEA TRUCK - CITY HALL,Food & Drink,Food & Drink,Boba Tea,bobatea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_030,gemini,TXN_030,GENKI SUSHI - ORCHARD CENTRAL,GENKI SUSHI - ORCHARD CENTRAL,Food & Drink,Food & Drink,Genki Sushi,genkisushi,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_031,gemini,TXN_031,SUSHIZEN - RAFFLES PLACE,SUSHIZEN - RAFFLES PLACE,Food & Drink,Food & Drink,Sushi Zen,sushizen,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_032,gemini,TXN_032,ICHO RAMEN - SUNTEC,ICHO RAMEN - SUNTEC,Food & Drink,Food & Drink,Icho Ramen,ichoramen,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_033,gemini,TXN_033,ENCIK TAN - PAYA LEBAR,ENCIK TAN - PAYA LEBAR,Food & Drink,Food & Drink,Encik Tan,enciktan,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_034,gemini,TXN_034,PAZZION CAFE - JEWEL,PAZZION CAFE - JEWEL,Food & Drink,Food & Drink,Pazzion Cafe,pazzioncafe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_035,gemini,TXN_035,PS.CAFE - HARDING ROAD,PS.CAFE - HARDING ROAD,Food & Drink,Food & Drink,PS.Cafe,pscafe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_036,gemini,TXN_036,THE DAILY CUT - ONE RAFFLES,THE DAILY CUT - ONE RAFFLES,Food & Drink,Food & Drink,The Daily Cut,thedailycut,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_037,gemini,TXN_037,STUFF'D - NORTHPOINT,STUFF'D - NORTHPOINT,Food & Drink,Food & Drink,Stuff'd,stuffd,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_038,gemini,TXN_038,GONG CHA - BUGIS JUNCTION,GONG CHA - BUGIS JUNCTION,Food & Drink,Food & Drink,Gong Cha,gongcha,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_039,gemini,TXN_039,MIXUE - CHINATOWN,MIXUE - CHINATOWN,Food & Drink,Food & Drink,Mixue,mixue,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_040,gemini,TXN_040,TORTILLA MEXICAN GRILLE,TORTILLA MEXICAN GRILLE,Food & Drink,Food & Drink,Guzman y Gomez,guzmanygomez,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_041,gemini,TXN_041,TIE FUN WAN - PAYA LEBAR,TIE FUN WAN - PAYA LEBAR,Food & Drink,Food & Drink,Tie Fun Wan,tiefunwan,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_042,gemini,TXN_042,BOON TONG KEE - BALESTIER,BOON TONG KEE - BALESTIER,Food & Drink,Food & Drink,Boon Tong Kee,boontongkee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_043,gemini,TXN_043,MEET FRESH - TAMPO,MEET FRESH - TAMPO,Food & Drink,Food & Drink,Meet Fresh,meetfresh,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_044,gemini,TXN_044,AH CHEW DESSERTS - BUGIS,AH CHEW DESSERTS - BUGIS,Food & Drink,Food & Drink,Ah Chew Desserts,ahchewdesserts,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_045,gemini,TXN_045,JUMBO SEAFOOD - EAST COAST,JUMBO SEAFOOD - EAST COAST,Food & Drink,Food & Drink,Jumbo Seafood,jumboseafood,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_046,gemini,TXN_046,NTUC FAIRPRICE - ANG MO KIO,NTUC FAIRPRICE - ANG MO KIO,Groceries,Groceries,FairPrice,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_047,gemini,TXN_047,FAIRPRICE FINEST - VIVOCITY,FAIRPRICE FINEST - VIVOCITY,Groceries,Groceries,FairPrice Finest,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_048,gemini,TXN_048,FAIRPRICE XTRA - JEM,FAIRPRICE XTRA - JEM,Groceries,Groceries,FairPrice Xtra,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_049,gemini,TXN_049,COLD STORAGE - TAKASHIMAYA,COLD STORAGE - TAKASHIMAYA,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_050,gemini,TXN_050,CS FRESH - GREAT WORLD,CS FRESH - GREAT WORLD,Groceries,Groceries,CS Fresh,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_051,gemini,TXN_051,SHENG SIONG - BEDOK RESERVOIR,SHENG SIONG - BEDOK RESERVOIR,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_052,gemini,TXN_052,SHENG SIONG SUPERMARKET - TAMPINES,SHENG SIONG SUPERMARKET - TAMPINES,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_053,gemini,TXN_053,GIANT HYPERMARKET - TAMPINES,GIANT HYPERMARKET - TAMPINES,Groceries,Groceries,Giant,giant,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_054,gemini,TXN_054,DON DON DONKI - ORCHARD CENTRAL,DON DON DONKI - ORCHARD CENTRAL,Groceries,Groceries,Don Don Donki,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_055,gemini,TXN_055,DON DON DONKI - 100AM,DON DON DONKI - 100AM,Groceries,Groceries,Don Don Donki,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_056,gemini,TXN_056,PRIME SUPERMARKET - HOUGANG,PRIME SUPERMARKET - HOUGANG,Groceries,Groceries,Prime Supermarket,primesupermarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_057,gemini,TXN_057,MEIDI-YA - MILLENIA WALK,MEIDI-YA - MILLENIA WALK,Groceries,Groceries,Meidi-Ya,meidiya,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_058,gemini,TXN_058,REDMART / LAZADA SG,REDMART / LAZADA SG,Groceries,Groceries,RedMart,redmart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_059,gemini,TXN_059,FAIRPRICE ON ONLINE,FAIRPRICE ON ONLINE,Groceries,Groceries,FairPrice Online,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_060,gemini,TXN_060,NTUC FAIRPRICE - CLEMENTI,NTUC FAIRPRICE - CLEMENTI,Groceries,Groceries,FairPrice,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_061,gemini,TXN_061,COLD STORAGE - PLAZA SINGAPURA,COLD STORAGE - PLAZA SINGAPURA,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_062,gemini,TXN_062,MARKET PLACE - RAFFLES CITY,MARKET PLACE - RAFFLES CITY,Groceries,Groceries,Market Place,marketplace,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_063,gemini,TXN_063,SCOOP WHOLEFOODS - PARAGON,SCOOP WHOLEFOODS - PARAGON,Groceries,Groceries,Scoop Wholefoods,scoopwholefoods,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_064,gemini,TXN_064,LITTLE INDIA SPICE MARKET,LITTLE INDIA SPICE MARKET,Groceries,Groceries,Little India Grocery,littleindiagrocery,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_065,gemini,TXN_065,YAT KAI GROCER - CHINATOWN,YAT KAI GROCER - CHINATOWN,Groceries,Groceries,Chinatown Grocer,chinatowngrocer,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_066,gemini,TXN_066,ACE MARKET - JURONG WEST,ACE MARKET - JURONG WEST,Groceries,Groceries,Ace Market,acemarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_067,gemini,TXN_067,HAOMART - WOODLANDS,HAOMART - WOODLANDS,Groceries,Groceries,hao mart,haomart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_068,gemini,TXN_068,U STARS SUPERMARKET - YISHUN,U STARS SUPERMARKET - YISHUN,Groceries,Groceries,U Stars,ustars,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_069,gemini,TXN_069,BEST ORGANIC FOOD - NOVENA,BEST ORGANIC FOOD - NOVENA,Groceries,Groceries,Best Organic,bestorganic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_070,gemini,TXN_070,SCALED BY AH HUA KELONG,SCALED BY AH HUA KELONG,Groceries,Groceries,Ah Hua Kelong,ahhuakelong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_071,gemini,TXN_071,TECK SANG - HONG LIM,TECK SANG - HONG LIM,Groceries,Groceries,Teck Sang,tecksang,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_072,gemini,TXN_072,NTUC EXPRESS - ESSO STATION,NTUC EXPRESS - ESSO STATION,Groceries,Groceries,FairPrice Express,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_073,gemini,TXN_073,CHEERS - MRT CITY HALL,CHEERS - MRT CITY HALL,Groceries,Groceries,Cheers,cheers,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_074,gemini,TXN_074,7-ELEVEN - BUGIS MRT,7-ELEVEN - BUGIS MRT,Groceries,Groceries,7-Eleven,7eleven,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_075,gemini,TXN_075,7-ELEVEN - NUS UTOWN,7-ELEVEN - NUS UTOWN,Groceries,Groceries,7-Eleven,7eleven,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_076,gemini,TXN_076,FAIRPRICE FINEST - THOMSON,FAIRPRICE FINEST - THOMSON,Groceries,Groceries,FairPrice Finest,fairprice,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_077,gemini,TXN_077,COLD STORAGE - HOLLAND VILLAGE,COLD STORAGE - HOLLAND VILLAGE,Groceries,Groceries,Cold Storage,coldstorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_078,gemini,TXN_078,SHENG SIONG - WOODLANDS,SHENG SIONG - WOODLANDS,Groceries,Groceries,Sheng Siong,shengsiong,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_079,gemini,TXN_079,GIANT EXPRESS - TOA PAYOH,GIANT EXPRESS - TOA PAYOH,Groceries,Groceries,Giant Express,giant,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_080,gemini,TXN_080,DON DON DONKI - JEM,DON DON DONKI - JEM,Groceries,Groceries,Don Don Donki,dondondonki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_081,gemini,TXN_081,GRAB* RIDES SINGAPORE,GRAB* RIDES SINGAPORE,Transport,Transport,Grab,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_082,gemini,TXN_082,GRAB* TRANSPORT SG,GRAB* TRANSPORT SG,Transport,Transport,Grab,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_083,gemini,TXN_083,GOJEK SINGAPORE,GOJEK SINGAPORE,Transport,Transport,Gojek,gojek,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_084,gemini,TXN_084,TRANSITLINK / SIMPLYGO,TRANSITLINK / SIMPLYGO,Transport,Transport,SimplyGo,simplygo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_085,gemini,TXN_085,EZ-LINK TOP-UP BUS/MRT,EZ-LINK TOP-UP BUS/MRT,Transport,Transport,EZ-Link,ezlink,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_086,gemini,TXN_086,COMFORTDELGRO TAXI,COMFORTDELGRO TAXI,Transport,Transport,ComfortDelGro,comfortdelgro,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_087,gemini,TXN_087,TADA RIDE SINGAPORE,TADA RIDE SINGAPORE,Transport,Transport,TADA,tada,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_088,gemini,TXN_088,RYDE TECHNOLOGIES SG,RYDE TECHNOLOGIES SG,Transport,Transport,Ryde,ryde,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_089,gemini,TXN_089,SMRT TRAINS - MRT FARE,SMRT TRAINS - MRT FARE,Transport,Transport,SMRT,smrt,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_090,gemini,TXN_090,SBS TRANSIT BUS FARE,SBS TRANSIT BUS FARE,Transport,Transport,SBS Transit,sbstransit,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_091,gemini,TXN_091,GETGO CARSHARING,GETGO CARSHARING,Transport,Transport,GetGo,getgo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_092,gemini,TXN_092,TRIBCAR CARSHARING,TRIBCAR CARSHARING,Transport,Transport,Tribcar,tribcar,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_093,gemini,TXN_093,BLUSG ELECTRIC CAR,BLUSG ELECTRIC CAR,Transport,Transport,BlueSG,bluesg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_094,gemini,TXN_094,ANYWHEEL BICYCLE RENTAL,ANYWHEEL BICYCLE RENTAL,Transport,Transport,Anywheel,anywheel,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_095,gemini,TXN_095,SHELL SERVICE STATION - ALEXANDRA,SHELL SERVICE STATION - ALEXANDRA,Transport,Transport,Shell,shell,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_096,gemini,TXN_096,ESSO PETROL STATION - BUKIT TIMAH,ESSO PETROL STATION - BUKIT TIMAH,Transport,Transport,Esso,esso,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_097,gemini,TXN_097,CALTEX SINGAPORE - LORONG CHUAN,CALTEX SINGAPORE - LORONG CHUAN,Transport,Transport,Caltex,caltex,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_098,gemini,TXN_098,SFC PARKING - LTA PARKING,SFC PARKING - LTA PARKING,Transport,Transport,LTA Parking,ltaparking,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Parking uses Transport regardless of payment frequency.
+gemini-TXN_099,gemini,TXN_099,PARK&GO / LTA PARKING SG,PARK&GO / LTA PARKING SG,Transport,Transport,Parking SG,parkingsg,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Parking uses Transport regardless of payment frequency.
+gemini-TXN_100,gemini,TXN_100,SINGAPORE CRUISE CENTRE,SINGAPORE CRUISE CENTRE,Transport,Transport,SG Cruise Centre,sgcruisecentre,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_101,gemini,TXN_101,MARINA SOUTH FERRIES,MARINA SOUTH FERRIES,Transport,Transport,Marina South Ferries,marinasouthferries,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_102,gemini,TXN_102,CHANGI AIRPORT CARPARK T3,CHANGI AIRPORT CARPARK T3,Transport,Transport,Changi Airport Carpark,changiairportcarpark,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_103,gemini,TXN_103,JEWEL CHANGI CARPARK,JEWEL CHANGI CARPARK,Transport,Transport,Jewel Carpark,jewelcarpark,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_104,gemini,TXN_104,SUNTEC CITY CARPARK,SUNTEC CITY CARPARK,Transport,Transport,Suntec Carpark,sunteccarpark,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_105,gemini,TXN_105,UOB CARPARK - RAFFLES PLACE,UOB CARPARK - RAFFLES PLACE,Transport,Transport,UOB Plaza Parking,uobplazaparking,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_106,gemini,TXN_106,GRAB* RIDES - AIRPORT DISPATCH,GRAB* RIDES - AIRPORT DISPATCH,Transport,Transport,Grab,grab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_107,gemini,TXN_107,GOJEK RIDE - JEM TO UTOWN,GOJEK RIDE - JEM TO UTOWN,Transport,Transport,Gojek,gojek,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_108,gemini,TXN_108,COMFORT TAXI - STREET HAIL,COMFORT TAXI - STREET HAIL,Transport,Transport,Comfort Taxi,comfortdelgro,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_109,gemini,TXN_109,TRANSITLINK AUTO TOP UP,TRANSITLINK AUTO TOP UP,Transport,Transport,TransitLink,simplygo,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_110,gemini,TXN_110,SIMPLYGO MRT TAP IN/OUT,SIMPLYGO MRT TAP IN/OUT,Transport,Transport,SimplyGo,simplygo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_111,gemini,TXN_111,ANYWHEEL LOCK FEE,ANYWHEEL LOCK FEE,Transport,Transport,Anywheel,anywheel,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_112,gemini,TXN_112,SHELL AUTOMOTIVE - YISHUN,SHELL AUTOMOTIVE - YISHUN,Transport,Transport,Shell,shell,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_113,gemini,TXN_113,SP MILITY ELECTRIC CHARGING,SP MILITY ELECTRIC CHARGING,Transport,Transport,SP Mobility EV,spmobilityev,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_114,gemini,TXN_114,CHARGE+ EV CHARGING,CHARGE+ EV CHARGING,Transport,Transport,Charge+,charge,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_115,gemini,TXN_115,EZ-LINK AUTOMATIC RELOAD,EZ-LINK AUTOMATIC RELOAD,Transport,Transport,EZ-Link,ezlink,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_116,gemini,TXN_116,SHOPEE SINGAPORE,SHOPEE SINGAPORE,Shopping,Shopping,Shopee,shopee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_117,gemini,TXN_117,SHOPEE SG *PAYMENT,SHOPEE SG *PAYMENT,Shopping,Shopping,Shopee,shopee,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_118,gemini,TXN_118,LAZADA SINGAPORE,LAZADA SINGAPORE,Shopping,Shopping,Lazada,lazada,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_119,gemini,TXN_119,UNIQLO - ION ORCHARD,UNIQLO - ION ORCHARD,Shopping,Shopping,Uniqlo,uniqlo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_120,gemini,TXN_120,UNIQLO SINGAPORE ONLINE,UNIQLO SINGAPORE ONLINE,Shopping,Shopping,Uniqlo,uniqlo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_121,gemini,TXN_121,DECATHLON - KALLANG,DECATHLON - KALLANG,Shopping,Shopping,Decathlon,decathlon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_122,gemini,TXN_122,TAOBAO / ALIPAY SG,TAOBAO / ALIPAY SG,Shopping,Shopping,Taobao,taobao,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_123,gemini,TXN_123,IKEA ALEXANDRA,IKEA ALEXANDRA,Shopping,Shopping,IKEA,ikea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_124,gemini,TXN_124,IKEA TAMPINES,IKEA TAMPINES,Shopping,Shopping,IKEA,ikea,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_125,gemini,TXN_125,TANGS DEPARTMENT STORE,TANGS DEPARTMENT STORE,Shopping,Shopping,Tangs,tangs,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_126,gemini,TXN_126,TAKASHIMAYA DEPARTMENT STORE,TAKASHIMAYA DEPARTMENT STORE,Shopping,Shopping,Takashimaya,takashimaya,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_127,gemini,TXN_127,COTTON ON - VIVOCITY,COTTON ON - VIVOCITY,Shopping,Shopping,Cotton On,cottonon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_128,gemini,TXN_128,ZARA - ORCHARD ROAD,ZARA - ORCHARD ROAD,Shopping,Shopping,Zara,zara,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_129,gemini,TXN_129,H&M - SOMERSET,H&M - SOMERSET,Shopping,Shopping,H&M,hm,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_130,gemini,TXN_130,CHARLES & KEITH - BUGIS,CHARLES & KEITH - BUGIS,Shopping,Shopping,Charles & Keith,charleskeith,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_131,gemini,TXN_131,PEDRO - PLAZA SINGAPURA,PEDRO - PLAZA SINGAPURA,Shopping,Shopping,Pedro,pedro,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_132,gemini,TXN_132,MUJI - PARAGON,MUJI - PARAGON,Shopping,Shopping,Muji,muji,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_133,gemini,TXN_133,POPULAR BOOKSTORE - BRAS BASAH,POPULAR BOOKSTORE - BRAS BASAH,Shopping,Shopping,Popular,popular,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_134,gemini,TXN_134,CHALLENGER - SUNTEC CITY,CHALLENGER - SUNTEC CITY,Shopping,Shopping,Challenger,challenger,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_135,gemini,TXN_135,COURTS - MEGSTORE TAMPINES,COURTS - MEGSTORE TAMPINES,Shopping,Shopping,Courts,courts,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_136,gemini,TXN_136,GAIN CITY - ANG MO KIO,GAIN CITY - ANG MO KIO,Shopping,Shopping,Gain City,gaincity,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_137,gemini,TXN_137,BEST DENKI - NGEE ANN CITY,BEST DENKI - NGEE ANN CITY,Shopping,Shopping,Best Denki,bestdenki,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_138,gemini,TXN_138,HARVEY NORMAN - MILLENIA,HARVEY NORMAN - MILLENIA,Shopping,Shopping,Harvey Norman,harveynorman,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_139,gemini,TXN_139,SEPHORA - ION ORCHARD,SEPHORA - ION ORCHARD,Shopping,Shopping,Sephora,sephora,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_140,gemini,TXN_140,BATH & BODY WORKS - TAKA,BATH & BODY WORKS - TAKA,Shopping,Shopping,Bath & Body Works,bathbodyworks,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_141,gemini,TXN_141,LOVISA - TAMPINES MALL,LOVISA - TAMPINES MALL,Shopping,Shopping,Lovisa,lovisa,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_142,gemini,TXN_142,G2000 - RAFFLES CITY,G2000 - RAFFLES CITY,Shopping,Shopping,G2000,g2000,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_143,gemini,TXN_143,NIPPON PAINT STORE SG,NIPPON PAINT STORE SG,Shopping,Shopping,Nippon Paint,nipponpaint,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_144,gemini,TXN_144,TYPO - 313 SOMERSET,TYPO - 313 SOMERSET,Shopping,Shopping,Typo,typo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_145,gemini,TXN_145,MINISO - NEX SERANGOON,MINISO - NEX SERANGOON,Shopping,Shopping,Miniso,miniso,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_146,gemini,TXN_146,KINOKUNIYA - TAKASHIMAYA,KINOKUNIYA - TAKASHIMAYA,Shopping,Shopping,Kinokuniya,kinokuniya,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_147,gemini,TXN_147,ZALORA SINGAPORE,ZALORA SINGAPORE,Shopping,Shopping,Zalora,zalora,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_148,gemini,TXN_148,LULULEMON - ION ORCHARD,LULULEMON - ION ORCHARD,Shopping,Shopping,Lululemon,lululemon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_149,gemini,TXN_149,NIKE STORE - JEWEL CHANGI,NIKE STORE - JEWEL CHANGI,Shopping,Shopping,Nike,nike,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_150,gemini,TXN_150,ADIDAS BRAND CENTRE - ORCHARD,ADIDAS BRAND CENTRE - ORCHARD,Shopping,Shopping,Adidas,adidas,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_151,gemini,TXN_151,CATHAY CINEPLEXES - AMK HUB,CATHAY CINEPLEXES - AMK HUB,Entertainment,Entertainment,Cathay Cineplexes,cathay,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_152,gemini,TXN_152,SHAW THEATRES - PLAZA SING,SHAW THEATRES - PLAZA SING,Entertainment,Entertainment,Shaw Theatres,shaw,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_153,gemini,TXN_153,GOLDEN VILLAGE - VIVOCITY,GOLDEN VILLAGE - VIVOCITY,Entertainment,Entertainment,Golden Village,goldenvillage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_154,gemini,TXN_154,SPOTIFY SINGAPORE,SPOTIFY SINGAPORE,Entertainment,Entertainment,Spotify,spotify,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_155,gemini,TXN_155,NETFLIX.COM SINGAPORE,NETFLIX.COM SINGAPORE,Entertainment,Entertainment,Netflix,netflix,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_156,gemini,TXN_156,STEAMPOWERED.COM *GAMES,STEAMPOWERED.COM *GAMES,Entertainment,Entertainment,Steam,steam,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_157,gemini,TXN_157,NINTENDO ESHOP SG,NINTENDO ESHOP SG,Entertainment,Entertainment,Nintendo eShop,nintendo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_158,gemini,TXN_158,SISTIC SINGAPORE *CONCERT,SISTIC SINGAPORE *CONCERT,Entertainment,Entertainment,SISTIC,sistic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_159,gemini,TXN_159,ESPLANADE THEATRES,ESPLANADE THEATRES,Entertainment,Entertainment,Esplanade,esplanade,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_160,gemini,TXN_160,MARINA BAY SANDS TICKETING,MARINA BAY SANDS TICKETING,Entertainment,Entertainment,MBS Theatres,mbstheatres,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_161,gemini,TXN_161,DISNEY PLUS SINGAPORE,DISNEY PLUS SINGAPORE,Entertainment,Entertainment,Disney+,disneyplus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_162,gemini,TXN_162,YOUTUBE PREMIUM SG,YOUTUBE PREMIUM SG,Entertainment,Entertainment,YouTube Premium,youtubepremium,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_163,gemini,TXN_163,APPLE.COM/BILL *APPLE MUSIC,APPLE.COM/BILL *APPLE MUSIC,Entertainment,Entertainment,Apple Music,applemusic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_164,gemini,TXN_164,PLAYSTATION NETWORK SG,PLAYSTATION NETWORK SG,Entertainment,Entertainment,PlayStation Network,playstation,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_165,gemini,TXN_165,TWITCH INTERACTIVE,TWITCH INTERACTIVE,Entertainment,Entertainment,Twitch,twitch,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_166,gemini,TXN_166,BOUNCE SINGAPORE - TRAMPOLINE,BOUNCE SINGAPORE - TRAMPOLINE,Entertainment,Entertainment,Bounce SG,bouncesg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_167,gemini,TXN_167,SUPERPARK SINGAPORE - SUNTEC,SUPERPARK SINGAPORE - SUNTEC,Entertainment,Entertainment,SuperPark,superpark,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_168,gemini,TXN_168,UNIVERSAL STUDIOS SINGAPORE,UNIVERSAL STUDIOS SINGAPORE,Entertainment,Entertainment,USS Sentosa,usssentosa,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_169,gemini,TXN_169,S.E.A. AQUARIUM SENTOSA,S.E.A. AQUARIUM SENTOSA,Entertainment,Entertainment,S.E.A. Aquarium,seaaquarium,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_170,gemini,TXN_170,NIGHT SAFARI - MANDAI,NIGHT SAFARI - MANDAI,Entertainment,Entertainment,Night Safari,nightsafari,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_171,gemini,TXN_171,SINGAPORE ZOO - MANDAI,SINGAPORE ZOO - MANDAI,Entertainment,Entertainment,Singapore Zoo,singaporezoo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_172,gemini,TXN_172,GARDENS BY THE BAY - FLOWER DOME,GARDENS BY THE BAY - FLOWER DOME,Entertainment,Entertainment,Gardens by the Bay,gardensbythebay,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_173,gemini,TXN_173,MUSEUM OF ICE CREAM SG,MUSEUM OF ICE CREAM SG,Entertainment,Entertainment,Museum of Ice Cream,museumoficecream,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_174,gemini,TXN_174,TIMEZONE - VIVOCITY,TIMEZONE - VIVOCITY,Entertainment,Entertainment,Timezone,timezone,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_175,gemini,TXN_175,COW PLAY COW MOO - SUNTEC,COW PLAY COW MOO - SUNTEC,Entertainment,Entertainment,Cow Play Cow Moo,cowplaycowmoo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_176,gemini,TXN_176,K-PARTY KARAOKE - BUGIS,K-PARTY KARAOKE - BUGIS,Entertainment,Entertainment,K-Party Karaoke,kpartykaraoke,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_177,gemini,TXN_177,TEO HENG KTV - JEWEL,TEO HENG KTV - JEWEL,Entertainment,Entertainment,Teo Heng KTV,teohengktv,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_178,gemini,TXN_178,BOARD GAME CAFE - PRINSEP,BOARD GAME CAFE - PRINSEP,Entertainment,Entertainment,Mind Cafe,mindcafe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_179,gemini,TXN_179,ESCAPE ROOM SINGAPORE - PLAZA SING,ESCAPE ROOM SINGAPORE - PLAZA SING,Entertainment,Entertainment,Captivate Escape Room,captivateescaperoom,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_180,gemini,TXN_180,SINGAPORE SYMPHONY ORCHESTRA,SINGAPORE SYMPHONY ORCHESTRA,Entertainment,Entertainment,SSO,sso,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_181,gemini,TXN_181,SINGTEL MOBILE BILL,SINGTEL MOBILE BILL,Bills & Utilities,Bills & Utilities,Singtel,singtel,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_182,gemini,TXN_182,STARHUB BROADBAND SG,STARHUB BROADBAND SG,Bills & Utilities,Bills & Utilities,StarHub,starhub,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_183,gemini,TXN_183,M1 LIMITED - MOBILE RECURRING,M1 LIMITED - MOBILE RECURRING,Bills & Utilities,Bills & Utilities,M1,m1,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_184,gemini,TXN_184,MYREPUBLIC BROADBAND,MYREPUBLIC BROADBAND,Bills & Utilities,Bills & Utilities,MyRepublic,myrepublic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_185,gemini,TXN_185,CIRCLES.LIFE MOBILE,CIRCLES.LIFE MOBILE,Bills & Utilities,Bills & Utilities,Circles.Life,circleslife,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_186,gemini,TXN_186,GOMO BY SINGTEL,GOMO BY SINGTEL,Bills & Utilities,Bills & Utilities,GOMO,gomo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_187,gemini,TXN_187,SIMBA TELECOM SG,SIMBA TELECOM SG,Bills & Utilities,Bills & Utilities,SIMBA,simba,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_188,gemini,TXN_188,SP SERVICES LTD - UTILITIES,SP SERVICES LTD - UTILITIES,Bills & Utilities,Bills & Utilities,SP Group,spgroup,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_189,gemini,TXN_189,PUB WATER BILL SG,PUB WATER BILL SG,Bills & Utilities,Bills & Utilities,PUB,pub,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_190,gemini,TXN_190,TOWN COUNCIL CONSERVANCY FEES,TOWN COUNCIL CONSERVANCY FEES,Bills & Utilities,Bills & Utilities,Town Council,towncouncil,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_191,gemini,TXN_191,KEPPEL ELECTRIC SG,KEPPEL ELECTRIC SG,Bills & Utilities,Bills & Utilities,Keppel Electric,keppelelectric,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_192,gemini,TXN_192,SEMBCORP POWER SG,SEMBCORP POWER SG,Bills & Utilities,Bills & Utilities,Sembcorp Power,sembcorppower,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_193,gemini,TXN_193,SENOKO ENERGY SG,SENOKO ENERGY SG,Bills & Utilities,Bills & Utilities,Senoko Energy,senoko,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_194,gemini,TXN_194,TUAS POWER SUPPLY,TUAS POWER SUPPLY,Bills & Utilities,Bills & Utilities,Tuas Power,tuaspower,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_195,gemini,TXN_195,GENECO ELECTRICITY,GENECO ELECTRICITY,Bills & Utilities,Bills & Utilities,Geneco,geneco,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_196,gemini,TXN_196,PACIFIC LIGHT ENERGY,PACIFIC LIGHT ENERGY,Bills & Utilities,Bills & Utilities,PacificLight,pacificlight,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_197,gemini,TXN_197,SINGPOST - TOWN COUNCIL PAYMENT,SINGPOST - TOWN COUNCIL PAYMENT,Bills & Utilities,Bills & Utilities,SingPost,singpost,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_198,gemini,TXN_198,AXS STATION - UTILITY BILL,AXS STATION - UTILITY BILL,Bills & Utilities,Bills & Utilities,AXS,axs,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_199,gemini,TXN_199,SINGTEL FIBRE BROADBAND,SINGTEL FIBRE BROADBAND,Bills & Utilities,Bills & Utilities,Singtel,singtel,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_200,gemini,TXN_200,STARHUB TV & MOBILE,STARHUB TV & MOBILE,Bills & Utilities,Bills & Utilities,StarHub,starhub,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_201,gemini,TXN_201,M1 FIBRE BROADBAND,M1 FIBRE BROADBAND,Bills & Utilities,Bills & Utilities,M1,m1,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_202,gemini,TXN_202,CIRCLES.LIFE DATA TOPUP,CIRCLES.LIFE DATA TOPUP,Bills & Utilities,Bills & Utilities,Circles.Life,circleslife,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_203,gemini,TXN_203,GOMO DATA ROAMING,GOMO DATA ROAMING,Bills & Utilities,Bills & Utilities,GOMO,gomo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_204,gemini,TXN_204,SP GROUP - GAS & ELEC,SP GROUP - GAS & ELEC,Bills & Utilities,Bills & Utilities,SP Group,spgroup,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_205,gemini,TXN_205,CITY ENERGY - TOWN GAS,CITY ENERGY - TOWN GAS,Bills & Utilities,Bills & Utilities,City Energy,cityenergy,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_206,gemini,TXN_206,HDB CONSERVANCY CHARGE - AMK,HDB CONSERVANCY CHARGE - AMK,Bills & Utilities,Bills & Utilities,HDB Town Council,hdbtowncouncil,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_207,gemini,TXN_207,HDB SEASON PARKING,HDB SEASON PARKING,Bills & Utilities,Transport,HDB Parking,hdbparking,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Parking uses Transport regardless of payment frequency.
+gemini-TXN_208,gemini,TXN_208,MSIG INSURANCE - HOME,MSIG INSURANCE - HOME,Bills & Utilities,Bills & Utilities,MSIG Insurance,msiginsurance,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_209,gemini,TXN_209,GREAT EASTERN LIFE SG,GREAT EASTERN LIFE SG,Bills & Utilities,Bills & Utilities,Great Eastern,greateastern,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_210,gemini,TXN_210,PRUDENTIAL SINGAPORE,PRUDENTIAL SINGAPORE,Bills & Utilities,Bills & Utilities,Prudential,prudential,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_211,gemini,TXN_211,GUARDIAN PHARMACY - RAFFLES CITY,GUARDIAN PHARMACY - RAFFLES CITY,Health,Health,Guardian,guardian,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_212,gemini,TXN_212,WATSONS SINGAPORE - NEX,WATSONS SINGAPORE - NEX,Health,Health,Watsons,watsons,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_213,gemini,TXN_213,UNITY PHARMACY - AMK HUB,UNITY PHARMACY - AMK HUB,Health,Health,Unity Pharmacy,unity,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_214,gemini,TXN_214,RAFFLES MEDICAL CLINIC - CLEMENTI,RAFFLES MEDICAL CLINIC - CLEMENTI,Health,Health,Raffles Medical,rafflesmedical,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_215,gemini,TXN_215,PARKWAY SHENTON CLINIC,PARKWAY SHENTON CLINIC,Health,Health,Parkway Shenton,parkwayshenton,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_216,gemini,TXN_216,SINGHEALTH POLYCLINIC - OUTRAM,SINGHEALTH POLYCLINIC - OUTRAM,Health,Health,SingHealth Polyclinic,singhealthpolyclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_217,gemini,TXN_217,NATIONAL UNIVERSITY HOSPITAL,NATIONAL UNIVERSITY HOSPITAL,Health,Health,NUH,nuh,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_218,gemini,TXN_218,SINGAPORE GENERAL HOSPITAL,SINGAPORE GENERAL HOSPITAL,Health,Health,SGH,sgh,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_219,gemini,TXN_219,TAN TOCK SENG HOSPITAL,TAN TOCK SENG HOSPITAL,Health,Health,TTSH,ttsh,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_220,gemini,TXN_220,EU YAN SANG - CHINATOWN,EU YAN SANG - CHINATOWN,Health,Health,Eu Yan Sang,euyansang,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_221,gemini,TXN_221,EUGENE DENTAL CLINIC - NOVENA,EUGENE DENTAL CLINIC - NOVENA,Health,Health,Dental Clinic,dentalclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_222,gemini,TXN_222,Q&M DENTAL SURGERY - BEDOK,Q&M DENTAL SURGERY - BEDOK,Health,Health,Q&M Dental,qmdental,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_223,gemini,TXN_223,PARKWAY DENTAL PRACTICE,PARKWAY DENTAL PRACTICE,Health,Health,Parkway Dental,parkwaydental,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_224,gemini,TXN_224,MINMED CLINIC - JURONG EAST,MINMED CLINIC - JURONG EAST,Health,Health,Minmed Clinic,minmedclinic,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_225,gemini,TXN_225,HEALTHWAY MEDICAL - TAMPINES,HEALTHWAY MEDICAL - TAMPINES,Health,Health,Healthway Medical,healthway,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_226,gemini,TXN_226,PROHEALTH MEDICAL GROUP,PROHEALTH MEDICAL GROUP,Health,Health,ProHealth Medical,prohealthmedical,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_227,gemini,TXN_227,FULLERTON HEALTH - CBD,FULLERTON HEALTH - CBD,Health,Health,Fullerton Health,fullertonhealth,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_228,gemini,TXN_228,SPEEDOC TELEMEDICINE SG,SPEEDOC TELEMEDICINE SG,Health,Health,Speedoc,speedoc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_229,gemini,TXN_229,DOCTOR ANYWHERE SG,DOCTOR ANYWHERE SG,Health,Health,Doctor Anywhere,doctoranywhere,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_230,gemini,TXN_230,MANDRIN OPTICAL - HOLLAND V,MANDRIN OPTICAL - HOLLAND V,Health,Health,Mandarin Optical,mandarinoptical,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_231,gemini,TXN_231,OWNDAYS - ION ORCHARD,OWNDAYS - ION ORCHARD,Health,Health,Owndays,owndays,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_232,gemini,TXN_232,SPECTACLE HUT - VIVOCITY,SPECTACLE HUT - VIVOCITY,Health,Health,Spectacle Hut,spectaclehut,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_233,gemini,TXN_233,WATSONS PHARMACY - TAKASHIMAYA,WATSONS PHARMACY - TAKASHIMAYA,Health,Health,Watsons,watsons,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_234,gemini,TXN_234,GUARDIAN HEALTHSTORE - BUGIS,GUARDIAN HEALTHSTORE - BUGIS,Health,Health,Guardian,guardian,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_235,gemini,TXN_235,NTUC HEALTH POLYCLINIC,NTUC HEALTH POLYCLINIC,Health,Health,NTUC Health,ntuchealth,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_236,gemini,TXN_236,SINGAPORE EYE CENTRE,SINGAPORE EYE CENTRE,Health,Health,SNEC,snec,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_237,gemini,TXN_237,NATIONAL SKIN CENTRE,NATIONAL SKIN CENTRE,Health,Health,NSC,nsc,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_238,gemini,TXN_238,SGP DENTAL SURGERY - WOODLANDS,SGP DENTAL SURGERY - WOODLANDS,Health,Health,SGP Dental,sgpdental,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_239,gemini,TXN_239,PANADOL DIRECT / PHARMA SG,PANADOL DIRECT / PHARMA SG,Health,Health,Pharma SG,pharmasg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_240,gemini,TXN_240,EUGENE HERBAL MEDICINE,EUGENE HERBAL MEDICINE,Health,Health,TCM Herbal,tcmherbal,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_241,gemini,TXN_241,POPULAR BOOKSTORE - URBAN,POPULAR BOOKSTORE - URBAN,Education,Shopping,Popular Bookstore,popular,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_242,gemini,TXN_242,NUS CO-OP - FORUM UTOWN,NUS CO-OP - FORUM UTOWN,Education,Education,NUS Co-Op,nus,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_243,gemini,TXN_243,NTU BOOKLINK - NORTH SPINE,NTU BOOKLINK - NORTH SPINE,Education,Education,NTU Booklink,ntu,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_244,gemini,TXN_244,SMU SHOP - CITY CAMPUS,SMU SHOP - CITY CAMPUS,Education,Education,SMU Shop,smu,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_245,gemini,TXN_245,THE LEARNING LAB - UNITED SQUARE,THE LEARNING LAB - UNITED SQUARE,Education,Education,The Learning Lab,thelearninglab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_246,gemini,TXN_246,KUMON LEARNING CENTRE - BEDOK,KUMON LEARNING CENTRE - BEDOK,Education,Education,Kumon,kumon,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_247,gemini,TXN_247,BRITISH COUNCIL SINGAPORE,BRITISH COUNCIL SINGAPORE,Education,Education,British Council,britishcouncil,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_248,gemini,TXN_248,UDEMY.COM ONLINE COURSES,UDEMY.COM ONLINE COURSES,Education,Education,Udemy,udemy,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_249,gemini,TXN_249,COURSERA.ORG SUBSCRIPTION,COURSERA.ORG SUBSCRIPTION,Education,Education,Coursera,coursera,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_250,gemini,TXN_250,EXAM PAPERS SG ONLINE,EXAM PAPERS SG ONLINE,Education,Education,Exam Papers SG,exampaperssg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_251,gemini,TXN_251,SIM GLOBAL EDUCATION - TUITION,SIM GLOBAL EDUCATION - TUITION,Education,Education,SIM,sim,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_252,gemini,TXN_252,KAPLAN HIGHER EDUCATION,KAPLAN HIGHER EDUCATION,Education,Education,Kaplan,kaplan,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_253,gemini,TXN_253,SUSS TUITION FEES,SUSS TUITION FEES,Education,Education,SUSS,suss,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_254,gemini,TXN_254,SIT TUITION FEES,SIT TUITION FEES,Education,Education,SIT,sit,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_255,gemini,TXN_255,SINGAPORE POLYTECHNIC FEES,SINGAPORE POLYTECHNIC FEES,Education,Education,SP,sp,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_256,gemini,TXN_256,NGEE ANN POLYTECHNIC,NGEE ANN POLYTECHNIC,Education,Education,NP,np,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_257,gemini,TXN_257,TEMASEK POLYTECHNIC FEES,TEMASEK POLYTECHNIC FEES,Education,Education,TP,tp,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_258,gemini,TXN_258,NANYANG POLYTECHNIC,NANYANG POLYTECHNIC,Education,Education,NYP,nyp,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_259,gemini,TXN_259,REPUBLIC POLYTECHNIC,REPUBLIC POLYTECHNIC,Education,Education,RP,rp,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_260,gemini,TXN_260,THE MATH LAB TUITION,THE MATH LAB TUITION,Education,Education,The Math Lab,themathlab,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_261,gemini,TXN_261,PHYSIX ACADEMY - BUGIS,PHYSIX ACADEMY - BUGIS,Education,Education,Physix Academy,physixacademy,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_262,gemini,TXN_262,THE CHEM CAFE TUITION,THE CHEM CAFE TUITION,Education,Education,The Chem Cafe,thechemcafe,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_263,gemini,TXN_263,PAPERMARKET - GREAT WORLD,PAPERMARKET - GREAT WORLD,Education,Shopping,PaperMarket,papermarket,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_264,gemini,TXN_264,TIMES BOOKSTORE - WATERWAY,TIMES BOOKSTORE - WATERWAY,Education,Shopping,Times Bookstore,timesbookstore,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_265,gemini,TXN_265,KINOKUNIYA TEXTBOOKS - TAKA,KINOKUNIYA TEXTBOOKS - TAKA,Education,Education,Kinokuniya,kinokuniya,yes,pending,,,AI-drafted synthetic descriptor; human review pending. Provisional bookstore policy applied using input text only.
+gemini-TXN_266,gemini,TXN_266,DATACAMP.COM ANNUAL SUB,DATACAMP.COM ANNUAL SUB,Education,Education,DataCamp,datacamp,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_267,gemini,TXN_267,DUOLINGO PLUS SG,DUOLINGO PLUS SG,Education,Education,Duolingo,duolingo,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_268,gemini,TXN_268,GRAMMARLY PREMIUM,GRAMMARLY PREMIUM,Education,Education,Grammarly,grammarly,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_269,gemini,TXN_269,OVERLEAF PRO SUBSCRIPTION,OVERLEAF PRO SUBSCRIPTION,Education,Education,Overleaf,overleaf,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_270,gemini,TXN_270,CH ку research / CHEGG.COM,CH ку research / CHEGG.COM,Education,Education,Chegg,chegg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_271,gemini,TXN_271,SINGAPORE POST - AMK POST OFFICE,SINGAPORE POST - AMK POST OFFICE,Other,Other,SingPost,singpost,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_272,gemini,TXN_272,AXS STATION - GENERAL PAYMENT,AXS STATION - GENERAL PAYMENT,Other,Other,AXS Station,axs,no,pending,,,AI-drafted synthetic descriptor; human review pending. Payment intermediary without identified expense purpose.
+gemini-TXN_273,gemini,TXN_273,IRAS - INCOME TAX PAYMENT,IRAS - INCOME TAX PAYMENT,Other,Other,IRAS,iras,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_274,gemini,TXN_274,IRAS - PROPERTY TAX SG,IRAS - PROPERTY TAX SG,Other,Other,IRAS,iras,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_275,gemini,TXN_275,GIVING.SG DONATION,GIVING.SG DONATION,Other,Other,Giving.sg,givingsg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_276,gemini,TXN_276,SINGAPORE RED CROSS DONATION,SINGAPORE RED CROSS DONATION,Other,Other,Red Cross SG,redcrosssg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_277,gemini,TXN_277,COMMUNITY CHEST SG,COMMUNITY CHEST SG,Other,Other,ComChest,comchest,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_278,gemini,TXN_278,SPCA SINGAPORE - ANIMAL SHELTER,SPCA SINGAPORE - ANIMAL SHELTER,Other,Other,SPCA,spca,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_279,gemini,TXN_279,EXTRA SPACE STORAGE - BOON LAY,EXTRA SPACE STORAGE - BOON LAY,Other,Other,Extra Space Storage,extraspacestorage,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_280,gemini,TXN_280,STORE-FRIENDLY STORAGE SG,STORE-FRIENDLY STORAGE SG,Other,Other,Storefriendly,storefriendly,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_281,gemini,TXN_281,LOCK+STORE SINGAPORE,LOCK+STORE SINGAPORE,Other,Other,Lock+Store,lockstore,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_282,gemini,TXN_282,ATM CASH WITHDRAWAL - DBS,ATM CASH WITHDRAWAL - DBS,Other,Other,DBS ATM,dbsatm,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_283,gemini,TXN_283,ATM CASH WITHDRAWAL - UOB,ATM CASH WITHDRAWAL - UOB,Other,Other,UOB ATM,uobatm,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_284,gemini,TXN_284,ATM CASH WITHDRAWAL - OCBC,ATM CASH WITHDRAWAL - OCBC,Other,Other,OCBC ATM,ocbcatm,no,pending,,,"AI-drafted synthetic descriptor; human review pending. Generic, ambiguous, transfer, top-up or withdrawal descriptor."
+gemini-TXN_285,gemini,TXN_285,DBS ANNUAL CARD FEE,DBS ANNUAL CARD FEE,Other,Other,DBS Bank,dbsbank,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_286,gemini,TXN_286,UOB ANNUAL CARD FEE,UOB ANNUAL CARD FEE,Other,Other,UOB Bank,uobbank,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_287,gemini,TXN_287,OCBC LATE PAYMENT FEE,OCBC LATE PAYMENT FEE,Other,Other,OCBC Bank,ocbcbank,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_288,gemini,TXN_288,SINGAPORE TOTO / SWEEP SG POOLS,SINGAPORE TOTO / SWEEP SG POOLS,Other,Other,Singapore Pools,singaporepools,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_289,gemini,TXN_289,SINGAPORE POOLS ONLINE ACCOUNT,SINGAPORE POOLS ONLINE ACCOUNT,Other,Other,Singapore Pools,singaporepools,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_290,gemini,TXN_290,LAUNDRYMART - SELF SERVICE,LAUNDRYMART - SELF SERVICE,Other,Other,LaundryMart,laundrymart,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_291,gemini,TXN_291,PRESTO DRYCLEANERS - SUNTEC,PRESTO DRYCLEANERS - SUNTEC,Other,Other,Presto Drycleaners,prestodrycleaners,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_292,gemini,TXN_292,DUSTLESS CLEANING SERVICES,DUSTLESS CLEANING SERVICES,Other,Other,Home Cleaning,homecleaning,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_293,gemini,TXN_293,KEY DUPLICATION - FAST LOCKSMITH,KEY DUPLICATION - FAST LOCKSMITH,Other,Other,Locksmith,locksmith,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_294,gemini,TXN_294,MOM WORK PERMIT PASS FEE,MOM WORK PERMIT PASS FEE,Other,Other,MOM SG,momsg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_295,gemini,TXN_295,ICA SINGAPORE PASSPORT RENEWAL,ICA SINGAPORE PASSPORT RENEWAL,Other,Other,ICA SG,icasg,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_296,gemini,TXN_296,ROAD TAX - LTA SINGAPORE,ROAD TAX - LTA SINGAPORE,Other,Other,LTA Road Tax,ltaroadtax,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_297,gemini,TXN_297,LAW FIRM NOTARY FEE SG,LAW FIRM NOTARY FEE SG,Other,Other,Law Firm,lawfirm,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_298,gemini,TXN_298,EMBASSY VISA APPLICATION SG,EMBASSY VISA APPLICATION SG,Other,Other,Embassy Visa,embassyvisa,yes,pending,,,AI-drafted synthetic descriptor; human review pending.
+gemini-TXN_299,gemini,TXN_299,SAM MACHINE PAYMENT - SINGPOST,SAM MACHINE PAYMENT - SINGPOST,Other,Other,SAM Machine,singpost,no,pending,,,AI-drafted synthetic descriptor; human review pending. Payment intermediary without identified expense purpose.
+gemini-TXN_300,gemini,TXN_300,MISC BANK SERVICE CHARGE,MISC BANK SERVICE CHARGE,Other,Other,Bank Admin,bankadmin,yes,pending,,,AI-drafted synthetic descriptor; human review pending.

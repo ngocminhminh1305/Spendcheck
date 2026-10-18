@@ -1,0 +1,189 @@
+{
+  "image": "spendcheck-classifier:v1",
+  "image_id": "sha256:8d87da502e52d02dd1efad663c370b7898ba21b028d1a08080a25e74ed610a97",
+  "image_size_bytes": 469054158,
+  "docker_image_list_size": "2.02GB",
+  "architecture": "arm64",
+  "host": "macOS-26.5.1-arm64-arm-64bit",
+  "bundle_sha256": "2c5b313a66bb311851231771e437c7b0543bb207f84e1a16d93c0ce7a4212d6a",
+  "fallback_sha256": "ccf0bf2cb698adebba8bd950315c44927a02d05fdcf8b02a589ec434bc7c7a34",
+  "catalogue_sha256": "38290b482291ccee368d73836afa839c473083197487f863c6f89ea03f893c90",
+  "local": {
+    "startup_to_readiness_seconds": 3.3249585420126095,
+    "server_rss_bytes": 489603072,
+    "sampled_peak_rss_bytes": 490143744,
+    "predictions": {
+      "NTUC FairPrice": {
+        "category": "Groceries",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Chagee": {
+        "category": "Food & Drink",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Watsons": {
+        "category": "Health",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Octobox": {
+        "category": "Groceries",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "ABC Dental Clinic": {
+        "category": "Health",
+        "confidence": 0.3530499339103699,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Happy Noodle House": {
+        "category": "Food & Drink",
+        "confidence": 0.2274577021598816,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "zzzzzzzzzzz": {
+        "category": "Other",
+        "confidence": 0.1820680946111679,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Unknown Merchant": {
+        "category": "Groceries",
+        "confidence": 0.3133316934108734,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      }
+    },
+    "warm_http_latency": {
+      "lookup": {
+        "requests": 80,
+        "p50_ms": 0.6416670512408018,
+        "p95_ms": 1.3291670475155115
+      },
+      "model": {
+        "requests": 80,
+        "p50_ms": 3.947416495066136,
+        "p95_ms": 6.4217919716611505
+      },
+      "all": {
+        "requests": 160,
+        "p50_ms": 2.656416967511177,
+        "p95_ms": 5.313291912898421
+      }
+    }
+  },
+  "container": {
+    "health": {
+      "status": "ready",
+      "model_version": "merchant-categoriser-v1",
+      "data_status": "372 human-checked constructed merchant-category descriptions; evaluated model and catalogue; final source checksums"
+    },
+    "readiness_after_driver_start_seconds": 3.2454571269990993,
+    "http_checks": 17,
+    "predictions": {
+      "NTUC FairPrice": {
+        "category": "Groceries",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Chagee": {
+        "category": "Food & Drink",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Watsons": {
+        "category": "Health",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Octobox": {
+        "category": "Groceries",
+        "confidence": null,
+        "source": "lookup",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "ABC Dental Clinic": {
+        "category": "Health",
+        "confidence": 0.3530500531196594,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Happy Noodle House": {
+        "category": "Food & Drink",
+        "confidence": 0.2274578958749771,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "zzzzzzzzzzz": {
+        "category": "Other",
+        "confidence": 0.1820680946111679,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      },
+      "Unknown Merchant": {
+        "category": "Groceries",
+        "confidence": 0.31333157420158386,
+        "source": "model",
+        "model_version": "merchant-categoriser-v1"
+      }
+    },
+    "warm_http_latency": {
+      "lookup": {
+        "requests": 80,
+        "p50_ms": 0.5047289996582549,
+        "p95_ms": 0.8569999990868382
+      },
+      "model": {
+        "requests": 80,
+        "p50_ms": 7.770374999381602,
+        "p95_ms": 11.1795409975457
+      },
+      "all": {
+        "requests": 160,
+        "p50_ms": 3.578750001906883,
+        "p95_ms": 9.355875001347158
+      }
+    },
+    "server_rss_bytes": 553385984,
+    "server_peak_rss_bytes": 553385984,
+    "sampled_cgroup_peak_bytes": 423940096,
+    "cgroup_memory_peak_bytes": 423952384,
+    "server_uid": "10001\t10001\t10001\t10001",
+    "startup_to_readiness_seconds_approx": 3.3705564600022626,
+    "docker_create_start_seconds": 0.1250962499761954,
+    "docker_stats_after_warmup": {
+      "BlockIO": "3.22MB / 0B",
+      "CPUPerc": "6.08%",
+      "Container": "spendcheck-hybrid-check-61275",
+      "ID": "e5e084ec63cc",
+      "MemPerc": "4.90%",
+      "MemUsage": "389MiB / 7.748GiB",
+      "Name": "spendcheck-hybrid-check-61275",
+      "NetIO": "0B / 0B",
+      "PIDs": "4"
+    },
+    "healthcheck": "healthy"
+  },
+  "parity_samples": 8,
+  "maximum_probability_difference": 1.9371509552001953e-07,
+  "artifact_bytes": 91607258,
+  "limitations": [
+    "Single sequential client; one worker and one math thread; Docker limited to one CPU.",
+    "Warm filesystem caches; not a cold-machine boot or load/capacity test.",
+    "RSS and Docker/cgroup memory use different accounting; cgroup peak includes the small stdlib driver.",
+    "Local RSS peak sampled at about 100 ms during startup and each warm sequence; brief peaks can be missed.",
+    "p95 is an empirical nearest-order statistic over 160 warm requests, not a production guarantee.",
+    "Docker image list and inspect use differing storage accounting; retain both rather than treating inspect Size as unpacked disk use."
+  ]
+}

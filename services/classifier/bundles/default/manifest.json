@@ -1,0 +1,84 @@
+{
+  "model_version": "merchant-categoriser-v1",
+  "status": "frozen release candidate",
+  "final_ready": true,
+  "selection": "User selected MiniLM on unchanged development validation; no retraining",
+  "data_status": "372 human-checked constructed merchant-category descriptions; evaluated model and catalogue; final source checksums",
+  "catalogue_version": "hybrid-v1-post-selection",
+  "catalogue_file": "../../data/catalogues/catalogue_post_selection.csv",
+  "catalogue_sha256": "38290b482291ccee368d73836afa839c473083197487f863c6f89ea03f893c90",
+  "model_directory": "../../models/minilm",
+  "fallback_sha256": "ccf0bf2cb698adebba8bd950315c44927a02d05fdcf8b02a589ec434bc7c7a34",
+  "fallback_metadata_sha256": "67e832006b41d599483f2315d9035b557ba6f4c5d1292cc66bcbf98a664654cf",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "configuration": {
+    "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "C": 1,
+    "class_weight": "balanced",
+    "training_rows": 280,
+    "confidence": "lookup=null; model=uncalibrated maximum probability",
+    "rejection_threshold": null,
+    "bare_ambiguities": [
+      "Grab",
+      "Apple"
+    ]
+  },
+  "category_policy": {
+    "Food & Drink": "Prepared meals, drinks, cafes, hawkers and food delivery.",
+    "Groceries": "Supermarkets, convenience stores and grocery delivery; merchant default.",
+    "Transport": "Public transit, rides, parking, vehicle rental and fuel; not wallet top-ups.",
+    "Shopping": "Retail, marketplaces, stationery and general bookstores; merchant default.",
+    "Entertainment": "Cinema, concerts, games, leisure attractions and media subscriptions.",
+    "Bills & Utilities": "Phone, internet, electricity, water, gas and identified household bills.",
+    "Health": "Healthcare, medicine and prescription optics; pharmacies default to Health.",
+    "Education": "Tuition and courses; textbooks only when explicitly identified in the input.",
+    "Other": "Identifiable expenses outside these categories, e.g. postage, haircut or donation."
+  },
+  "audit": {
+    "training_rows": 280,
+    "reserved_rows": 47,
+    "reserved_split_groups": 29,
+    "catalogues": {
+      "development": {
+        "entries": 262,
+        "families": 220
+      },
+      "post_selection": {
+        "entries": 298,
+        "families": 250
+      }
+    },
+    "evaluation_source_records_present": true,
+    "human_checked_training_pool_rows": 372,
+    "label_review": "372 constructed merchant-description/category pairs human-checked; separate evaluation-source qualifications remain in the README.",
+    "identity_review": "Frozen groups, explicit aliases and documented provider relationships screened; not an exhaustive corporate ownership audit.",
+    "evaluation_file_hashes": {
+      "manifest.json": "164774e75fed67bfdbacb5d1598af696fd3f202264a516f19ff554c86cc3907c",
+      "split.csv": "42d55df68eff3a9eb996cdcb67391302fb15858076789dbe5aec800c95328293",
+      "recognition.csv": "a6e62586d7ee5661a756b6807da2f5df4f1684b269a15f6395ce35489197788f",
+      "operational.csv": "0d0bc5186953840607fce7e75c00f03624bff29f4588a2bd4bcb016144f257b9",
+      "merchant_checks.csv": "e54bfd95ed420ac9acfbaf4f331679bd4eab37333027aaffd2929753b903e65e"
+    }
+  },
+  "runtime_sha256": {
+    "app/hybrid.py": "c2862b21d242e283a2acb54179102ffaebbee0196e37aaa8b908a74cff3ed6f7",
+    "app/__init__.py": "75ad4b2caf611e9f93749257c642c0982db7f19c6760bc15a9541e345bdf36fe",
+    "app/model.py": "24eae1a9f2df8048b350b00c8b08829f6c0fcff47f454711eab94ec91c68a216",
+    "app/embeddings.py": "64f5dda6321289df21c3b36ff7a1dc3da875e2f8a8f71e8dd88a3799961b738d",
+    "app/schemas.py": "5ce9e2a4edde238b23cb9b92190835805b9a4f729e8d919edee6b8ddf6d495fe",
+    "app/settings.py": "1bf9ffa8c00707adfa4a73661ea822cdf6a6b7e5992751242bf34067a7a90c64",
+    "app/main.py": "f934d44aa263f9434b5ca85fd1a6300ca9910dc715daa572990c6a54eb88fd6e",
+    "app/cleaning.py": "719b4e5e75fddf037cf4b5cf8b09b0d786f3089df3a4df38f09ef09b25787ece",
+    "app/catalogue.py": "626bb8f1c29e52035654cad96898959ce5e42e27d0715ab3ef4f0247439d6551",
+    "requirements.txt": "ab25eb72f796b867218d19324beec55b7017859d46b0b9d5a3add881fcdbec0c",
+    "requirements-encoders.txt": "16c83fd6266a58f7830f689beffd987089a1b1237408b1290c1f551b15799f55",
+    "Dockerfile.hybrid": "675a4d7470a21a3f847ee3ceba50a38bae77e7da95d6aa666afc4903f7273aba",
+    "Dockerfile.hybrid.dockerignore": "cc9ef2f3314c73b341a5e18eddc5a00174b2885a19471e1f06208634b5d94c1a"
+  },
+  "functional_evidence_sha256": "4b3d0262c5487f2ce3ca5f1a11ba050b6b8161e810865b4887f5bbd764112ea6",
+  "evaluated_manifest_sha256": "907c5e05fae68a611ec9a9192322c32d1a038b461e338ccce2c563f628fe5620",
+  "evaluated_model_metadata_sha256": "a5fdc91214c3ae53ce487fed18b5a3c073d1547d4c8638a318bfceb9001bddfc",
+  "fallback_metadata_file": "metadata.json",
+  "evaluated_at": "2026-10-17T17:03:54.726830+00:00",
+  "source_note": "Current repository paths and source hashes differ from the evaluated records. Model, encoder, catalogue, labels and preprocessing semantics are unchanged; frozen reports retain their original manifest identifiers."
+}

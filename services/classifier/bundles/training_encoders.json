@@ -1,0 +1,10 @@
+{
+  "minilm": {
+    "encoder_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
+  },
+  "mpnet": {
+    "encoder_id": "sentence-transformers/all-mpnet-base-v2",
+    "encoder_revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130"
+  }
+}
