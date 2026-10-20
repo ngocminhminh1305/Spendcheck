@@ -1,0 +1,134 @@
+diff --git a/incoming/team-repo/services/forecaster/app/features.py b/services/forecaster/app/features.py
+index 837918f..685b944 100644
+--- a/incoming/team-repo/services/forecaster/app/features.py
++++ b/services/forecaster/app/features.py
+@@ -2,9 +2,14 @@
+ 
+ from dataclasses import dataclass
+ from datetime import date
++from statistics import mean, median
+ 
+ import pandas as pd
+ 
++# Spendcheck integration change: one-off purchases (see one_off_spend).
++ONE_OFF_TYPICAL_MULTIPLE = 5   # at least 5x the user's typical (median) past purchase ...
++ONE_OFF_MONTH_SHARE = 0.2      # ... and at least 20% of their usual (3-month average) month
++
+ 
+ @dataclass
+ class MonthSummary:
+@@ -34,3 +39,18 @@ def summarise(transactions: list[tuple[date, float]], as_of: date) -> MonthSumma
+         all_months = pd.period_range(past.index.min(), current - 1, freq="M")
+         summary.history = past.reindex(all_months, fill_value=0.0).astype(float).tolist()
+     return summary
++
++
++def one_off_spend(transactions: list[tuple[date, float]], as_of: date, history: list[float]) -> float:
++    """Spendcheck integration change: total of this month's unusually large single purchases.
++
++    A $329 phone bought on day 6 is not a spending *pace*. Left in, it made the ML model (trained
++    on Berka, where big payments are early-month bills) predict that the month was nearly over.
++    The API forecasts everyday spending without these purchases and adds them back afterwards.
++    """
++    month_start = as_of.replace(day=1)
++    past = [amount for d, amount in transactions if d < month_start]
++    if not history or not past:
++        return 0.0
++    threshold = max(ONE_OFF_TYPICAL_MULTIPLE * median(past), ONE_OFF_MONTH_SHARE * mean(history[-3:]))
++    return float(sum(amount for d, amount in transactions if month_start <= d <= as_of and amount >= threshold))
+diff --git a/incoming/team-repo/services/forecaster/app/main.py b/services/forecaster/app/main.py
+index 70804e0..66c8c5f 100644
+--- a/incoming/team-repo/services/forecaster/app/main.py
++++ b/services/forecaster/app/main.py
+@@ -5,7 +5,7 @@ from datetime import date
+ 
+ from fastapi import FastAPI
+ 
+-from app.features import summarise
++from app.features import one_off_spend, summarise
+ from app.forecaster import budget_risk, predict
+ from app.ml_model import load_model
+ from app.schemas import ForecastRequest, ForecastResponse
+@@ -28,10 +28,15 @@ def health():
+ @app.post("/forecast", response_model=ForecastResponse)
+ def forecast(req: ForecastRequest):
+     as_of = req.as_of or date.today()
+-    s = summarise([(t.date, t.amount) for t in req.transactions], as_of)
+-
+-    total = predict(req.method, s.history, s.spent_so_far, s.days_elapsed,
+-                    s.days_in_month, month=as_of.strftime("%Y-%m"))
++    pairs = [(t.date, t.amount) for t in req.transactions]
++    s = summarise(pairs, as_of)
++
++    # Spendcheck integration change: forecast everyday spending without this month's one-off
++    # purchases, then add them back (see features.one_off_spend). predict() itself, and so the
++    # Berka evaluation, is unchanged.
++    one_offs = one_off_spend(pairs, as_of, s.history)
++    total = predict(req.method, s.history, s.spent_so_far - one_offs, s.days_elapsed,
++                    s.days_in_month, month=as_of.strftime("%Y-%m")) + one_offs
+     risk = budget_risk(total, s.history, req.budget)
+ 
+     return ForecastResponse(
+@@ -43,5 +48,6 @@ def forecast(req: ForecastRequest):
+         days_elapsed=s.days_elapsed,
+         days_in_month=s.days_in_month,
+         months_of_history=len(s.history),
++        one_off_spend=round(one_offs, 2),
+         risk=risk,
+     )
+diff --git a/incoming/team-repo/services/forecaster/app/schemas.py b/services/forecaster/app/schemas.py
+index 1ad05fd..6e852bf 100644
+--- a/incoming/team-repo/services/forecaster/app/schemas.py
++++ b/services/forecaster/app/schemas.py
+@@ -37,4 +37,7 @@ class ForecastResponse(BaseModel):
+     days_elapsed: int
+     days_in_month: int
+     months_of_history: int
++    # Spendcheck integration change: this month's one-off purchases, included in forecast_total
++    # but kept out of the spending pace. 0 when there are none.
++    one_off_spend: float = 0.0
+     risk: Risk
+diff --git a/services/forecaster/tests/test_one_offs.py b/services/forecaster/tests/test_one_offs.py
+new file mode 100644
+index 0000000..e23c4a3
+--- /dev/null
++++ b/services/forecaster/tests/test_one_offs.py
+@@ -0,0 +1,38 @@
++"""Spendcheck integration change: one-off purchases are kept out of the spending pace."""
++
++from datetime import date, timedelta
++
++from fastapi.testclient import TestClient
++
++from app.features import one_off_spend
++from app.main import app
++
++client = TestClient(app)
++
++
++def daily(start: date, days: int, amount: float) -> list[dict]:
++    return [{"date": (start + timedelta(days=i)).isoformat(), "amount": amount} for i in range(days)]
++
++
++# Three normal months of $20 a day (~$600 a month), then 15 days of September.
++HISTORY = daily(date(2026, 6, 1), 30, 20) + daily(date(2026, 7, 1), 30, 20) + daily(date(2026, 8, 1), 30, 20)
++SEPTEMBER = daily(date(2026, 9, 1), 15, 20)
++LAPTOP = {"date": "2026-09-06", "amount": 400}
++
++
++def test_large_purchase_is_added_once_not_extrapolated():
++    body = {"as_of": "2026-09-15", "method": "pace", "transactions": HISTORY + SEPTEMBER + [LAPTOP]}
++    data = client.post("/forecast", json=body).json()
++    assert data["spent_so_far"] == 700            # still reports everything spent
++    assert data["one_off_spend"] == 400
++    assert data["forecast_total"] == 1000          # pace on $300 everyday spend = 600, plus 400 once
++
++
++def test_ordinary_purchases_are_not_one_offs():
++    pairs = [(date.fromisoformat(t["date"]), t["amount"]) for t in HISTORY + SEPTEMBER]
++    pairs.append((date(2026, 9, 10), 60.0))       # 3x a typical purchase: ordinary
++    assert one_off_spend(pairs, date(2026, 9, 15), [600.0, 620.0, 600.0]) == 0.0
++
++
++def test_no_history_means_no_one_offs():
++    assert one_off_spend([(date(2026, 9, 2), 500.0)], date(2026, 9, 15), []) == 0.0

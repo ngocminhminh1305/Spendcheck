@@ -1,0 +1,197 @@
+diff --git a/services/extractor/.dockerignore b/services/extractor/.dockerignore
+new file mode 100644
+index 0000000..3c757d5
+--- /dev/null
++++ b/services/extractor/.dockerignore
+@@ -0,0 +1,6 @@
++.venv
++venv
++__pycache__
++*.pyc
++.pytest_cache
++data/outputs
+diff --git a/services/extractor/Dockerfile b/services/extractor/Dockerfile
+new file mode 100644
+index 0000000..cb43dd8
+--- /dev/null
++++ b/services/extractor/Dockerfile
+@@ -0,0 +1,30 @@
++# Module 1: Transaction Entity Extractor (rules -> spaCy -> GLiNER).
++# Build context is this folder:  docker build -t spendcheck/extractor services/extractor
++FROM python:3.12-slim
++
++ENV PYTHONDONTWRITEBYTECODE=1 \
++    PYTHONUNBUFFERED=1 \
++    HF_HOME=/models/hf
++
++WORKDIR /app
++
++# Create the runtime user and its model folder first: downloading the models as that user avoids a
++# later `chown -R`, which would copy every model file into a new image layer (+600 MB).
++RUN useradd --create-home --uid 10001 appuser && mkdir -p /models && chown appuser /models
++
++COPY requirements.txt .
++# CPU-only PyTorch first: the default wheel bundles CUDA libraries (several GB) that a CPU-only
++# server never uses. The requirements pin the same version, so pip keeps this build.
++RUN pip install --no-cache-dir torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu \
++ && pip install --no-cache-dir -r requirements.txt \
++ && python -m spacy download en_core_web_sm
++
++USER appuser
++# Download the GLiNER weights at build time, so the first request is not slow and the container
++# never needs internet access at runtime.
++RUN python -c "from gliner import GLiNER; GLiNER.from_pretrained('urchade/gliner_small-v2.1')"
++
++COPY app ./app
++
++EXPOSE 8000
++CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+diff --git a/incoming/team-repo/services/extractor/app/extractor.py b/services/extractor/app/extractor.py
+index bb91be0..c30b524 100644
+--- a/incoming/team-repo/services/extractor/app/extractor.py
++++ b/services/extractor/app/extractor.py
+@@ -191,12 +191,31 @@ def extract_subscription_provider(text: str) -> str | None:
+     return provider
+ 
+ 
++# Spendcheck integration change: rides such as "grab to school 14.60" or "taxi to airport 30".
++# Without this, "to" is read as "paid to <merchant>" and the destination ("school", "airport")
++# became the merchant. The ride provider or mode at the start of the entry is the merchant.
++_TRIP = re.compile(
++    r"(?ix)^\s*(?:(?:took|take|taking|booked|book)\s+(?:a\s+)?)?"
++    r"(grab|gojek|tada|ryde|zig|cdg|comfortdelgro|taxi|cab|uber|bus|mrt|train)"
++    r"(?:\s+(?:ride|car|trip|share))?\s+(?:to|from)\s+\S"
++)
++
++
++def extract_trip_provider(text: str) -> str | None:
++    """The ride provider in "<ride> to/from <place> <amount>" entries, spelled as typed."""
++    match = _TRIP.match(text)
++    return match.group(1) if match else None
++
++
+ def extract_merchant(text: str) -> str | None:
+     """Extract a merchant using common transaction sentence patterns."""
+     candidates: list[str] = []
+     provider = extract_subscription_provider(text)
+     if provider:
+         candidates.append(provider)
++    trip_provider = extract_trip_provider(text)   # integration change, see _TRIP
++    if trip_provider:
++        candidates.append(trip_provider)
+ 
+     # Try each marker, so an earlier date phrase does not hide "at Kopitiam".
+     for marker in re.finditer(r"(?i)\b(?:at|from|to|on)\s+", text):
+diff --git a/incoming/team-repo/services/extractor/app/layered.py b/services/extractor/app/layered.py
+index 8bd9853..0ea0fe2 100644
+--- a/incoming/team-repo/services/extractor/app/layered.py
++++ b/services/extractor/app/layered.py
+@@ -8,7 +8,7 @@ from threading import Lock
+ from app.extractor import (
+     _parse_money, extract_amount, extract_date, extract_merchant,
+     find_amount_candidates, has_multiple_transactions,
+-    extract_subscription_provider,
++    extract_subscription_provider, extract_trip_provider,
+ )
+ from app.gliner_extractor import extract_gliner_entities
+ from app.schemas import ExtractResponse
+@@ -74,6 +74,8 @@ def strong_rule_merchant(text: str, merchant: str) -> bool:
+         return False
+     if extract_subscription_provider(text) == merchant:
+         return True
++    if extract_trip_provider(text) == merchant:   # integration change: "grab to school 14.60"
++        return True
+     name = re.escape(merchant)
+     return bool(
+         re.search(rf"(?i)\b(?:at|from|to|on)\s+{name}(?=$|[\s.,!?;])", text)
+diff --git a/incoming/team-repo/services/extractor/app/main.py b/services/extractor/app/main.py
+index 85e8fb0..4b8006b 100644
+--- a/incoming/team-repo/services/extractor/app/main.py
++++ b/services/extractor/app/main.py
+@@ -1,18 +1,37 @@
+ """HTTP entry point. Start with: python -m uvicorn app.main:app --reload."""
+ 
+ import logging
++import os
++from contextlib import asynccontextmanager
+ 
+ from fastapi import FastAPI, HTTPException
+ 
++from app.gliner_extractor import load_model as load_gliner
+ from app.layered import ModelUnavailableError
+ 
+ from app.pipeline import extract_transaction
+ from app.schemas import ExtractRequest, ExtractResponse
++from app.spacy_extractor import load_model as load_spacy
++
++
++@asynccontextmanager
++async def lifespan(app: FastAPI):
++    # Spendcheck integration change: load spaCy and GLiNER at startup. Otherwise the first entry
++    # that needs a model waits ~20 s while they load. Set EXTRACTOR_WARMUP=0 to skip (e.g. tests).
++    if os.getenv("EXTRACTOR_WARMUP", "1") == "1":
++        try:
++            load_spacy()
++            load_gliner()
++        except Exception:   # rules still work; requests that need a model will return 503
++            logging.getLogger(__name__).exception("Model warm-up failed")
++    yield
++
+ 
+ app = FastAPI(
+     title="Spendcheck — Module 1",
+     description="Local transaction extraction using rules, spaCy, and GLiNER.",
+     version="1.0.0",
++    lifespan=lifespan,
+ )
+ 
+ 
+diff --git a/services/extractor/tests/test_trips.py b/services/extractor/tests/test_trips.py
+new file mode 100644
+index 0000000..b1db850
+--- /dev/null
++++ b/services/extractor/tests/test_trips.py
+@@ -0,0 +1,43 @@
++"""Spendcheck integration change: ride entries such as "grab to school 14.60".
++
++Rules only (use_models=False), so no model weights are needed.
++"""
++
++from datetime import date, datetime, timedelta, timezone
++
++import pytest
++
++from app.extractor import extract_merchant, extract_trip_provider
++from app.pipeline import extract_transaction
++
++REFERENCE = datetime(2026, 10, 16, 12, 0, tzinfo=timezone(timedelta(hours=8)))
++
++
++@pytest.mark.parametrize("text, merchant, amount", [
++    ("grab to school 14.60", "grab", 14.6),
++    ("taxi to airport 30", "taxi", 30.0),
++    ("Gojek from Changi 25.40", "Gojek", 25.4),
++    ("took a grab to NUS 12.30", "grab", 12.3),
++    ("bus to work 1.80", "bus", 1.8),
++])
++def test_ride_provider_is_the_merchant(text, merchant, amount):
++    result = extract_transaction(text, REFERENCE, use_models=False)
++    assert (result.merchant, result.amount) == (merchant, amount)
++
++
++def test_ride_with_date():
++    result = extract_transaction("grab to school 14.60 yesterday", REFERENCE, use_models=False)
++    assert (result.merchant, result.amount, result.date) == ("grab", 14.6, date(2026, 10, 15))
++
++
++@pytest.mark.parametrize("text", [
++    "spent $8.90 at Kopitiam yesterday",   # "at" marker, not a ride
++    "paid $20 to Kopitiam",                # "to" still marks a merchant when no ride word leads
++    "grab food 15",                        # food delivery is a compact entry, not a trip
++])
++def test_non_rides_are_unchanged(text):
++    assert extract_trip_provider(text) is None
++
++
++def test_to_marker_still_finds_merchants():
++    assert extract_merchant("paid $20 to Kopitiam") == "Kopitiam"

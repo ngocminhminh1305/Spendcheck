@@ -8,7 +8,7 @@ from threading import Lock
 from app.extractor import (
     _parse_money, extract_amount, extract_date, extract_merchant,
     find_amount_candidates, has_multiple_transactions,
-    extract_subscription_provider,
+    extract_subscription_provider, extract_trip_provider,
 )
 from app.gliner_extractor import extract_gliner_entities
 from app.schemas import ExtractResponse
@@ -73,6 +73,8 @@ def strong_rule_merchant(text: str, merchant: str) -> bool:
     if not valid_merchant(merchant):
         return False
     if extract_subscription_provider(text) == merchant:
+        return True
+    if extract_trip_provider(text) == merchant:   # integration change: "grab to school 14.60"
         return True
     name = re.escape(merchant)
     return bool(

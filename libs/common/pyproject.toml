@@ -1,0 +1,17 @@
+[project]
+name = "spendcheck-common"
+version = "0.1.0"
+description = "Shared helpers for every Spendcheck service: request-ID/latency middleware, the X-User-Id dependency and the Claude client factory."
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115"]
+
+[project.optional-dependencies]
+# Only Modules 4 and 5 call the LLM; other services install the package without this extra.
+llm = ["anthropic[bedrock]==1.13.0", "httpx==0.28.1"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["spendcheck_common"]

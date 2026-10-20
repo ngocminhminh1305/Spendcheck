@@ -1,0 +1,67 @@
+# Postgres + pgvector as a StatefulSet: one pod with a persistent volume, so data survives restarts.
+# The schema comes from the db-init ConfigMap (created from db/init/, see k8s/README.md) and runs
+# only the first time, when the volume is empty.
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres
+spec:
+  selector:
+    app: postgres
+  ports:
+    - port: 5432
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: postgres
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+        - name: postgres
+          image: pgvector/pgvector:pg16
+          ports:
+            - containerPort: 5432
+          env:
+            - name: POSTGRES_DB
+              value: spendcheck
+            - name: POSTGRES_USER
+              value: postgres
+            - name: PGDATA                       # subfolder: volume roots can contain lost+found
+              value: /var/lib/postgresql/data/pgdata
+          envFrom:
+            - secretRef:
+                name: spendcheck-db              # POSTGRES_PASSWORD and the per-role passwords
+          readinessProbe:
+            exec:
+              command: ["pg_isready", "-U", "postgres", "-d", "spendcheck"]
+            periodSeconds: 5
+          resources:
+            requests: { cpu: 250m, memory: 512Mi }
+            limits: { memory: 1Gi }
+          volumeMounts:
+            - name: data
+              mountPath: /var/lib/postgresql/data
+            - name: init
+              mountPath: /docker-entrypoint-initdb.d
+      volumes:
+        - name: init
+          configMap:
+            name: db-init
+  volumeClaimTemplates:
+    - metadata:
+        name: data
+      spec:
+        accessModes: ["ReadWriteOnce"]
+        resources:
+          requests:
+            storage: 10Gi

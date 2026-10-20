@@ -1,0 +1,49 @@
+# Module 1: Transaction Entity Extractor. Reachable inside the cluster as http://extractor:8000
+apiVersion: v1
+kind: Service
+metadata:
+  name: extractor
+spec:
+  selector:
+    app: extractor
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: extractor
+  labels:
+    app: extractor
+    module: m1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: extractor
+  template:
+    metadata:
+      labels:
+        app: extractor
+        module: m1
+    spec:
+      containers:
+        - name: extractor
+          image: spendcheck/extractor
+          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          ports:
+            - containerPort: 8000
+          startupProbe:                         # spaCy + GLiNER load at startup (~30 s on a laptop,
+            httpGet: { path: /health, port: 8000 }   # longer on a 2-vCPU VM): allow up to 3 minutes
+            periodSeconds: 5
+            failureThreshold: 36
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 20
+          resources:                            # spaCy + GLiNER (PyTorch) load on first use
+            requests: { cpu: 250m, memory: 768Mi }
+            limits: { memory: 2Gi }

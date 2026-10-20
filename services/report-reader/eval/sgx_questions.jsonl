@@ -1,0 +1,3 @@
+{"id": "sgx01", "doc_id": "sgx/D05/2025", "question": "What was DBS's net profit in 2025?", "gold_answer": "S$10,933 million reported net profit (S$11,033 million before the S$100 million CSR provision)", "gold_pages": [86, 89]}
+{"id": "sgx02", "doc_id": "sgx/C6L/2026", "question": "What was Singapore Airlines Group net profit for FY2025/26?", "gold_answer": "S$1,184 million profit attributable to owners of the Company, down 57.4% from S$2,778 million", "gold_pages": [9, 10, 22, 59]}
+{"id": "sgx03", "doc_id": "sgx/OV8/2025", "question": "What was Sheng Siong's revenue in FY2025?", "gold_answer": "S$1,570 million, up 9.9% year on year", "gold_pages": [10]}

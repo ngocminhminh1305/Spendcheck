@@ -1,0 +1,46 @@
+# Module 3: Spending Forecaster. Reachable inside the cluster as http://forecaster:8000
+apiVersion: v1
+kind: Service
+metadata:
+  name: forecaster
+spec:
+  selector:
+    app: forecaster
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: forecaster
+  labels:
+    app: forecaster
+    module: m3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: forecaster
+  template:
+    metadata:
+      labels:
+        app: forecaster
+        module: m3
+    spec:
+      containers:
+        - name: forecaster
+          image: spendcheck/forecaster
+          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          ports:
+            - containerPort: 8000
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests: { cpu: 100m, memory: 256Mi }
+            limits: { memory: 768Mi }

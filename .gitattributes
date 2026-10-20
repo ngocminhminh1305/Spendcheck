@@ -1,0 +1,6 @@
+# Unix line endings everywhere, whatever the checkout machine: shell scripts run inside Linux
+# containers, and Module 2 verifies its catalogue and model files by checksum at startup, so a
+# Windows checkout that converted them to CRLF would fail to start.
+* text=auto eol=lf
+*.sh text eol=lf
+*.sql text eol=lf
