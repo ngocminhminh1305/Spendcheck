@@ -191,12 +191,31 @@ def extract_subscription_provider(text: str) -> str | None:
     return provider
 
 
+# Spendcheck integration change: rides such as "grab to school 14.60" or "taxi to airport 30".
+# Without this, "to" is read as "paid to <merchant>" and the destination ("school", "airport")
+# became the merchant. The ride provider or mode at the start of the entry is the merchant.
+_TRIP = re.compile(
+    r"(?ix)^\s*(?:(?:took|take|taking|booked|book)\s+(?:a\s+)?)?"
+    r"(grab|gojek|tada|ryde|zig|cdg|comfortdelgro|taxi|cab|uber|bus|mrt|train)"
+    r"(?:\s+(?:ride|car|trip|share))?\s+(?:to|from)\s+\S"
+)
+
+
+def extract_trip_provider(text: str) -> str | None:
+    """The ride provider in "<ride> to/from <place> <amount>" entries, spelled as typed."""
+    match = _TRIP.match(text)
+    return match.group(1) if match else None
+
+
 def extract_merchant(text: str) -> str | None:
     """Extract a merchant using common transaction sentence patterns."""
     candidates: list[str] = []
     provider = extract_subscription_provider(text)
     if provider:
         candidates.append(provider)
+    trip_provider = extract_trip_provider(text)   # integration change, see _TRIP
+    if trip_provider:
+        candidates.append(trip_provider)
 
     # Try each marker, so an earlier date phrase does not hide "at Kopitiam".
     for marker in re.finditer(r"(?i)\b(?:at|from|to|on)\s+", text):

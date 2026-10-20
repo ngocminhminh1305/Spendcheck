@@ -37,4 +37,7 @@ class ForecastResponse(BaseModel):
     days_elapsed: int
     days_in_month: int
     months_of_history: int
+    # Spendcheck integration change: this month's one-off purchases, included in forecast_total
+    # but kept out of the spending pace. 0 when there are none.
+    one_off_spend: float = 0.0
     risk: Risk

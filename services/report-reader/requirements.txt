@@ -1,0 +1,10 @@
+# Pinned for reproducible builds. The Claude SDK comes from libs/common[llm].
+fastapi==0.143.0
+uvicorn[standard]==0.54.0
+pydantic-settings==2.15.0
+psycopg[binary]==3.3.6
+psycopg-pool==3.3.3
+pgvector==0.5.1        # vector type adapter for psycopg
+fastembed==0.9.0       # local ONNX embeddings (no GPU, no per-call API cost)
+pymupdf==1.28.2        # PDF text + table extraction, page by page
+boto3==1.43.112        # read annual-report PDFs from S3

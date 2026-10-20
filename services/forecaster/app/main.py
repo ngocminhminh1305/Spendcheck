@@ -5,7 +5,7 @@ from datetime import date
 
 from fastapi import FastAPI
 
-from app.features import summarise
+from app.features import one_off_spend, summarise
 from app.forecaster import budget_risk, predict
 from app.ml_model import load_model
 from app.schemas import ForecastRequest, ForecastResponse
@@ -28,10 +28,15 @@ def health():
 @app.post("/forecast", response_model=ForecastResponse)
 def forecast(req: ForecastRequest):
     as_of = req.as_of or date.today()
-    s = summarise([(t.date, t.amount) for t in req.transactions], as_of)
+    pairs = [(t.date, t.amount) for t in req.transactions]
+    s = summarise(pairs, as_of)
 
-    total = predict(req.method, s.history, s.spent_so_far, s.days_elapsed,
-                    s.days_in_month, month=as_of.strftime("%Y-%m"))
+    # Spendcheck integration change: forecast everyday spending without this month's one-off
+    # purchases, then add them back (see features.one_off_spend). predict() itself, and so the
+    # Berka evaluation, is unchanged.
+    one_offs = one_off_spend(pairs, as_of, s.history)
+    total = predict(req.method, s.history, s.spent_so_far - one_offs, s.days_elapsed,
+                    s.days_in_month, month=as_of.strftime("%Y-%m")) + one_offs
     risk = budget_risk(total, s.history, req.budget)
 
     return ForecastResponse(
@@ -43,5 +48,6 @@ def forecast(req: ForecastRequest):
         days_elapsed=s.days_elapsed,
         days_in_month=s.days_in_month,
         months_of_history=len(s.history),
+        one_off_spend=round(one_offs, 2),
         risk=risk,
     )

@@ -1,0 +1,49 @@
+# Module 2: Merchant Categoriser. Reachable inside the cluster as http://categoriser:8000
+apiVersion: v1
+kind: Service
+metadata:
+  name: categoriser
+spec:
+  selector:
+    app: categoriser
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: categoriser
+  labels:
+    app: categoriser
+    module: m2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: categoriser
+  template:
+    metadata:
+      labels:
+        app: categoriser
+        module: m2
+    spec:
+      containers:
+        - name: categoriser
+          image: spendcheck/categoriser
+          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          ports:
+            - containerPort: 8000
+          startupProbe:                         # verifies checksums and loads MiniLM at startup
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 5
+            failureThreshold: 36
+          readinessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /health, port: 8000 }
+            periodSeconds: 20
+          resources:                            # measured ~390 MiB warm (module README)
+            requests: { cpu: 100m, memory: 512Mi }
+            limits: { memory: 1Gi }

@@ -1,0 +1,40 @@
+# Module 5 ingestion, kept as a suspended CronJob so it never runs on a schedule but always has
+# the current image and settings. Start a run whenever new PDFs are in S3:
+#   kubectl create job ingest-$(date +%s) --from=cronjob/report-ingest -n spendcheck
+# On the course's Ronin VM there is no S3 bucket and ingestion is slow on 2 vCPUs, so reports are
+# ingested on a laptop and the database is copied across instead (k8s/README.md).
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: report-ingest
+spec:
+  suspend: true
+  schedule: "0 0 1 1 *"                 # required field; ignored while suspended
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      ttlSecondsAfterFinished: 86400
+      template:
+        metadata:
+          labels:
+            app: report-ingest
+            module: m5
+        spec:
+          restartPolicy: Never
+          containers:
+            - name: ingest
+              image: spendcheck/report-reader
+              imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+              command: ["python", "-m", "ingest.run", "--manifest", "s3://$(REPORTS_BUCKET)/manifest.csv"]
+              envFrom:
+                - configMapRef:
+                    name: spendcheck-config
+              env:
+                - name: REPORT_READER_DB_PASSWORD
+                  valueFrom:
+                    secretKeyRef: { name: spendcheck-db, key: REPORT_READER_DB_PASSWORD }
+                - name: DATABASE_URL
+                  value: postgresql://report_reader:$(REPORT_READER_DB_PASSWORD)@postgres:5432/spendcheck
+              resources:
+                requests: { cpu: "1", memory: 1Gi }
+                limits: { memory: 2Gi }

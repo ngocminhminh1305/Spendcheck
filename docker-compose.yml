@@ -1,0 +1,180 @@
+# Local development stack: the same images that run on Kubernetes, wired together on one machine.
+#
+#   cp .env.example .env            # then set passwords and LLM credentials
+#   docker compose up --build       # Postgres + Modules 4 and 5
+#   docker compose run --rm report-ingest        # load PDFs listed in data/reports/manifest.csv
+#
+# Each module owner adds their service in the marked section, following the same pattern:
+# build from the repo root, listen on 8000 inside the container, expose 800N on the host.
+
+name: spendcheck
+
+x-llm-env: &llm-env
+  LOG_LEVEL: INFO
+  LLM_PROVIDER: ${LLM_PROVIDER:-openrouter}
+  LLM_MODEL: ${LLM_MODEL:-}
+  OPENROUTER_API_KEY: ${OPENROUTER_API_KEY:-}
+  ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+  AWS_REGION: ${AWS_REGION:-ap-southeast-1}
+  AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+  AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+  AWS_SESSION_TOKEN: ${AWS_SESSION_TOKEN:-}
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: spendcheck
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD}
+      CHAT_AGENT_DB_PASSWORD: ${CHAT_AGENT_DB_PASSWORD}
+      REPORT_READER_DB_PASSWORD: ${REPORT_READER_DB_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init:/docker-entrypoint-initdb.d:ro   # runs once, on an empty volume
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d spendcheck"]
+      interval: 5s
+      retries: 12
+
+  # ---- API gateway: the website's single entry point (services/gateway) ---------------------
+  gateway:
+    build:
+      context: services/gateway
+    environment:
+      DATABASE_URL: postgresql://spendcheck_app:${APP_DB_PASSWORD}@postgres:5432/spendcheck
+      DEMO_USER_ID: ${DEMO_USER_ID:-demo-user}
+      CORS_ORIGINS: http://localhost:5173
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ---- Module 1: Transaction Entity Extractor (team code, services/extractor) -----------------
+  extractor:
+    build:
+      context: services/extractor
+    ports:
+      - "8001:8000"
+
+  # ---- Module 2: Merchant Categoriser (team code, services/categoriser) -----------------------
+  categoriser:
+    build:
+      context: services/categoriser
+      dockerfile: Dockerfile.hybrid      # uses Dockerfile.hybrid.dockerignore (runtime files only)
+    ports:
+      - "8002:8000"
+
+  # ---- Module 3: Spending Forecaster (team code, services/forecaster) -------------------------
+  forecaster:
+    build:
+      context: services/forecaster
+    ports:
+      - "8003:8000"
+
+  # ---- Module 4: Budget Chat Agent ------------------------------------------------------------
+  chat-agent:
+    build:
+      context: .
+      dockerfile: services/chat-agent/Dockerfile
+    environment:
+      <<: *llm-env
+      DATABASE_URL: postgresql://chat_agent_ro:${CHAT_AGENT_DB_PASSWORD}@postgres:5432/spendcheck
+      FORECASTER_URL: http://forecaster:8000
+      REPORT_READER_URL: http://report-reader:8000
+      EVAL_MODE: ${EVAL_MODE:-true}     # local only: lets the evaluation fix "today"
+    ports:
+      - "8004:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Module 4 helper: seed synthetic users, run unit tests, run the evaluation. Not started by `up`.
+  #   docker compose run --rm chat-eval                                   # seed eval-user + demo-user
+  #   docker compose run --rm --no-deps chat-eval python -m unittest discover -s tests -v
+  #   docker compose run --rm chat-eval python eval/run_eval.py --limit 5
+  chat-eval:
+    profiles: ["tools"]
+    build:
+      context: .
+      dockerfile: services/chat-agent/Dockerfile
+    command: ["python", "eval/seed_synthetic_user.py"]
+    environment:
+      APP_DATABASE_URL: postgresql://spendcheck_app:${APP_DB_PASSWORD}@postgres:5432/spendcheck
+      DATABASE_URL: postgresql://chat_agent_ro:${CHAT_AGENT_DB_PASSWORD}@postgres:5432/spendcheck
+      CHAT_AGENT_URL: http://chat-agent:8000
+      PYTHONPATH: /app                  # so eval scripts can import the app package
+    volumes:
+      - ./services/chat-agent/eval:/app/eval
+      - ./services/chat-agent/tests:/app/tests:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ---- Module 5: SGX Report Reader ------------------------------------------------------------
+  report-reader:
+    build:
+      context: .
+      dockerfile: services/report-reader/Dockerfile
+    environment:
+      <<: *llm-env
+      DATABASE_URL: postgresql://report_reader:${REPORT_READER_DB_PASSWORD}@postgres:5432/spendcheck
+    ports:
+      - "8005:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # One-off ingestion job (same image as report-reader). Not started by `docker compose up`.
+  report-ingest:
+    profiles: ["tools"]
+    build:
+      context: .
+      dockerfile: services/report-reader/Dockerfile
+    command: ["python", "-m", "ingest.run", "--manifest", "/data/reports/manifest.csv"]
+    environment:
+      DATABASE_URL: postgresql://report_reader:${REPORT_READER_DB_PASSWORD}@postgres:5432/spendcheck
+    volumes:
+      - ./data/reports:/data/reports:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Module 5 helper: unit tests, sample report, evaluation. Not started by `up`.
+  #   docker compose run --rm --no-deps reader-eval python -m unittest discover -s tests -v
+  #   docker compose run --rm reader-eval python eval/make_sample_report.py /data/reports/sample
+  #   docker compose run --rm reader-eval python -m ingest.run --manifest /data/reports/sample/manifest.csv
+  reader-eval:
+    profiles: ["tools"]
+    build:
+      context: .
+      dockerfile: services/report-reader/Dockerfile
+    command: ["python", "-m", "unittest", "discover", "-s", "tests", "-v"]
+    environment:
+      <<: *llm-env                      # the evaluation's LLM judge uses the same provider settings
+      DATABASE_URL: postgresql://report_reader:${REPORT_READER_DB_PASSWORD}@postgres:5432/spendcheck
+      REPORT_READER_URL: http://report-reader:8000
+      PYTHONPATH: /app
+    volumes:
+      - ./services/report-reader/tests:/app/tests:ro
+      - ./services/report-reader/eval:/app/eval
+      - ./data/reports:/data/reports
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ---- Website (frontend/): open http://localhost:3000 --------------------------------------
+  frontend:
+    build:
+      context: frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - gateway
+
+volumes:
+  pgdata:

@@ -1,0 +1,13 @@
+# Non-secret settings shared by every service (secrets live in the spendcheck-db Secret).
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spendcheck-config
+data:
+  LOG_LEVEL: INFO
+  LLM_PROVIDER: openrouter        # or anthropic / bedrock; keys live in the spendcheck-db Secret
+  LLM_MODEL: nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-ultra-550b-a55b:free,google/gemma-4-31b-it:free   # main model, then fallbacks
+  AWS_REGION: ap-southeast-1
+  FORECASTER_URL: http://forecaster:8000
+  REPORT_READER_URL: http://report-reader:8000
+  REPORTS_BUCKET: spendcheck-reports

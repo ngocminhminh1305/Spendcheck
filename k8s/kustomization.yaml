@@ -1,0 +1,45 @@
+# Deploy everything with:  kubectl apply -k k8s/
+# Before the first deploy, see k8s/README.md (images on the node, db-init ConfigMap, secrets.env).
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: spendcheck
+
+resources:
+  - 00-namespace.yaml
+  - 01-configmap.yaml
+  - 10-postgres.yaml
+  - 20-extractor.yaml
+  - 21-categoriser.yaml
+  - 22-forecaster.yaml
+  - 25-gateway.yaml
+  - 26-frontend.yaml
+  - 30-chat-agent.yaml
+  - 31-report-reader.yaml
+  - 40-report-ingest.yaml
+  - 50-ingress.yaml
+
+# Passwords come from k8s/secrets.env (git-ignored; copy secrets.env.example).
+secretGenerator:
+  - name: spendcheck-db
+    envs:
+      - secrets.env
+
+# Manifests use short image names. The images are built on a laptop and loaded straight onto the
+# node (there is no registry on the course VM); every container sets imagePullPolicy: Never, so
+# Kubernetes only ever runs those local copies. Bump the tag here on a release you want to keep.
+images:
+  - name: spendcheck/extractor
+    newTag: v1
+  - name: spendcheck/categoriser
+    newTag: v1
+  - name: spendcheck/forecaster
+    newTag: v1
+  - name: spendcheck/gateway
+    newTag: v1
+  - name: spendcheck/frontend
+    newTag: v1
+  - name: spendcheck/chat-agent
+    newTag: v1
+  - name: spendcheck/report-reader
+    newTag: v1

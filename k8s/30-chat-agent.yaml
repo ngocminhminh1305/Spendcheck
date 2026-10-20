@@ -1,0 +1,61 @@
+# Module 4: Budget Chat Agent. Reachable inside the cluster as http://chat-agent:8000
+apiVersion: v1
+kind: Service
+metadata:
+  name: chat-agent
+spec:
+  selector:
+    app: chat-agent
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chat-agent
+  labels:
+    app: chat-agent
+    module: m4
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chat-agent
+  template:
+    metadata:
+      labels:
+        app: chat-agent
+        module: m4
+    spec:
+      containers:
+        - name: chat-agent
+          image: spendcheck/chat-agent        # tag set in kustomization.yaml
+          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          ports:
+            - containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: spendcheck-config
+          env:
+            - name: CHAT_AGENT_DB_PASSWORD
+              valueFrom:
+                secretKeyRef: { name: spendcheck-db, key: CHAT_AGENT_DB_PASSWORD }
+            - name: DATABASE_URL                # $(VAR) expands the variable defined above
+              value: postgresql://chat_agent_ro:$(CHAT_AGENT_DB_PASSWORD)@postgres:5432/spendcheck
+            - name: OPENROUTER_API_KEY
+              valueFrom:
+                secretKeyRef: { name: spendcheck-db, key: OPENROUTER_API_KEY, optional: true }
+            - name: ANTHROPIC_API_KEY
+              valueFrom:
+                secretKeyRef: { name: spendcheck-db, key: ANTHROPIC_API_KEY, optional: true }
+          readinessProbe:                       # only receive traffic once Postgres is reachable
+            httpGet: { path: /ready, port: 8000 }
+            periodSeconds: 10
+          livenessProbe:                        # restart the container if the process hangs
+            httpGet: { path: /health, port: 8000 }
+            initialDelaySeconds: 10
+            periodSeconds: 20
+          resources:
+            requests: { cpu: 100m, memory: 256Mi }
+            limits: { memory: 512Mi }

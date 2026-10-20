@@ -1,7 +1,32 @@
-.venv/
+.env
+k8s/secrets.env
+# Ronin VM private keys: anyone with this file can log in to the group VM
+*.pem
 __pycache__/
-.pytest_cache/
 *.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
 .DS_Store
+
+# Website build output (built inside Docker)
+frontend/node_modules/
+frontend/dist/
+
+# Local copy of the team repo used while merging
+incoming/
+
+# Large or generated data: annual-report PDFs and the database stay out of git. The manifests
+# (which reports, from where) are kept so anyone can download the same files and ingest them.
+data/**
+!data/**/
+!data/reports/**/manifest.csv
+!data/reports/README.md
+*.pdf
+results*.jsonl
+results*.csv
+
+# Module 1 run outputs
 /services/extractor/data/outputs/*
 !/services/extractor/data/outputs/.gitkeep
