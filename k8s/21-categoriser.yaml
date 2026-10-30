@@ -31,7 +31,7 @@ spec:
       containers:
         - name: categoriser
           image: spendcheck/categoriser
-          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          imagePullPolicy: Never              # the copy pulled from ECR at deploy time (README step 2)
           ports:
             - containerPort: 8000
           startupProbe:                         # verifies checksums and loads MiniLM at startup

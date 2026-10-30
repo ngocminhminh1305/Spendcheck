@@ -1,8 +1,8 @@
 # Module 5 ingestion, kept as a suspended CronJob so it never runs on a schedule but always has
 # the current image and settings. Start a run whenever new PDFs are in S3:
 #   kubectl create job ingest-$(date +%s) --from=cronjob/report-ingest -n spendcheck
-# On the course's Ronin VM there is no S3 bucket and ingestion is slow on 2 vCPUs, so reports are
-# ingested on a laptop and the database is copied across instead (k8s/README.md).
+# The PDFs live in S3 (bucket in 01-configmap.yaml). Ingestion is slow on the VM's 2 vCPUs, so in
+# practice the same command runs on a laptop and the database is copied across (k8s/README.md).
 apiVersion: batch/v1
 kind: CronJob
 metadata:
@@ -24,12 +24,17 @@ spec:
           containers:
             - name: ingest
               image: spendcheck/report-reader
-              imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+              imagePullPolicy: Never              # the copy pulled from ECR at deploy time (README step 2)
               command: ["python", "-m", "ingest.run", "--manifest", "s3://$(REPORTS_BUCKET)/manifest.csv"]
               envFrom:
                 - configMapRef:
                     name: spendcheck-config
+                - secretRef:                    # temporary Learner Lab keys, created just before a run:
+                    name: aws-lab               # kubectl create secret generic aws-lab --from-env-file=...
+                    optional: true
               env:
+                - name: AWS_DEFAULT_REGION       # the reports bucket is in us-east-1
+                  value: us-east-1
                 - name: REPORT_READER_DB_PASSWORD
                   valueFrom:
                     secretKeyRef: { name: spendcheck-db, key: REPORT_READER_DB_PASSWORD }

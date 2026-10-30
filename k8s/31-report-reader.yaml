@@ -30,8 +30,8 @@ spec:
     spec:
       containers:
         - name: report-reader
-          image: spendcheck/report-reader     # tag set in kustomization.yaml
-          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          image: spendcheck/report-reader     # ECR name and tag set in kustomization.yaml
+          imagePullPolicy: Never              # the copy pulled from ECR at deploy time (README step 2)
           ports:
             - containerPort: 8000
           envFrom:

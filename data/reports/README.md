@@ -1,7 +1,10 @@
 # Annual reports for Module 5
 
-The PDFs are not in git (about 70 MB). Each folder has a `manifest.csv` listing its reports;
-download the PDFs into the same folder with the file names in the `path` column, then ingest:
+The PDFs are not in git (about 70 MB). They are stored in the private S3 bucket
+`spendcheck-reports-767397718813` (us-east-1, Learner Lab account), with a `manifest.csv` at the
+top that the ingest job reads (see k8s/README.md). Each folder here also has a `manifest.csv`
+listing its reports; to work locally instead, download the PDFs into the same folder with the
+file names in the `path` column, then ingest:
 
 ```bash
 MSYS_NO_PATHCONV=1 docker compose run --rm report-ingest python -m ingest.run --manifest /data/reports/sgx/manifest.csv

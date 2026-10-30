@@ -10,4 +10,4 @@ data:
   AWS_REGION: ap-southeast-1
   FORECASTER_URL: http://forecaster:8000
   REPORT_READER_URL: http://report-reader:8000
-  REPORTS_BUCKET: spendcheck-reports
+  REPORTS_BUCKET: spendcheck-reports-767397718813   # S3, us-east-1 (Learner Lab account)

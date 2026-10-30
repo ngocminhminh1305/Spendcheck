@@ -25,21 +25,30 @@ secretGenerator:
     envs:
       - secrets.env
 
-# Manifests use short image names. The images are built on a laptop and loaded straight onto the
-# node (there is no registry on the course VM); every container sets imagePullPolicy: Never, so
-# Kubernetes only ever runs those local copies. Bump the tag here on a release you want to keep.
+# Manifests use short image names; this maps them to the ECR repositories in the Learner Lab
+# account (us-east-1). The deploy step pulls each image from ECR onto the VM once
+# (k8s/README.md, step 2); every container sets imagePullPolicy: Never, so Kubernetes runs that
+# local copy and never needs AWS credentials, which in the Learner Lab expire after a few hours.
+# Bump the tag on every release.
 images:
   - name: spendcheck/extractor
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/extractor
     newTag: v1
   - name: spendcheck/categoriser
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/categoriser
     newTag: v1
   - name: spendcheck/forecaster
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/forecaster
     newTag: v1
   - name: spendcheck/gateway
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/gateway
     newTag: v1
   - name: spendcheck/frontend
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/frontend
     newTag: v1
   - name: spendcheck/chat-agent
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/chat-agent
     newTag: v1
   - name: spendcheck/report-reader
+    newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/report-reader
     newTag: v1

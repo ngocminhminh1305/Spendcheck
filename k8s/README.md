@@ -1,20 +1,32 @@
 # Deploying Spendcheck on the group's Ronin VM (AWS EC2) with Kubernetes
 
 Target: **k3s** (a full, certified Kubernetes distribution) on the course's Ronin machine
-`dsa2111-group14.nus.cloud`, an AWS EC2 **t3.medium** (2 vCPU, 4 GiB) in ap-southeast-1.
-Docker builds the images on a laptop; Kubernetes runs them on AWS. Docker Compose stays the
-local development set-up.
+`dsa2111-group14.nus.cloud`, an AWS EC2 **t3.medium** (2 vCPU, 4 GiB, 60 GB disk) in
+ap-southeast-1, with images in **Amazon ECR** and the annual-report PDFs in **Amazon S3**, both in
+an AWS Academy Learner Lab account (767397718813, us-east-1). Docker builds the images on a
+laptop; Kubernetes runs them on AWS. Docker Compose stays the local development set-up.
 
 ```
-laptop (Docker)  --docker save | ssh-->  VM: Docker image store  <--  k3s (uses Docker as runtime)
-                                                                         |
+laptop (Docker) --push--> ECR (us-east-1) --pull once per release--> VM Docker <-- k3s (Docker runtime)
+laptop ingest  <--PDFs--  S3 (us-east-1)        laptop Postgres --pg_dump/pg_restore--> VM Postgres
 browser --SSH tunnel--> VM:80 Traefik Ingress --> frontend (nginx) --/api--> gateway --> modules 1-5
 ```
 
-There is no container registry (no AWS account, so no ECR) and no S3: images are streamed to the
-VM over SSH, and the database (with the annual reports already ingested) is copied from a laptop.
-Port 80 is closed to the internet by Ronin's firewall, so the site is reached through an SSH
-tunnel. That also keeps the free AI quota (50 requests/day) to ourselves.
+Learner Lab keys expire after a few hours, so the VM pulls each image from ECR **once**, at deploy
+time, and every container uses `imagePullPolicy: Never`: Kubernetes runs that local copy and never
+needs AWS credentials. Ingestion is too slow for the VM, so it runs on a laptop (reading the PDFs
+from S3) and the database is copied across. Port 80 is closed to the internet by Ronin's
+firewall, so the site is reached through an SSH tunnel. That also keeps the free AI quota
+(50 requests/day) to ourselves.
+
+**Learner Lab keys:** start the lab, then copy *AWS Details > AWS CLI* into `~/.aws/credentials`
+(or run `aws configure export-credentials --format env` in the lab terminal). The AWS commands
+below use Amazon's official AWS CLI image, so nothing needs installing:
+
+```bash
+aws() { MSYS_NO_PATHCONV=1 docker run --rm -v "$(cygpath -w ~/.aws):/root/.aws:ro" amazon/aws-cli:2.27.0 "$@"; }
+REGISTRY=767397718813.dkr.ecr.us-east-1.amazonaws.com
+```
 
 All commands below run in **Git Bash from the repo root** on a laptop unless marked *on the VM*.
 
@@ -47,18 +59,29 @@ curl -sfL https://get.k3s.io | INSTALL_K3S_EXEC="server --docker --write-kubecon
 kubectl get nodes
 ```
 
-## 2. Ship the images (after any code change)
+## 2. Ship the images through ECR (after any code change)
+
+Build, tag and push from the laptop (about 3 minutes for all seven; use Bash, because Windows
+PowerShell corrupts the login token when it pipes it):
 
 ```bash
 docker compose build
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin $REGISTRY
 for s in extractor categoriser forecaster gateway chat-agent report-reader frontend; do
-  docker tag spendcheck-$s:latest spendcheck/$s:v1
+  docker tag spendcheck-$s:latest $REGISTRY/spendcheck/$s:v1
+  docker push $REGISTRY/spendcheck/$s:v1
 done
-docker save spendcheck/{extractor,categoriser,forecaster,gateway,chat-agent,report-reader,frontend}:v1 \
-  | gzip -3 | ssh -i $KEY $VM 'gunzip | docker load'
 ```
 
-The first upload is about 3 GB compressed. To ship one changed service, save just that image.
+Then pull them onto the VM once (about 4 minutes). The 12-hour login token is passed over SSH and
+the VM logs out of ECR straight afterwards:
+
+```bash
+aws ecr get-login-password --region us-east-1 | ssh -i $KEY $VM "docker login --username AWS --password-stdin $REGISTRY && \
+  for s in extractor categoriser forecaster gateway chat-agent report-reader frontend; do docker pull -q $REGISTRY/spendcheck/\$s:v1; done; \
+  docker logout $REGISTRY"
+```
+
 Re-using the tag `v1` is fine; restart the deployment afterwards (step 6) so it picks the new
 image up.
 
@@ -107,13 +130,21 @@ kubectl exec -i -n spendcheck postgres-0 -- pg_restore -U postgres -d spendcheck
 
 After shipping a new image: `kubectl rollout restart deployment/<name> -n spendcheck`.
 
-**Adding annual reports.** Ingest on the laptop (about 3 s a page on 2 vCPUs is too slow for the VM),
-then repeat this step. The three SGX reports came from SGX Company Announcements, category "Annual
-Reports and Related Documents", and are listed in `data/reports/sgx/manifest.csv`:
+**Adding annual reports.** The PDFs live in the private bucket `spendcheck-reports-767397718813`
+(`manifest.csv` at the top lists every report; `sgx/` and `financebench/` hold the files). Upload
+a new PDF, add a line to the manifests, ingest on the laptop from S3 (about 3 s a page, too slow for
+the VM), then repeat this step to copy the database:
 
 ```bash
-MSYS_NO_PATHCONV=1 docker compose run --rm report-ingest python -m ingest.run --manifest /data/reports/sgx/manifest.csv
+aws s3 cp new-report.pdf s3://spendcheck-reports-767397718813/sgx/
+MSYS_NO_PATHCONV=1 docker compose run --rm -v "$(cygpath -w ~/.aws):/aws-creds:ro" \
+  -e AWS_SHARED_CREDENTIALS_FILE=/aws-creds/credentials -e AWS_DEFAULT_REGION=us-east-1 \
+  report-ingest python -m ingest.run --manifest s3://spendcheck-reports-767397718813/manifest.csv
 ```
+
+Reports already in the database are skipped. The three SGX reports came from SGX Company
+Announcements, category "Annual Reports and Related Documents" (sources in
+`data/reports/README.md`).
 
 ## 7. Open the website
 
@@ -129,8 +160,9 @@ Leave that running and open http://localhost:8080. The M1-M5 dots at the top sho
 |---|---|
 | A pod is `Pending` | `kubectl describe pod <pod> -n spendcheck`: usually not enough memory; `free -h` |
 | A pod restarts (`CrashLoopBackOff`, `OOMKilled`) | `kubectl logs <pod> -n spendcheck --previous` |
-| `ErrImageNeverPull` / `ImagePullBackOff` | the image is not on the VM: `docker images \| grep spendcheck`, then step 2 |
-| Disk full | `df -h /`; `docker image prune -f` removes old untagged images |
+| `ErrImageNeverPull` / `ImagePullBackOff` | the image is not on the VM: `docker images \| grep spendcheck`, then pull it from ECR (step 2) |
+| Every pod `Pending` or `ContainerStatusUnknown`; node tainted `disk-pressure` | the disk passed 85%: Kubernetes evicted the pods and **deleted their images**. Free space (`df -h /`; download caches such as `~/.cache/pip` are safe to clear), pull the images from ECR again (step 2), then `kubectl delete pods -n spendcheck --field-selector=status.phase=Failed`. This happened on 26 Oct when other work filled the disk; it was grown to 60 GB afterwards. Please do not build or run the project with docker compose on the VM |
+| New pod stuck `Pending` with "Insufficient memory" during a rollout | an old broken pod still reserves memory: delete the old ReplicaSet (`kubectl get rs -n spendcheck`, then `kubectl delete rs <old>`) |
 | Site down after the VM restarted | wait 3 minutes (the extractor loads its models), then `kubectl get pods -n spendcheck` |
 | Answers fail with "Provider returned error" | a free model is down. `LLM_MODEL` in `01-configmap.yaml` is a list: OpenRouter tries each in turn. Swap in models that are up (https://openrouter.ai/models, filter "free"), `kubectl apply -k k8s/`, then restart chat-agent and report-reader |
 
