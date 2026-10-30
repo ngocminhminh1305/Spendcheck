@@ -31,7 +31,7 @@ spec:
       containers:
         - name: frontend
           image: spendcheck/frontend
-          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          imagePullPolicy: Never              # the copy pulled from ECR at deploy time (README step 2)
           ports:
             - containerPort: 80
           readinessProbe:

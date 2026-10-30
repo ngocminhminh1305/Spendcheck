@@ -31,7 +31,7 @@ spec:
       containers:
         - name: extractor
           image: spendcheck/extractor
-          imagePullPolicy: Never              # only the copy loaded onto the VM, never a registry
+          imagePullPolicy: Never              # the copy pulled from ECR at deploy time (README step 2)
           ports:
             - containerPort: 8000
           startupProbe:                         # spaCy + GLiNER load at startup (~30 s on a laptop,

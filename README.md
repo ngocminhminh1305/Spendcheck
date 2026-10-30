@@ -45,6 +45,15 @@ The AI (Modules 4 and 5) uses OpenRouter's free models: 50 requests a day per ac
 chat question. `LLM_MODEL` in `.env` is a comma-separated list; OpenRouter falls back to the next
 model when one is down.
 
+## Before a demo
+
+The demo user's data covers the six months up to the day it was generated, so refresh it on the
+morning of a demo; it also copies the database to the Ronin VM (see k8s/README.md):
+
+```bash
+bash scripts/refresh_demo.sh
+```
+
 ## Tests
 
 Each service owns its tests and its pytest configuration (two services use a package named
