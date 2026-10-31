@@ -50,7 +50,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 echo 'vm.swappiness=10' | sudo tee /etc/sysctl.d/99-spendcheck-swap.conf
 
 # Classic Docker storage: Docker 29's default (containerd image store) keeps a packed AND an
-# unpacked copy of every image, which does not fit on the 40 GB disk.
+# unpacked copy of every image, which did not fit on the original 40 GB disk.
 echo '{"features": {"containerd-snapshotter": false}}' | sudo tee /etc/docker/daemon.json
 sudo systemctl restart docker
 
@@ -82,8 +82,8 @@ aws ecr get-login-password --region us-east-1 | ssh -i $KEY $VM "docker login --
   docker logout $REGISTRY"
 ```
 
-Re-using the tag `v1` is fine; restart the deployment afterwards (step 6) so it picks the new
-image up.
+Re-using the tag `v1` is fine: after pulling, restart each changed deployment so it picks the new
+image up (`kubectl rollout restart deployment/<name> -n spendcheck`, on the VM).
 
 ## 3. Ship the manifests and the database schema
 

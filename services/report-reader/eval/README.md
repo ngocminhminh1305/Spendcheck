@@ -63,13 +63,26 @@ those answers. Note that one "wrong" citation (pp. 32-33 for the segment questio
 gold figure; the fact simply appears on more than one page, so also report a hand-checked citation
 accuracy on a sample.
 
-## Free-model budget
+## Held-out run (27 Oct 2026, 8 questions, nvidia/nemotron-3-ultra-550b-a55b:free)
 
-50 requests a day. 74 questions x 2 modes = 148 asks, plus judge calls for non-numeric answers, is
-roughly 250 requests: about five days. Module 4 needs about five days too, so alternate or run
-both with `--resume` a little every day, and start early.
+The free models allow 50 requests a day, and all 74 questions in both modes plus judge calls need
+about 250, so the full set was not run. Instead, `financebench_run_27oct.jsonl` holds 8 held-out
+questions, one from each of the 8 filings that follow the 3M 10-K in alphabetical order (3M 10-Q
+to Best Buy 10-K): for each filing, its first question that was not in the 5-question
+development check.
+
+```bash
+docker compose run --rm reader-eval python eval/run_eval.py --questions eval/financebench_run_27oct.jsonl --pause 8
+```
+
+| Mode | Correct | Evidence page retrieved | Citations on evidence pages | Median |
+|---|---|---|---|---|
+| full | 7/8 | 6/8 | 4/10 | 13.6 s |
+| basic | 3/8 | 2/8 | 2/22 | 7.7 s |
+
+Results are in `results_financebench_run_27oct.csv`. Short numeric answers were graded by number
+matching; the other 14 rows were graded by hand against `gold_answer` (`grade_method` = `manual`).
 
 The FinanceBench paper reports results for several set-ups, including a vector store shared
-across all filings (closest to our `basic` mode) and one store per filing. Our `full` mode adds
-company/year scoping, hybrid search and source-label citations, so the comparison maps directly
-onto the paper's table.
+across all filings, which is closest to our `basic` mode. Our `full` mode adds company/year
+scoping, hybrid search and source-label citations.

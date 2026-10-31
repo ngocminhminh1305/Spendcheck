@@ -2,7 +2,7 @@
 # Creates one database role per access pattern. Runs once, when the Postgres data volume is empty
 # (the official postgres image runs every file in /docker-entrypoint-initdb.d in name order).
 #
-#   spendcheck_app  read/write transactions  - gateway and Modules 1-3
+#   spendcheck_app  read/write transactions  - gateway (and the demo seed script)
 #   chat_agent_ro   read-only, one user only - Module 4 (enforced by row-level security)
 #   report_reader   owns the reports schema  - Module 5
 #

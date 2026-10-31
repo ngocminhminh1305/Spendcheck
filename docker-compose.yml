@@ -1,11 +1,12 @@
-# Local development stack: the same images that run on Kubernetes, wired together on one machine.
+# Local stack: the same images that run on Kubernetes (k8s/), wired together on one machine.
 #
-#   cp .env.example .env            # then set passwords and LLM credentials
-#   docker compose up --build       # Postgres + Modules 4 and 5
-#   docker compose run --rm report-ingest        # load PDFs listed in data/reports/manifest.csv
+#   cp .env.example .env                   # then set passwords and LLM credentials
+#   docker compose up -d --build           # Postgres, gateway, Modules 1 to 5 and the website
+#   docker compose run --rm chat-eval      # seed the synthetic demo-user and eval-user
+#   open http://localhost:3000
 #
-# Each module owner adds their service in the marked section, following the same pattern:
-# build from the repo root, listen on 8000 inside the container, expose 800N on the host.
+# Every service listens on 8000 inside its container; Module N is exposed on host port 800N, the
+# gateway on 8000 and the website on 3000. Services under the "tools" profile are one-off jobs.
 
 name: spendcheck
 
@@ -130,12 +131,13 @@ services:
         condition: service_healthy
 
   # One-off ingestion job (same image as report-reader). Not started by `docker compose up`.
+  # Default: the SGX reports; other sets in data/reports/README.md.
   report-ingest:
     profiles: ["tools"]
     build:
       context: .
       dockerfile: services/report-reader/Dockerfile
-    command: ["python", "-m", "ingest.run", "--manifest", "/data/reports/manifest.csv"]
+    command: ["python", "-m", "ingest.run", "--manifest", "/data/reports/sgx/manifest.csv"]
     environment:
       DATABASE_URL: postgresql://report_reader:${REPORT_READER_DB_PASSWORD}@postgres:5432/spendcheck
     volumes:

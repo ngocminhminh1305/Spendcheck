@@ -1,4 +1,4 @@
-"""Ingestion entry point. Runs as a Kubernetes Job (k8s/40-report-ingest-job.yaml) or locally.
+"""Ingestion entry point. Runs as a Kubernetes Job (k8s/40-report-ingest.yaml) or locally.
 
     python -m ingest.run --manifest s3://spendcheck-reports/manifest.csv
     python -m ingest.run --manifest ./data/reports/manifest.csv          # local files, no AWS
