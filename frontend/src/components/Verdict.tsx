@@ -9,6 +9,8 @@ import { health, HEALTH_LABEL, verdict, type Health } from "../voice";
 
 const ICONS: Record<Health, typeof Info> = { none: Info, good: CircleCheck, warning: TriangleAlert, critical: CircleAlert };
 
+const plural = (n: number, word: string) => `${n} ${word}${n === 1 ? "" : "s"}`;
+
 /** Spending allowed per remaining day (after today) to finish within budget. */
 export function perDayLeft(summary: Summary, forecast: Forecast | null): number | null {
   if (!summary.budget || !forecast) return null;
@@ -42,14 +44,16 @@ export default function Verdict({ prefs, summary, forecast, showWhy = false }: {
       ) : null}
       <div className="facts">
         {perDay !== null && perDay > 0 && <span><b>{sgd(perDay)}</b> a day left</span>}
-        {daysLeft !== null && <span><b>{daysLeft}</b> days to go</span>}
+        {daysLeft !== null && (daysLeft === 0
+          ? <span><b>Last day</b> of the month</span>
+          : <span><b>{daysLeft}</b> {daysLeft === 1 ? "day" : "days"} to go</span>)}
         {forecast && <span>Month-end forecast <b>{sgd(forecast.forecast_total)}</b></span>}
       </div>
       {showWhy && forecast && (
         <div className="why">
-          <strong>Why we think this:</strong> you've spent {sgd(forecast.spent_so_far)} in {forecast.days_elapsed} days
+          <strong>Why we think this:</strong> you've spent {sgd(forecast.spent_so_far)} in {plural(forecast.days_elapsed, "day")}
           {forecast.one_off_spend > 0 && <>, including {sgd(forecast.one_off_spend)} of one-off purchases (counted once, not as your daily pace)</>}.
-          The forecaster learned your usual pattern from {forecast.months_of_history} months of history and expects about{" "}
+          The forecaster learned your usual pattern from {plural(forecast.months_of_history, "month")} of history and expects about{" "}
           {sgd(forecast.forecast_total)} by {shortDate(`${forecast.month}-${String(forecast.days_in_month).padStart(2, "0")}`)}.
           {" "}It's an estimate, not a promise.
         </div>

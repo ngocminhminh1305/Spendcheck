@@ -1,0 +1,11 @@
+id,mode,question,gold,answer,correct,server_ms,wall_ms,tool_calls,error
+q01,agent,How much did I spend on food last week?,62.4,You spent SGD 62.40 on food last week.,True,39107.1,39118.3,1,
+q01,baseline,How much did I spend on food last week?,62.4,Last week (Monday 6 Oct – Sunday 12 Oct 2026) you spent **SGD 71.70** on food & drink. This total is the sum of all Food & Drink transactions from those dates.,False,53074.1,53082.3,0,
+q02,agent,What was my biggest single purchase this month?,41.15,"Your biggest single purchase this month was $41.15 at FairPrice on October 2, 2026. This is the highest amount among all your transactions from October 1 to today.",True,10917.5,10922.5,1,
+q02,baseline,What was my biggest single purchase this month?,41.15,"Your biggest single purchase in October 2026 was a FairPrice grocery run for SGD 41.15 on 2 October 2026. This exceeds all other October transactions, which are all under SGD 22.55.",True,28314.9,28330.9,0,
+q03,agent,How many times did I take Grab in September?,2.0,You took Grab **2 times** in September.,True,11608.7,11613.1,1,
+q03,baseline,How many times did I take Grab in September?,2.0,You took Grab twice in September 2026 – on September 11 and September 19. Each trip was recorded as a Transport expense.,True,64709.1,64713.8,0,
+q04,agent,Which category did I spend the most on last month?,Shopping,"Last month (September 2026), your highest spending was in the **Shopping** category, with a total of **SGD 595.85**.",True,9237.8,9251.9,1,
+q04,baseline,Which category did I spend the most on last month?,Shopping,"In September 2026, you spent the most on the **Shopping** category, with a total of **SGD 595.85**. The next highest spending was on Food & Drink (SGD 338.85), followed by Groceries (SGD 156.75). All other categories were below SGD 100.",True,145122.9,145131.8,0,
+q05,agent,How much of my October budget is left?,555.44,"Your October budget is $900.00. You’ve spent $344.56 so far this month (up to October 13), leaving $555.44 remaining.",True,29238.4,29246.4,1,
+q05,baseline,How much of my October budget is left?,555.44,"You’ve spent 344.56 SGD in October so far. With an October ALL budget of 900.00 SGD, you have 555.44 SGD remaining.",True,56062.4,56069.4,0,

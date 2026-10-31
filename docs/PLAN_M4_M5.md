@@ -1,6 +1,7 @@
-# Modules 4 and 5: design and work plan
+# Modules 4 and 5: design
 
-Owner: Okaggar. This is the plan for the two services; the shared rules are in `CONTRACTS.md`.
+Owner: Okaggar. This is the design of the two services; the shared rules are in `CONTRACTS.md`
+and the evaluations in each service's `eval/README.md`.
 
 ## Module 4: Budget Chat Agent (`services/chat-agent`)
 
@@ -13,9 +14,9 @@ novelty point 4) while the two modules stay separate services with separate eval
 
 ```mermaid
 flowchart LR
-    Q[POST /v1/chat] --> A[agent loop<br/>Claude + tools]
+    Q[POST /v1/chat] --> A[agent loop<br/>LLM + tools]
     A -- run_sql --> G[SQL guard<br/>sqlglot allowlist] --> D[(Postgres<br/>read-only role + RLS)]
-    A -- get_forecast --> F[Module 3<br/>GET /v1/forecast]
+    A -- get_forecast --> F[Module 3<br/>POST /forecast]
     A -- search_annual_reports --> M5[Module 5<br/>POST /v1/ask]
     D --> A
     F --> A
@@ -23,9 +24,9 @@ flowchart LR
     A --> R[answer + steps + citations]
 ```
 
-**Status: implemented.** 29 unit tests pass (13 SQL guard, 7 agent loop with a fake LLM, 9 LLM
-adapters with fake HTTP responses); tools verified against Postgres; synthetic users seeded.
-Needs a free OpenRouter key to answer.
+**Status: implemented and deployed.** 35 unit tests pass (14 SQL guard, 10 agent loop with a fake
+LLM, 9 LLM adapters with fake HTTP responses, 2 forecast tool); synthetic users seeded. Needs a
+free OpenRouter key (`.env`) to answer.
 
 | File | Role |
 |---|---|
@@ -36,7 +37,7 @@ Needs a free OpenRouter key to answer.
 | `app/tools/reports_tool.py` | `search_annual_reports`: HTTP call to Module 5, passes citations through |
 | `app/tools/__init__.py` | tool list and dispatcher; failures become error results the LLM can recover from |
 | `app/db.py` | connection pool; `user_scoped_readonly` sets the user for row-level security |
-| `app/prompts.py` | system prompt with the schema (prompt-cached) and the "today is" line |
+| `app/prompts.py` | system prompt with the schema (prompt-cached), the "today is" line and the persona's voice |
 | `app/baseline.py` | evaluation baseline: same LLM, history pasted as CSV, no tools |
 | `eval/seed_synthetic_user.py` | fixed-seed `eval-user` (1 Apr to 13 Oct 2026) and `demo-user` (last 6 months) |
 | `eval/run_eval.py` | gold answers from `gold_sql`, calls both modes, scores, writes `results.csv` |
@@ -46,7 +47,7 @@ Needs a free OpenRouter key to answer.
 `transactions`, `budgets`, `categories`; the database login (`chat_agent_ro`) has SELECT grants
 only; each query runs in a READ ONLY transaction with a 3-second timeout; and Postgres row-level
 security hides every row that is not the current user's. The last layer is enforced by the
-database, so it holds even if the first three fail. This is worth a paragraph in the report.
+database, so it holds even if the first three fail.
 
 ## Module 5: SGX Report Reader (`services/report-reader`)
 
@@ -64,10 +65,10 @@ flowchart LR
     V --> H
 ```
 
-**Status: pipeline implemented.** 23 unit tests pass (PDF parsing on a generated sample report,
-chunking, scoping, rank fusion, citations with a fake LLM). End to end with the free model on the
-sample report: correct answers with correct pages in full mode, and through the Module 4 chat.
-Still to do: download the real SGX and FinanceBench PDFs, and the evaluation script.
+**Status: implemented and deployed.** 31 unit tests pass (7 ingest: PDF parsing on a generated
+sample report and chunking; 18 retrieval and answers: scoping, rank fusion, citations with a fake
+LLM; 6 evaluation scoring). Loaded: 3 SGX annual reports (DBS, Singapore Airlines, Sheng Siong),
+20 FinanceBench filings and the sample report, 24 documents in all; the PDFs are kept in Amazon S3.
 
 | File | Role |
 |---|---|
@@ -76,10 +77,11 @@ Still to do: download the real SGX and FinanceBench PDFs, and the evaluation scr
 | `ingest/chunking.py` | chunks never cross pages; tables are their own chunks (split by rows, header repeated) |
 | `app/embeddings.py` | local `BAAI/bge-small-en-v1.5` via fastembed, baked into the image |
 | `app/store.py` | pgvector similarity search (HNSW, iterative scan when scoped) and OR-ed full-text search |
+| `app/glossary.py` | finance glossary: adds statement wording to analyst terms before searching |
 | `app/retriever.py` | `basic` (dense top-k) and `full` (scope by company/year + hybrid + RRF) retrieval |
 | `app/answer.py` | numbered source labels -> page citations, and the supporting sentence as the quote |
 | `eval/make_sample_report.py` | generates a 5-page sample report with known facts, for tests and demos |
-| `eval/` | FinanceBench subset, ~30 SGX questions, grading (to write) |
+| `eval/` | FinanceBench subset (74 questions), SGX questions, `run_eval.py` (grading) and the results |
 
 **Why the citations are verifiable.** In full mode the retrieved chunks are labelled [S1], [S2], ...
 and the model must tag each fact with a label. Our code, not the model, maps the label to a chunk,
@@ -92,7 +94,7 @@ citation accuracy compares the two. This works with any LLM, including free ones
 
 | Decision | Choice | Reason | Alternative considered |
 |---|---|---|---|
-| LLM | Free open model through OpenRouter (default `nvidia/nemotron-3-super-120b-a12b:free`) | zero cost (the group has no LLM budget); one key for many models; switchable with `LLM_MODEL` | Claude via its API or Amazon Bedrock: same code, `LLM_PROVIDER=anthropic` or `bedrock` |
+| LLM | Free open models through OpenRouter: `LLM_MODEL` lists Nemotron 3 Super, then Nemotron 3 Ultra and Gemma 4 31B as fallbacks | zero cost (the group has no LLM budget); one key for many models; a model outage does not stop the chat | Claude via its API or Amazon Bedrock: same code, `LLM_PROVIDER=anthropic` or `bedrock` |
 | Provider-neutral LLM layer | one `chat()` / `tool_results()` interface, adapters for OpenRouter (OpenAI format) and Claude | the agent never depends on a vendor; models can be compared in the report | calling one vendor's SDK directly |
 | Free-tier limits | 20 requests/min, 50/day: evaluation paces itself and resumes across days | stays free | buying credit (1,000/day after US$10) |
 | Agent loop | hand-written loop | records each tool call for the UI and the report; step limit | SDK tool runner |
@@ -109,25 +111,15 @@ citation accuracy compares the two. This works with any LLM, including free ones
 
 | Module | Data | Our system | Baseline | Metrics |
 |---|---|---|---|---|
-| 4 | synthetic user, ~50 questions with gold SQL | `mode=agent` | `mode=baseline` (pasted CSV, no tools) | accuracy overall and per question type; latency |
-| 5 | FinanceBench 150 + ~30 SGX questions | `mode=full` | `mode=basic` (same LLM, dense top-k) | answer accuracy (LLM judge + manual check), citation accuracy, retrieval recall@k, latency |
-| System | AWS deployment | per-container `X-Process-Time-Ms` and end-to-end time | | median, p95 |
+| 4 | synthetic user, 50 questions with gold SQL | `mode=agent` | `mode=baseline` (pasted CSV, no tools) | accuracy; latency |
+| 5 | FinanceBench subset (74 questions) + SGX questions | `mode=full` | `mode=basic` (same LLM, dense top-k) | answer accuracy, evidence page retrieved (recall@k), citation accuracy, latency |
+| System | Ronin VM deployment | per-container `X-Process-Time-Ms`, the gateway's `Server-Timing`, end-to-end time | | single timed runs |
 
-LLM cost is zero on OpenRouter's free models, but they allow only 50 requests a day: the Module 4
-evaluation (about 50 questions x 2 modes, roughly 250 requests) takes about five days of quota,
-so start it early and run it with `--resume` each day. Keep a FinanceBench subset for Module 5.
+OpenRouter's free models allow only 50 requests a day, so the full sets (about 250 requests for
+each module) were not run. What was run, with the same model for both modes in each run:
 
-## Timeline (submission Sun 1 Nov 23:59, demo Week 12)
-
-| Dates | Module 4 | Module 5 | Integration |
-|---|---|---|---|
-| Tue 13 to Sun 18 Oct | `validate_sql` + unit tests, agent loop, baseline, synthetic user | `parse_pdf`, `chunk_pages`, `store_document`; ingest 3 to 5 SGX reports locally | agree `CONTRACTS.md`; create GitHub repo; everyone's stubs run in compose |
-| Mon 19 to Sun 25 Oct | write the 50 questions; first eval run | retrieval (basic + full), citations; ingest FinanceBench PDFs; write SGX questions | first AWS deploy (ECR + k3s) with all services; gateway wired to all modules |
-| Mon 26 Oct to Sun 1 Nov | final eval, tables and charts | final eval, tables and charts | latency benchmark on AWS; frontend; report sections, slides, zip, **submit** |
-| Week 12 | | | live demo |
-
-## Next steps right now
-
-1. Share `CONTRACTS.md` with the group and fix the open points in its section 7.
-2. Push this folder as the group repo so the others add their services in the same layout.
-3. Implement Module 4 first (smaller, and its synthetic data is needed for the demo), then Module 5.
+| Module | Questions | Ours | Baseline | Details |
+|---|---|---|---|---|
+| 4 | 15 (q01 to q05 on 15 Oct, q06 to q15 on 27 Oct) | 15/15 correct | 11/15 | `services/chat-agent/eval/README.md` |
+| 5 | 8 held-out FinanceBench questions (27 Oct) | 7/8 correct, evidence page 6/8 | 3/8, evidence page 2/8 | `services/report-reader/eval/README.md` |
+| 5 | 3 SGX questions, answers checked by hand against the PDFs | 3/3 | | `sgx_questions.jsonl` |

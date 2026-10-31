@@ -26,7 +26,7 @@ export default function MonthView({ prefs, data, onAsk, onEditBudgets }: {
           <SpendChart summary={summary} forecast={forecast} />
         </section>
         <section className="card reveal" aria-labelledby="cats-title">
-          <h2 className="card__title" id="cats-title">Where it went · {summary.transactions} receipts</h2>
+          <h2 className="card__title" id="cats-title">Where it went · {summary.transactions} receipt{summary.transactions === 1 ? "" : "s"}</h2>
           <CategoryList summary={summary} />
         </section>
         <section className="card reveal" aria-labelledby="next-title">

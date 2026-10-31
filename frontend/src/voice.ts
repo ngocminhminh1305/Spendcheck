@@ -45,9 +45,10 @@ export function verdict(v: Voice, summary: Summary, forecast: Forecast | null, p
     case "none":
       return "Set a monthly budget and I'll tell you if you're on track.";
     case "good":
+      if (perDay === null) return hype ? "You're under budget so far! 🔥" : "You're under budget so far.";   // forecaster down
       return hype
-        ? `You're crushing it: keep under ${sgd(perDay ?? 0)} a day and you finish under budget! 🔥`
-        : `You're on track. Up to ${sgd(perDay ?? 0)} a day keeps you inside your budget.`;
+        ? `You're crushing it: keep under ${sgd(perDay)} a day and you finish under budget! 🔥`
+        : `You're on track. Up to ${sgd(perDay)} a day keeps you inside your budget.`;
     case "warning": {
       const over = (forecast?.forecast_total ?? 0) - (summary.budget ?? 0);
       return hype

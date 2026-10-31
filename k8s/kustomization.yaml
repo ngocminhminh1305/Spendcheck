@@ -29,7 +29,7 @@ secretGenerator:
 # account (us-east-1). The deploy step pulls each image from ECR onto the VM once
 # (k8s/README.md, step 2); every container sets imagePullPolicy: Never, so Kubernetes runs that
 # local copy and never needs AWS credentials, which in the Learner Lab expire after a few hours.
-# Bump the tag on every release.
+# A release re-uses the tag: pull the new image, then restart its deployment (README, step 2).
 images:
   - name: spendcheck/extractor
     newName: 767397718813.dkr.ecr.us-east-1.amazonaws.com/spendcheck/extractor

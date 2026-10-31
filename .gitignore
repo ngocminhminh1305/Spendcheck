@@ -26,6 +26,10 @@ data/**
 *.pdf
 results*.jsonl
 results*.csv
+# ...except the evaluation results the report cites (Tables III and IV)
+!services/chat-agent/eval/results.csv
+!services/chat-agent/eval/results_run_27oct.csv
+!services/report-reader/eval/results_financebench_run_27oct.csv
 
 # Module 1 run outputs
 /services/extractor/data/outputs/*
